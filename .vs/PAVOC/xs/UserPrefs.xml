@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{D05D4EA8-F93B-42E5-A726-EB2546C4CFEB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PAVOC/Startup.cs">
+    <Files>
+      <File FileName="PAVOC/Startup.cs" Line="46" Column="34" />
+      <File FileName="PAVOC/Program.cs" Line="1" Column="1" />
+      <File FileName="PAVOC/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="PAVOC/Controllers/WeatherForecastController.cs" Line="24" Column="10" />
+      <File FileName="PAVOC/Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PAVOC" expanded="True">
+            <Node name="PAVOC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PAVOC PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
