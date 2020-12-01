@@ -19,7 +19,9 @@ namespace PAVOC.DataModel.Models
         public int CategoryEntityId { get; set; }
         public CategoryEntity Category { get; set; }
 
-
         public ICollection<LearnQuestionEntity> LearnQuestions { get; set; } = new List<LearnQuestionEntity>();
+
+        public IList<UserLearnLevelEntity> UserLearnLevels { get; set; } = new List<UserLearnLevelEntity>();
+
     }
 }

@@ -15,5 +15,7 @@ namespace PAVOC.DataModel.Models
 
 
         public ICollection<TestQuestionEntity> TestQuestions { get; set; } = new List<TestQuestionEntity>();
+
+        public IList<UserTestLevelEntity> UserTestLevels { get; set; } = new List<UserTestLevelEntity>();
     }
 }

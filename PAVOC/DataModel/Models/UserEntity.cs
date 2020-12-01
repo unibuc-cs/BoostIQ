@@ -25,5 +25,8 @@ namespace PAVOC.DataModel.Models
         public Int32 PointsPlay { get; set; }
 
         public ICollection<FeedbackEntity> Feedbacks { get; set; } = new List<FeedbackEntity>();
+
+        public IList<UserLearnLevelEntity> UserLearnLevels { get; set; } = new List<UserLearnLevelEntity>();
+        public IList<UserTestLevelEntity> UserTestLevels { get; set; } = new List<UserTestLevelEntity>();
     }
 }

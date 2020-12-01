@@ -29,6 +29,35 @@ namespace PAVOC.DataModel.Context
                 .WithMany(b => b.Feedbacks)
                 .HasForeignKey(p => p.UserEntityId);
 
+
+            // User -> LearnLevel relationship
+            modelBuilder.Entity<UserLearnLevelEntity>().HasKey(sc => new { sc.UserEntityId, sc.LearnLevelEntityId });
+
+            modelBuilder.Entity<UserLearnLevelEntity>()
+            .HasOne(x => x.User)
+            .WithMany(x => x.UserLearnLevels)
+            .HasForeignKey(x => x.UserEntityId);
+
+            modelBuilder.Entity<UserLearnLevelEntity>()
+               .HasOne(x => x.LearnLevel)
+               .WithMany(x => x.UserLearnLevels)
+               .HasForeignKey(x => x.LearnLevelEntityId);
+
+
+            // User -> TestLevel relationship
+            modelBuilder.Entity<UserTestLevelEntity>().HasKey(sc => new { sc.UserEntityId, sc.TestLevelEntityId });
+
+            modelBuilder.Entity<UserTestLevelEntity>()
+            .HasOne(x => x.User)
+            .WithMany(x => x.UserTestLevels)
+            .HasForeignKey(x => x.UserEntityId);
+
+            modelBuilder.Entity<UserTestLevelEntity>()
+               .HasOne(x => x.TestLevel)
+               .WithMany(x => x.UserTestLevels)
+               .HasForeignKey(x => x.TestLevelEntityId);
+
+
             // Category -> LearnLevel relationship
             modelBuilder.Entity<LearnLevelEntity>()
                 .HasOne(p => p.Category)
