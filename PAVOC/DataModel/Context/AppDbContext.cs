@@ -15,6 +15,8 @@ namespace PAVOC.DataModel.Context
         public DbSet<TestLevelEntity> TestLevels { get; set; }
         public DbSet<TestQuestionEntity> TestQuestions { get; set; }
         public DbSet<TestQuestionAnswerEntity> TestQuestionAnswers { get; set; }
+        public DbSet<UserLearnLevelEntity> UserLearnLevels { get; set; }
+        public DbSet<UserTestLevelEntity> UserTestLevels { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
