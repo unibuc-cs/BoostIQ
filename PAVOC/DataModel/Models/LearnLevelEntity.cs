@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PAVOC.DataModel.Models
@@ -17,5 +18,8 @@ namespace PAVOC.DataModel.Models
 
         public int CategoryEntityId { get; set; }
         public CategoryEntity Category { get; set; }
+
+
+        public ICollection<LearnQuestionEntity> LearnQuestions { get; set; } = new List<LearnQuestionEntity>();
     }
 }

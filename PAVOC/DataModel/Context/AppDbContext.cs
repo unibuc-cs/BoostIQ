@@ -10,6 +10,7 @@ namespace PAVOC.DataModel.Context
         public DbSet<FeedbackEntity> Feedbacks { get; set; }
         public DbSet<CategoryEntity> Categories { get; set; }
         public DbSet<LearnLevelEntity> LearnLevels { get; set; }
+        public DbSet<LearnQuestionEntity> LearnQuestions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -30,6 +31,17 @@ namespace PAVOC.DataModel.Context
                 .WithMany(b => b.LearnLevels)
                 .HasForeignKey(p => p.CategoryEntityId);
 
+            // LearnLevel -> LearnQuestion relationship
+            modelBuilder.Entity<LearnQuestionEntity>()
+                .HasOne(p => p.LearnLevelEntity)
+                .WithMany(b => b.LearnQuestions)
+                .HasForeignKey(p => p.LearnLevelEntityId);
+
+            // LearnQuestion -> LearnQuestionAnswer relationship
+            modelBuilder.Entity<LearnQuestionAnswerEntity>()
+                .HasOne(p => p.LearnQuestion)
+                .WithMany(b => b.LearnQuestionAnswers)
+                .HasForeignKey(p => p.LearnQuestionEntityId);
         }
     }
 }
