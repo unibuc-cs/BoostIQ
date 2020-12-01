@@ -14,5 +14,6 @@ namespace PAVOC.DataModel.Models
 
         public ICollection<LearnLevelEntity> LearnLevels { get; set; } = new List<LearnLevelEntity>();
 
+        public ICollection<TestLevelEntity> TestLevels { get; set; } = new List<TestLevelEntity>();
     }
 }

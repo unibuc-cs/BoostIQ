@@ -11,6 +11,10 @@ namespace PAVOC.DataModel.Context
         public DbSet<CategoryEntity> Categories { get; set; }
         public DbSet<LearnLevelEntity> LearnLevels { get; set; }
         public DbSet<LearnQuestionEntity> LearnQuestions { get; set; }
+        public DbSet<LearnQuestionAnswerEntity> LearnQuestionAnswers { get; set; }
+        public DbSet<TestLevelEntity> TestLevels { get; set; }
+        public DbSet<TestQuestionEntity> TestQuestions { get; set; }
+        public DbSet<TestQuestionAnswerEntity> TestQuestionAnswers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -42,6 +46,25 @@ namespace PAVOC.DataModel.Context
                 .HasOne(p => p.LearnQuestion)
                 .WithMany(b => b.LearnQuestionAnswers)
                 .HasForeignKey(p => p.LearnQuestionEntityId);
+
+
+            // Category -> TestLevel relationship
+            modelBuilder.Entity<TestLevelEntity>()
+                .HasOne(p => p.Category)
+                .WithMany(b => b.TestLevels)
+                .HasForeignKey(p => p.CategoryEntityId);
+
+            // TestLevel -> TestQuestion relationship
+            modelBuilder.Entity<TestQuestionEntity>()
+                .HasOne(p => p.TestLevelEntity)
+                .WithMany(b => b.TestQuestions)
+                .HasForeignKey(p => p.TestLevelEntityId);
+
+            // TestQuestion -> TestQuestionAnswer relationship
+            modelBuilder.Entity<TestQuestionAnswerEntity>()
+                .HasOne(p => p.TestQuestion)
+                .WithMany(b => b.TestQuestionAnswers)
+                .HasForeignKey(p => p.TestQuestionEntityId);
         }
     }
 }
