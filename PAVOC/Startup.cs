@@ -42,6 +42,7 @@ namespace PAVOC
                 app.UseHsts();
             }
 
+            app.UseCorsMiddleware();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())
