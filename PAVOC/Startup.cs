@@ -3,12 +3,11 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using PAVOC.Common;
 using PAVOC.OAuth2;
 
 namespace PAVOC
@@ -59,6 +58,11 @@ namespace PAVOC
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var initDB = false; // change this to true to fill db with mock data
+
+            if (initDB)
+                MockDbDataService.Fill();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
