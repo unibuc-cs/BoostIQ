@@ -1,0 +1,84 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1>BoostIQ</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> HOME </a>
+      <a mat-button [routerLink]="'/learn'"> LEARN </a>
+      <a mat-button [routerLink]="'/play'"> PLAY </a>
+      <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
+      <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<br>
+<header>
+<h3>Leaderbord</h3>
+</header>
+
+
+
+
+ <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  </ng-container>
+
+ 
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="weight">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Weight </th>
+    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="symbol">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Symbol </th>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+
+
+
+
+
+<style>
+h3{
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu-spacer {
+  margin: 20px;
+}
+
+h1{
+  font-size:30px;
+}
+
+@media screen and (min-width: 1500px)
+{
+  a{
+  font-size: 20px;
+  justify-content: center;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  padding: 2px 195px;
+}  
+}
+</style>

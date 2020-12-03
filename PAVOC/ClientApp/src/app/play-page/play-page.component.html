@@ -1,0 +1,56 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1>BoostIQ</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> HOME </a>
+      <a mat-button [routerLink]="'/learn'"> LEARN </a>
+      <a mat-button [routerLink]="'/play'"> PLAY </a>
+      <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
+      <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<br>
+<header>
+<h3>Categories</h3>
+</header>
+
+
+
+<style>
+h3{
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu-spacer {
+  margin: 20px;
+}
+
+h1{
+  font-size:30px;
+}
+
+@media screen and (min-width: 1500px)
+{
+  a{
+  font-size: 20px;
+  justify-content: center;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  padding: 2px 195px;
+}  
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+</style>
