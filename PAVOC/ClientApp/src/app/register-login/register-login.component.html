@@ -5,18 +5,16 @@
 
       <mat-tab label="Login">
           <mat-card-content>
-            <form action="">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
               <mat-form-field>
                  <input
                 matInput
                 placeholder="User Name"
                 required
-                name="username"
-                ngModel
-                #username="ngModel">
+                formControlName="username">
               <mat-icon matSuffix>perm_identity</mat-icon>
               <mat-error
-                *ngIf="username.invalid">
+                *ngIf="loginForm.get('username').hasError('required')">
                 Username is required
               </mat-error>
               </mat-form-field>
@@ -27,17 +25,10 @@
                   placeholder="Password"
                   type="password"
                   required
-                  minlength="6"
-                  name="password"
-                  ngModel
-                  #password="ngModel">
+                  formControlName="password">
                   <mat-error
-                    *ngIf="password.errors && password.errors.required">
+                    *ngIf="loginForm.get('password').hasError('required')">
                     Password is required
-                  </mat-error>
-                  <mat-error
-                    *ngIf="password.errors && password.errors.minlength">
-                    Password must be of length 6
                   </mat-error>
                 <mat-icon matSuffix>lock</mat-icon>
               </mat-form-field>
