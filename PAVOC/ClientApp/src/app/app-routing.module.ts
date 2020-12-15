@@ -6,15 +6,20 @@ import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.co
 import { LearnPageComponent } from './learn-page/learn-page.component';
 import { PlayPageComponent } from './play-page/play-page.component';
 import { RegisterLoginComponent } from './register-login/register-login.component';
+import { AuthGuard } from './shared/guards/auth-guard';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent},
-    { path: 'learn', component: LearnPageComponent},
-    { path: 'play', component: PlayPageComponent},
-    { path: 'leaderboard', component: LeaderboardPageComponent},
+    { path: 'learn', component: LearnPageComponent, canActivate: [AuthGuard]},
+    { path: 'play', component: PlayPageComponent, canActivate: [AuthGuard]},
+    { path: 'leaderboard', component: LeaderboardPageComponent, canActivate: [AuthGuard]},
     { path: 'about-us', component: AboutUsPageComponent},
     { path: 'login-register', component: RegisterLoginComponent},
-    { path: '*', component: HomeComponent}
+
+
+
+    { path: '**', component: HomeComponent}
+
 ];
 
 @NgModule({
