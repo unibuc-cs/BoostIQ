@@ -124,6 +124,10 @@ namespace PAVOC.Common
                 learnQuestion2LearnLevel1History.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel1History);
 
 
+
+
+
+
                 categoryRepository.Update(historyCategory);
 
                 uow.Save();

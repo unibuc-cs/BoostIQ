@@ -7,7 +7,7 @@ import {MatTableDataSource} from '@angular/material/table';
 @Component({
   selector: 'app-play-page',
   templateUrl: './play-page.component.html',
-  styleUrls: ['./play-page.component.css']
+  // styleUrls: ['./play-page.component.css']
 })
 
 

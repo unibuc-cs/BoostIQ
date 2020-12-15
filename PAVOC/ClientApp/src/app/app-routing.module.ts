@@ -13,7 +13,8 @@ const routes: Routes = [
     { path: 'play', component: PlayPageComponent},
     { path: 'leaderboard', component: LeaderboardPageComponent},
     { path: 'about-us', component: AboutUsPageComponent},
-    { path: 'login-register', component: RegisterLoginComponent}
+    { path: 'login-register', component: RegisterLoginComponent},
+    { path: '*', component: HomeComponent}
 ];
 
 @NgModule({

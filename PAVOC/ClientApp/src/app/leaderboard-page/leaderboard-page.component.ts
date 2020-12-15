@@ -27,7 +27,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-leaderboard-page',
   templateUrl: './leaderboard-page.component.html',
-  styleUrls: ['./leaderboard-page.component.css']
+  // styleUrls: ['./leaderboard-page.component.css']
 })
 
 

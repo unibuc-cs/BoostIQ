@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PAVOC.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/LearnLevel")]
     [ApiController]
     public class LearnLevelController : ControllerBase
     {
-        // GET: api/<LearnLevelController>
+        // GET: api/LearnLevel
         [HttpGet]
         public IEnumerable<string> Get()
         {
