@@ -13,10 +13,10 @@ export class ApiService {
   header = new HttpHeaders({
     'Content-Type': 'application/json'
   });
-  baseUrl = 'http://localhost:5000/api';
+  baseUrl = 'api/';
  
   getLevels() {
-    return this.http.get(this.baseUrl + '/LearnLevel');
+    return this.http.get<any>(this.baseUrl + 'LearnLevel');
   }
 
   
