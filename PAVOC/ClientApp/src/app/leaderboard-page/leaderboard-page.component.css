@@ -4,7 +4,7 @@
 }
 
 h2{
-    margin-left: 520px;
+    margin-left: 410px;
     margin-bottom: 20px;
 }
 
@@ -30,8 +30,8 @@ h2{
 #play{
     position: absolute; 
     visibility: visible; 
-    top: 213px; 
+    top: 219px; 
     height: 110px; 
     width: 97%; 
-    margin-left: 1950px;
+    margin-left: 1456px;
 }
