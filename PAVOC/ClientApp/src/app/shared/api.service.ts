@@ -19,6 +19,9 @@ export class ApiService {
     return this.http.get<any>(this.baseUrl + 'LearnLevel');
   }
 
+  getCategory(){
+    return this.http.get<any>(this.baseUrl + 'Categories');
+  }
   
 }
 

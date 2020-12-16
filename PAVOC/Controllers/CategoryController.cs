@@ -3,20 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PAVOC.DataModel.Models;
+using PAVOC.DataModel.Repository.Interface;
+using PAVOC.DataModel.UnitOfWork;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace PAVOC.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Categories")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
         // GET: api/<CategoryController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<CategoryEntity> Get()
         {
-            return new string[] { "value1", "value2" };
+            using (var uow = new UnitOfWork())
+            {
+                var repo = uow.GetRepository<ICategoryRepository>();
+                return repo.GetAll();
+            }
         }
 
         // GET api/<CategoryController>/5

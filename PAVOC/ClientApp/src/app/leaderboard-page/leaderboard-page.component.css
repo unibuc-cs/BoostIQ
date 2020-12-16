@@ -1,0 +1,37 @@
+.mat-elevation-z8{
+    width: 40%;
+    margin-left: 80px;
+}
+
+h2{
+    margin-left: 520px;
+    margin-bottom: 20px;
+}
+
+
+.mat-elevation-z4{
+    width: 40%;
+    margin-right: 80px;
+    color: white;
+    float: right;
+    margin-bottom: 5000px;
+    
+}
+
+#tabel2{
+    position: absolute; 
+    visibility: visible; 
+    top: 275px; 
+    height: 110px; 
+    width: 97%; 
+    margin-left: 80px;
+}
+
+#play{
+    position: absolute; 
+    visibility: visible; 
+    top: 213px; 
+    height: 110px; 
+    width: 97%; 
+    margin-left: 1950px;
+}

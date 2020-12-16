@@ -12,23 +12,71 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<br>
+<h1> Categories </h1>
+<br><br>
+
+<!---
+<div>
+  <div *ngFor="let item of levels">{{item | json}}</div>
+</div> 
+-->
+
+<!--
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Learn Level Entity ID</th>
+          <th>Text</th>
+          <th>Image</th>
+          <th>Learn Level Number</th>
+          <th>Learn Questions</th>
+          <th>User Learn Levels</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let level of levels">
+        <td>{{ level.learnLevelEntityId }}</td>
+        <td>{{ level.text }}</td>
+        <td>{{ level.image }}</td>
+        <td>{{ level.learnLevelNumber }}</td>
+        <td>{{ level.learnQuestions }}</td>
+        <td>{{ level.userLearnLevels }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+
+
+      <div class="container">
+        <div class="row pl-5">
+          <ng-container *ngFor=" let level of levels ">
+            <div class="view mb-3 mr-3 p-0 hoverable">
+              <img [src]="level.image" class="img-fluid z-depth-1 rounded" alt="hoverable"/>
+
+              <div class="detail">
+                <p id="p1">Nivelul {{ level.learnLevelNumber }}</p>
+                <p id="p2">{{ level.text }}</p>
+              </div>
+            </div>
+            <div class="w-100" *ngIf="ind != 0 && (ind + 1) % 4 == 0"></div>
+          </ng-container>
+
+
+
+
+<!--
+<div class="pageWrapper space">
+  <ng-template ngFor let-p [ngForOf]="levels">
+    {{p.learnLevelEntityId }}
+    {{p.learnQuestions }}
+  </ng-template>
+</div>
+-->
+
+
 <style>
-.menu-spacer {
-  margin: 20px;
-}
 
-h1{
-  font-size:30px;
-}
-
-@media screen and (min-width: 1500px)
-{
-  a{
-  font-size: 100%;
-  justify-content: center;
-  border-radius: 20% 20% 20% 20%;
-  border: none;
-  padding: 4% 31.5%;
-}  
-}
 </style>

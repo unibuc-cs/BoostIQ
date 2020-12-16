@@ -1,0 +1,55 @@
+.menu-spacer {
+    margin: 20px;
+  }
+  
+  h1{
+    font-size:40px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 1500px)
+  {
+    a{
+    font-size: 100%;
+    justify-content: center;
+    border-radius: 20% 20% 20% 20%;
+    border: none;
+    padding: 4% 31.5%;
+  }  
+  }  
+  
+  
+  
+  #p1 {
+    padding-left: 20px;
+    /* text-align: center; */
+    font-weight: 500;
+    padding-top: 5px;
+    height:60px;
+    max-height: 79px;
+    margin-bottom: 0;
+    /* overflow: hidden; */
+  }
+  
+  #container-content {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 90%;
+  }
+  
+
+  img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .view .mask {
+    height: 88%;
+  }
+  

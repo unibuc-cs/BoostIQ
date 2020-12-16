@@ -12,7 +12,7 @@ namespace PAVOC.DataModel.Repository.Implementation
     {
         public CategoryRepository(AppDbContext context) : base(context) { }
 
-        public IEnumerable<CategoryEntity> GetCategories()
+        public IEnumerable<CategoryEntity> GetAll()
         {
             return _context.Categories.ToList();
         }

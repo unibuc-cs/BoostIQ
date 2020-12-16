@@ -13,7 +13,7 @@ namespace PAVOC.DataModel.DbManager
             {
                 var repo = uow.GetRepository<ICategoryRepository>();
 
-                return repo.GetCategories();
+                return repo.GetAll();
             }
         }
     }

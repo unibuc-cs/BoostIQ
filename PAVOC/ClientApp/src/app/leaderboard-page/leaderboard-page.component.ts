@@ -3,42 +3,68 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+export interface Learn {
+  position_learn: number;
+  username_learn: string;
+  score_learn: number;
+
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+export interface Play{
+  position_play: number;
+  username_play: string;
+  score_play: number;
+}
+
+const ELEMENT_DATA: Learn[] = [
+  {position_learn: 1, username_learn: 'Snake', score_learn: 4244},
+  {position_learn: 2, username_learn: 'Ghost', score_learn: 2341},
+  {position_learn: 3, username_learn: 'Raven', score_learn: 2198},
+  {position_learn: 4, username_learn: 'Predator', score_learn: 1771},
+  {position_learn: 5, username_learn: 'Nightmare', score_learn: 1520},
+  {position_learn: 6, username_learn: 'Zero', score_learn: 1253},
+  {position_learn: 7, username_learn: 'Nemesis', score_learn: 972},
+  {position_learn: 8, username_learn: 'Joker', score_learn: 731},
+  {position_learn: 9, username_learn: 'Phoenix', score_learn: 491},
+  {position_learn: 10, username_learn: 'Storm', score_learn: 159}
 ];
+
+const ELEMENT_DATA_PLAY: Play[] = [
+  {position_play: 1, username_play: 'Snake', score_play: 2198},
+  {position_play: 2, username_play: 'Ghost', score_play:  1253},
+  {position_play: 3, username_play: 'Raven', score_play: 491},
+  {position_play: 4, username_play: 'Predator', score_play: 2341},
+  {position_play: 5, username_play: 'Nightmare', score_play: 1771},
+  {position_play: 6, username_play: 'Zero', score_play: 1253},
+  {position_play: 7, username_play: 'Nemesis', score_play: 731},
+  {position_play: 8, username_play: 'Joker', score_play:159 },
+  {position_play: 9, username_play: 'Phoenix', score_play: 972},
+  {position_play: 10, username_play: 'Storm', score_play: 4244}
+];
+
+
 
 
 @Component({
   selector: 'app-leaderboard-page',
   templateUrl: './leaderboard-page.component.html',
-  // styleUrls: ['./leaderboard-page.component.css']
+  styleUrls: ['./leaderboard-page.component.css']
 })
 
 
 export class LeaderboardPageComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  displayedColumnsPlay: string[] = ['position_play', 'username_play', 'score_play'];
+  dataSourcePlay = new MatTableDataSource(ELEMENT_DATA_PLAY);
+  
+  displayedColumnsLearn: string[] = ['position_learn', 'username_learn', 'score_learn'];
+  dataSourceLearn = new MatTableDataSource(ELEMENT_DATA);
 
   @ViewChild(MatSort, {static:false}) sort: MatSort;
-
+  
+  
   ngAfterViewInit() {
-    this.dataSource.sort = this.sort;
+    this.dataSourceLearn.sort = this.sort;
+    this.dataSourcePlay.sort = this.sort;
   }
   ngOnInit(){
     
