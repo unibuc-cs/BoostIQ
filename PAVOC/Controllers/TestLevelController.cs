@@ -12,11 +12,15 @@ namespace PAVOC.Controllers
     [ApiController]
     public class TestLevelController : ControllerBase
     {
-        // GET: api/<TestLevelController>
+         // GET: api/LearnLevel
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<TestLevelEntity> Get()
         {
-            return new string[] { "value1", "value2" };
+            using (var uow = new UnitOfWork())
+            {
+                var repo = uow.GetRepository<ITestLevelRepository>();
+                return repo.GetAll();
+            }
         }
 
         // GET api/<TestLevelController>/5

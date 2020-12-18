@@ -11,6 +11,7 @@ namespace PAVOC.DataModel.Models
         public int TestLevelNumber { get; set; }
 
         public int CategoryEntityId { get; set; }
+
         public CategoryEntity Category { get; set; }
 
 
