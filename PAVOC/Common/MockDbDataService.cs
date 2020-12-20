@@ -17,7 +17,7 @@ namespace PAVOC.Common
 
         private static void FillUsers()
         {
-            using(var uow = new UnitOfWork())
+            using (var uow = new UnitOfWork())
             {
                 var repo = uow.GetRepository<IUserRepository>();
                 var user = new UserEntity()
@@ -644,8 +644,9 @@ namespace PAVOC.Common
                 uow.Save();
             }
         }
-    }
-     private static void FillTestLevels()
+
+
+        private static void FillTestLevels()
         {
             using (var uow = new UnitOfWork())
             {
@@ -739,7 +740,7 @@ namespace PAVOC.Common
                 var testLevel2History = new TestLevelEntity()
                 {
                     TestLevelNumber = 2,
-                    };
+                };
 
                 historyCategory.TestLevels.Add(testLevel2History);
 
@@ -825,7 +826,7 @@ namespace PAVOC.Common
                 var testLevel3History = new TestLevelEntity()
                 {
                     TestLevelNumber = 3,
-                    
+
                 };
 
                 historyCategory.TestLevels.Add(testLevel3History);
@@ -912,7 +913,7 @@ namespace PAVOC.Common
                 var testLevel1Sports = new TestLevelEntity()
                 {
                     TestLevelNumber = 1,
-                   
+
                 };
 
                 sportsCategory.TestLevels.Add(testLevel1Sports);
@@ -996,7 +997,7 @@ namespace PAVOC.Common
                 var testLevel2Sports = new TestLevelEntity()
                 {
                     TestLevelNumber = 2,
-                       };
+                };
 
                 sportsCategory.TestLevels.Add(testLevel2Sports);
 
@@ -1081,7 +1082,7 @@ namespace PAVOC.Common
                 var testLevel3Sports = new TestLevelEntity()
                 {
                     TestLevelNumber = 3,
-                     };
+                };
 
                 sportsCategory.TestLevels.Add(testLevel3Sports);
 
@@ -1173,4 +1174,5 @@ namespace PAVOC.Common
                 uow.Save();
             }
         }
+    }
 }
