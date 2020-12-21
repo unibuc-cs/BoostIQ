@@ -18,11 +18,14 @@ export class LearnPageComponent implements OnInit {
   ngOnInit() {
     this.api.getLevels().subscribe(result => {
       this.levels = result;
+      
 
-    this.api.getCategory().subscribe(result => {
-      this.category = result;
+    
     })
-    })
+
+    
   }
+
+
 
 }

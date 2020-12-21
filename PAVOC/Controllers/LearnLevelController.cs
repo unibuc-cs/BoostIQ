@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PAVOC.Common.DTO;
 using PAVOC.DataModel.Models;
 using PAVOC.DataModel.Repository.Interface;
 using PAVOC.DataModel.UnitOfWork;
@@ -17,12 +19,25 @@ namespace PAVOC.Controllers
     {
         // GET: api/LearnLevel
         [HttpGet]
-        public IEnumerable<LearnLevelEntity> Get()
+        public IList<LearnLevelDTO> Get()
         {
             using (var uow = new UnitOfWork())
             {
-                var repo = uow.GetRepository<ILearnLevelRepository>();
-                return repo.GetAll();
+                
+                
+                    var repo = uow.GetRepository<ILearnLevelRepository>();
+                    var learnLevels = repo.GetAll();
+                var config = new MapperConfiguration(cfg => {
+                    cfg.CreateMap<LearnQuestionEntity, LearnQuestionDTO>();
+                    cfg.CreateMap<LearnQuestionAnswerEntity, LearnQuestionAnswerDTO>();
+                    cfg.CreateMap <LearnLevelEntity,LearnLevelDTO>();
+                });
+                IMapper iMapper = config.CreateMapper();
+                var learnLevelDTOs = iMapper.Map<List<LearnLevelEntity>, List<LearnLevelDTO>>(learnLevels.ToList());
+                return learnLevelDTOs;
+ 
+                
+                
             }
         }
 

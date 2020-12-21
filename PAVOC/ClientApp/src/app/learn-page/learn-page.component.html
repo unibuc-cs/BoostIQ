@@ -56,13 +56,26 @@
             <div class="view mb-3 mr-3 p-0 hoverable">
               <img [src]="level.image" class="img-fluid z-depth-1 rounded" alt="hoverable"/>
 
-              <div class="detail">
+              <div class="detail1">
                 <p id="p1">Nivelul {{ level.learnLevelNumber }}</p>
                 <p id="p2">{{ level.text }}</p>
+                <P id="p3"> Intrebari: {{ level.learnQuestions.text}}
               </div>
+
+
             </div>
             <div class="w-100" *ngIf="ind != 0 && (ind + 1) % 4 == 0"></div>
           </ng-container>
+<!--
+          <ng-container *ngFor=" let question of level.learnQuestions"
+             <div class="detail2">
+                <p id="p4">{{ question.text}}</p>
+          </ng-container>
+
+        -->
+        </div>
+      </div>
+        
 
 
 

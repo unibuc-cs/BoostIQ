@@ -31,6 +31,12 @@
     margin-bottom: 0;
     /* overflow: hidden; */
   }
+
+  #p3 {
+    padding-left: 20px;
+    font-weight: 500;
+  }
+  
   
   #container-content {
     padding: 30px;
