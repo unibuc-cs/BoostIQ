@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PAVOC.DataModel.Models;
+using PAVOC.DataModel.Repository.Interface;
+using PAVOC.DataModel.UnitOfWork;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,11 +15,15 @@ namespace PAVOC.Controllers
     [ApiController]
     public class TestLevelController : ControllerBase
     {
-        // GET: api/<TestLevelController>
+         // GET: api/LearnLevel
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<TestLevelEntity> Get()
         {
-            return new string[] { "value1", "value2" };
+            using (var uow = new UnitOfWork())
+            {
+                var repo = uow.GetRepository<ITestLevelRepository>();
+                return repo.GetAll();
+            }
         }
 
         // GET api/<TestLevelController>/5
