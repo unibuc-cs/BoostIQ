@@ -1,1 +1,63 @@
-<p>learn-category works!</p>
+<mat-toolbar>
+    <mat-toolbar-row>
+      <h1>BoostIQ</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/home'"> HOME </a>
+        <a mat-button [routerLink]="'/learn'"> LEARN </a>
+        <a mat-button [routerLink]="'/play'"> PLAY </a>
+        <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
+        <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <br>
+
+  <!-- pagina cu textul -->
+  <div *ngIf="textDisplayed"> 
+    <div *ngIf="learnLevel">
+        <h1> Learn Level {{learnLevel.learnLevelNumber}} </h1>
+        <br><br>
+      
+        <img src="{{learnLevel.image}}" alt="">
+        <p>{{learnLevel.text}}</p>
+    </div>
+    <button (click)="goToQuestions()">Questions</button>
+  </div>
+
+  <!-- pagina cu intrebarile -->
+  <div *ngIf="questionsDisplayed">
+    <div *ngIf="question">
+        <h2>{{question.text}}</h2>
+        <ol>
+            <li *ngFor="let answer of question.learnQuestionAnswers">
+                <p [id]="'answer' + answer.learnQuestionAnswerEntityId" [style.background-color]="getBackgroundColor(answer.learnQuestionAnswerEntityId)" 
+                (click)="selectAnswer(answer.learnQuestionAnswerEntityId)">{{answer.text}}</p>
+            </li>
+        </ol>
+
+        <div *ngIf="questionOrder > 1">
+            <button (click)="previousQuestion()">Previous Question</button>
+        </div>
+        <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
+            <button (click)="nextQuestion()">Next Question</button>
+        </div>
+        <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
+            <button (click)="finish()">Finish</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- pagina cu rezultatele -->
+  <div *ngIf="resultDisplayed">
+    <div *ngIf="passedLevel">
+        <h2>Good job. You passed the level!</h2>
+    </div>
+    <div *ngIf="!passedLevel">
+        <h2>We are sorry, but you failed the level.</h2>
+    </div>
+  </div>
+  
+
+  

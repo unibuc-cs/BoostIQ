@@ -12,6 +12,17 @@ export class LearnCategoryComponent implements OnInit {
 
   public learnLevel;
 
+  public textDisplayed: boolean = true;
+  public questionsDisplayed: boolean = false;
+  public resultDisplayed: boolean = false;
+
+  public question;
+  public questionOrder: number;
+
+  public answers = {};
+
+  public passedLevel:boolean;
+
   constructor(private activatedRoute: ActivatedRoute, private authService: AuthService, private api: ApiService) { }
 
   ngOnInit() {
@@ -19,8 +30,76 @@ export class LearnCategoryComponent implements OnInit {
     let userId = this.authService.getUserId();
 
     this.api.getUserLearnLevelByCategoryId(userId, categoryId).subscribe(learnLevel => {
-      this.learnLevel = learnLevel;
+      if(learnLevel) {
+        this.learnLevel = learnLevel;
+      } else {
+        this.textDisplayed = false;
+        this.questionsDisplayed = false;
+      }
+
     })
+  }
+
+  selectAnswer(answerId) {
+    var alreadySelected = this.answers[this.questionOrder];
+    if(alreadySelected) { 
+      document.getElementById("answer" + alreadySelected).style.background = "none"; // clear old selection
+    }
+
+    this.answers[this.questionOrder] = answerId;
+  }
+
+  getBackgroundColor(answerId) {
+    var answer = this.answers[this.questionOrder];
+    if(answer == answerId) {
+      return 'green';
+    } else {
+      return 'none';
+    }
+  }
+
+
+  goToQuestions() {
+    this.textDisplayed = false;
+    this.questionsDisplayed = true;
+    this.questionOrder = 1;
+    this.question = this.learnLevel.learnQuestions.find(p => p.order == this.questionOrder);
+  }
+
+  previousQuestion() {
+    this.questionOrder--;
+    this.question = this.learnLevel.learnQuestions.find(p => p.order == this.questionOrder);
+  }
+
+  nextQuestion() {
+    this.questionOrder++;
+    this.question = this.learnLevel.learnQuestions.find(p => p.order == this.questionOrder);
+
+  }
+
+  finish() {
+    this.questionsDisplayed = false;
+    this.resultDisplayed = true;
+
+    let totalQuestions = this.learnLevel.learnQuestions.length;
+    let correctAnswers = 0.0;
+
+    this.learnLevel.learnQuestions.forEach(learnQuestion => {
+      let answer = this.answers[learnQuestion.order];
+      if(answer) {
+        let correctAnswer = learnQuestion.learnQuestionAnswers.find(p => p.isCorrect);
+        if(correctAnswer.learnQuestionAnswerEntityId == answer) {
+          correctAnswers++;
+        }
+      }
+    });
+
+    let score = correctAnswers/totalQuestions;
+    if(score >= 0.5) {
+      this.passedLevel = true;
+    } else {
+      this.passedLevel = false;
+    }
   }
 
 }
