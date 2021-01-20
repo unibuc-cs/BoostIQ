@@ -16,80 +16,12 @@
 <h1> Categories </h1>
 <br><br>
 
-<!---
-<div>
-  <div *ngFor="let item of levels">{{item | json}}</div>
-</div> 
--->
-
-<!--
-<div class="container">
-  <table class="table table-striped">
-    <thead>
-        <tr>
-          <th>Learn Level Entity ID</th>
-          <th>Text</th>
-          <th>Image</th>
-          <th>Learn Level Number</th>
-          <th>Learn Questions</th>
-          <th>User Learn Levels</th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let level of levels">
-        <td>{{ level.learnLevelEntityId }}</td>
-        <td>{{ level.text }}</td>
-        <td>{{ level.image }}</td>
-        <td>{{ level.learnLevelNumber }}</td>
-        <td>{{ level.learnQuestions }}</td>
-        <td>{{ level.userLearnLevels }}</td>
-      </tr>
-    </tbody>
-  </table>
+<div *ngFor="let category of categories">
+  <!-- exemplu learn/1 -->
+  <a href="learn/{{category.categoryEntityId}}"> 
+    <div>
+      <p>{{category.name}}</p>
+    </div>
+  </a>
+  <div>
 </div>
--->
-
-
-      <div class="container">
-        <div class="row pl-5">
-          <ng-container *ngFor=" let level of levels ">
-            <div class="view mb-3 mr-3 p-0 hoverable">
-              <img [src]="level.image" class="img-fluid z-depth-1 rounded" alt="hoverable"/>
-
-              <div class="detail1">
-                <p id="p1">Nivelul {{ level.learnLevelNumber }}</p>
-                <p id="p2">{{ level.text }}</p>
-                <P id="p3"> Intrebari: {{ level.learnQuestions.text}}
-              </div>
-
-
-            </div>
-            <div class="w-100" *ngIf="ind != 0 && (ind + 1) % 4 == 0"></div>
-          </ng-container>
-<!--
-          <ng-container *ngFor=" let question of level.learnQuestions"
-             <div class="detail2">
-                <p id="p4">{{ question.text}}</p>
-          </ng-container>
-
-        -->
-        </div>
-      </div>
-        
-
-
-
-
-<!--
-<div class="pageWrapper space">
-  <ng-template ngFor let-p [ngForOf]="levels">
-    {{p.learnLevelEntityId }}
-    {{p.learnQuestions }}
-  </ng-template>
-</div>
--->
-
-
-<style>
-
-</style>

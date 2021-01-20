@@ -8,22 +8,16 @@ import { ApiService } from '../shared/api.service';
 })
 export class LearnPageComponent implements OnInit {
 
-  public levels;
-  public category;
+  public categories;
 
 
   constructor(private api:ApiService) {}
    
 
   ngOnInit() {
-    this.api.getLevels().subscribe(result => {
-      this.levels = result;
-      
-
-    
+    this.api.getCategories().subscribe(result => {
+      this.categories = result;
     })
-
-    
   }
 
 

@@ -20,5 +20,12 @@ namespace PAVOC.DataModel.Repository.Implementation
                 .ToList();
             
         }
+
+        public LearnLevelEntity Get(int categoryId, int levelNumber)
+        {
+            return _context.LearnLevels
+                .Include(p => p.LearnQuestions).ThenInclude(z => z.LearnQuestionAnswers)
+                .Where(p => p.CategoryEntityId == categoryId && p.LearnLevelNumber == levelNumber).FirstOrDefault();
+        }
     }
 }

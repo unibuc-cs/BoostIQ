@@ -7,5 +7,7 @@ namespace PAVOC.DataModel.Repository.Interface
     public interface ILearnLevelRepository : IGenericRepository<LearnLevelEntity>
     {
         public IEnumerable<LearnLevelEntity> GetAll();
+
+        public LearnLevelEntity Get(int categoryId, int levelNumber);
     }
 }
