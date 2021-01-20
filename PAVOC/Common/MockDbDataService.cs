@@ -183,14 +183,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Pe ce insula a fost exilat Napoleon Bonaparte?",
                 };
-                learnLevel1History.LearnQuestions.Add(learnQuestion1LearnLevel1History);
+                learnLevel2History.LearnQuestions.Add(learnQuestion1LearnLevel2History);
 
                 var learnQuestionAnswer1Question1LearnLevel2History = new LearnQuestionAnswerEntity()
                 {
                     Text = "Insula Diavolului",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel1History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2History);
+                learnQuestion1LearnLevel2History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2History);
 
                 var learnQuestionAnswer2Question1LearnLevel2History = new LearnQuestionAnswerEntity()
                 {
@@ -221,7 +221,7 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Ce prieteni a luat in exil Napoleon Bonaparte?",
                 };
-                learnLevel1History.LearnQuestions.Add(learnQuestion1LearnLevel1History);
+                learnLevel2History.LearnQuestions.Add(learnQuestion2LearnLevel2History);
 
                 var learnQuestionAnswer1Question2LearnLevel2History = new LearnQuestionAnswerEntity()
                 {
@@ -229,7 +229,7 @@ namespace PAVOC.Common
                     IsCorrect = false
                 };
 
-                learnQuestion1LearnLevel1History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel2History);
+                learnQuestion2LearnLevel2History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel2History);
 
                 var learnQuestionAnswer2Question2LearnLevel2History = new LearnQuestionAnswerEntity()
                 {
@@ -277,14 +277,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "In ce perioada a avut loc Razboiul Rece?",
                 };
-                learnLevel1History.LearnQuestions.Add(learnQuestion1LearnLevel3History);
+                learnLevel3History.LearnQuestions.Add(learnQuestion1LearnLevel3History);
 
                 var learnQuestionAnswer1Question1LearnLevel3History = new LearnQuestionAnswerEntity()
                 {
                     Text = "1941-1972",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel1History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel3History);
+                learnQuestion1LearnLevel3History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel3History);
 
                 var learnQuestionAnswer2Question1LearnLevel3History = new LearnQuestionAnswerEntity()
                 {
@@ -315,14 +315,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Cum se numeau reformele de liberalizare introduce de Mihai Gorbaciov in anii '80?",
                 };
-                learnLevel1History.LearnQuestions.Add(learnQuestion2LearnLevel3History);
+                learnLevel3History.LearnQuestions.Add(learnQuestion2LearnLevel3History);
 
                 var learnQuestionAnswer1Question2LearnLevel3History = new LearnQuestionAnswerEntity()
                 {
                     Text = "Otrezki",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel1History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel3History);
+                learnQuestion2LearnLevel3History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel3History);
 
                 var learnQuestionAnswer2Question2LearnLevel3History = new LearnQuestionAnswerEntity()
                 {
@@ -470,14 +470,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Caderea de la paralele a Nadiei Comaneci de la Campionatele Mondiale din 1978, au trimis-o pe locul?",
                 };
-                learnLevel1Sports.LearnQuestions.Add(learnQuestion1LearnLevel1Sports);
+                learnLevel2Sports.LearnQuestions.Add(learnQuestion1LearnLevel2Sports);
 
                 var learnQuestionAnswer1Question1LearnLevel2Sports = new LearnQuestionAnswerEntity()
                 {
                     Text = "3",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel1Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2Sports);
+                learnQuestion1LearnLevel2Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2Sports);
 
                 var learnQuestionAnswer2Question1LearnLevel2Sports = new LearnQuestionAnswerEntity()
                 {
@@ -508,7 +508,7 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Care a fost nota exacta obtinuta de Nadia Comanescu la barna in anul 1979?",
                 };
-                learnLevel1History.LearnQuestions.Add(learnQuestion1LearnLevel1History);
+                learnLevel2Sports.LearnQuestions.Add(learnQuestion2LearnLevel2Sports);
 
                 var learnQuestionAnswer1Question2LearnLevel2Sports = new LearnQuestionAnswerEntity()
                 {
@@ -516,7 +516,7 @@ namespace PAVOC.Common
                     IsCorrect = false
                 };
 
-                learnQuestion1LearnLevel1Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel2Sports);
+                learnQuestion2LearnLevel2Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel2Sports);
 
                 var learnQuestionAnswer2Question2LearnLevel2Sports = new LearnQuestionAnswerEntity()
                 {
@@ -562,14 +562,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Cate puncte a marcat in echipa McDonald's All-American-Team la finalul sezonului in anul 1980 ?",
                 };
-                learnLevel1Sports.LearnQuestions.Add(learnQuestion1LearnLevel3Sports);
+                learnLevel3Sports.LearnQuestions.Add(learnQuestion1LearnLevel3Sports);
 
                 var learnQuestionAnswer1Question1LearnLevel3Sports = new LearnQuestionAnswerEntity()
                 {
                     Text = "19.3",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel1Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel3Sports);
+                learnQuestion1LearnLevel3Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel3Sports);
 
                 var learnQuestionAnswer2Question1LearnLevel3Sports = new LearnQuestionAnswerEntity()
                 {
@@ -600,14 +600,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Dupa moartea tatalui sau, ce zona a fondat Michael Jordan, in semn de recunostinta?",
                 };
-                learnLevel1Sports.LearnQuestions.Add(learnQuestion2LearnLevel3Sports);
+                learnLevel3Sports.LearnQuestions.Add(learnQuestion2LearnLevel3Sports);
 
                 var learnQuestionAnswer1Question2LearnLevel3Sports = new LearnQuestionAnswerEntity()
                 {
                     Text = "Orlando Magic",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel1Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel3Sports);
+                learnQuestion2LearnLevel3Sports.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel3Sports);
 
                 var learnQuestionAnswer2Question2LearnLevel3Sports = new LearnQuestionAnswerEntity()
                 {
