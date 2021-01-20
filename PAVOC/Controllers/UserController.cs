@@ -3,20 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PAVOC.DataModel.Models;
+using PAVOC.DataModel.Repository.Interface;
+using PAVOC.DataModel.UnitOfWork;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace PAVOC.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/User")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        // GET: api/<UserController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("passLearn/user/{userId}/learnLevel/{learnLevelId}")]
+        public void PassLearnLevel(int userId, int learnLevelId)
         {
-            return new string[] { "value1", "value2" };
+            using(var uow = new UnitOfWork())
+            {
+                var userRepo = uow.GetRepository<IUserRepository>();
+                var user = userRepo.GetById(userId);
+                UserLearnLevelEntity userLearnLevelEntity = new UserLearnLevelEntity()
+                {
+                    UserEntityId = userId,
+                    LearnLevelEntityId = learnLevelId
+                };
+                user.UserLearnLevels.Add(userLearnLevelEntity);
+                uow.Save();
+            }
+
         }
 
         // GET api/<UserController>/5

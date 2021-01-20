@@ -44,18 +44,12 @@ namespace PAVOC.Controllers
 
                 var userLearnLevels = userLearnLevelRepository.Get(userId, categoryId);
 
-                if(userLearnLevels == null || !userLearnLevels.Any())
-                {
-                    var firstLearnLevel = learnLevelRepository.Get(categoryId, 1);
-                    if (firstLearnLevel == null) return null;
+                var learnLevelEntity = learnLevelRepository.Get(categoryId, userLearnLevels.Count() + 1);
+                if (learnLevelEntity == null) return null; //finished all levels or category doesnt have levels
 
-                    var learnLevelDTO = iMapper.Map<LearnLevelEntity, LearnLevelDTO>(firstLearnLevel);
-                    return learnLevelDTO;
-                }
-
+                var learnLevelDTO = iMapper.Map<LearnLevelEntity, LearnLevelDTO>(learnLevelEntity);
+                return learnLevelDTO;
             }
-
-            return null;
         }
 
         // POST api/<UserLearnLevelController>

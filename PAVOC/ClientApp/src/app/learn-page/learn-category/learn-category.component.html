@@ -53,10 +53,17 @@
   <div *ngIf="resultDisplayed">
     <div *ngIf="passedLevel">
         <h2>Good job. You passed the level!</h2>
+        <button (click)="reloadPage()">Next level</button>
     </div>
     <div *ngIf="!passedLevel">
         <h2>We are sorry, but you failed the level.</h2>
+        <button (click)="reloadPage()">Try again</button>
     </div>
+  </div>
+
+  <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
+  <div *ngIf="finishedAllLevels">
+    <h2>You finished all levels for this category!</h2>
   </div>
   
 

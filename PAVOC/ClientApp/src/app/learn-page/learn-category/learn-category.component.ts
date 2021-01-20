@@ -12,9 +12,10 @@ export class LearnCategoryComponent implements OnInit {
 
   public learnLevel;
 
-  public textDisplayed: boolean = true;
+  public textDisplayed: boolean = false;
   public questionsDisplayed: boolean = false;
   public resultDisplayed: boolean = false;
+  public finishedAllLevels: boolean = false;
 
   public question;
   public questionOrder: number;
@@ -31,10 +32,10 @@ export class LearnCategoryComponent implements OnInit {
 
     this.api.getUserLearnLevelByCategoryId(userId, categoryId).subscribe(learnLevel => {
       if(learnLevel) {
+        this.textDisplayed = true;
         this.learnLevel = learnLevel;
       } else {
-        this.textDisplayed = false;
-        this.questionsDisplayed = false;
+        this.finishedAllLevels = true;
       }
 
     })
@@ -97,9 +98,14 @@ export class LearnCategoryComponent implements OnInit {
     let score = correctAnswers/totalQuestions;
     if(score >= 0.5) {
       this.passedLevel = true;
+      this.api.passLearnLevel(this.authService.getUserId(), this.learnLevel.learnLevelEntityId).subscribe(result => {});
     } else {
       this.passedLevel = false;
     }
+  }
+
+  reloadPage() {
+    window.location.reload();
   }
 
 }
