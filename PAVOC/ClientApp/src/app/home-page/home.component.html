@@ -1,6 +1,6 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <h1><a href="http://"><img src = "https://i.ibb.co/VHp4s9B/Vanilla-0-8s-280px-2.gif"></a></h1>
+    <h1><a href="#"><img src = "https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"></a></h1>
     <span class="menu-spacer"></span>
     <div>
       <a mat-button [routerLink]="'/home'"> HOME </a>
@@ -23,7 +23,7 @@
 <style>
 
 img{
-  width: 50%;
+  width: 63%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -80,12 +80,6 @@ body {
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 /* Footer */
 .footer {
@@ -101,13 +95,6 @@ body {
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 
 
 .menu-spacer {
@@ -116,6 +103,13 @@ body {
 
 h1{
   font-size:30px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+p{
+  animation-duration: 5s;
+  /* animation-iteration-count: infinite; */
 }
 
 
@@ -126,7 +120,7 @@ h1{
   justify-content: center;
   border-radius: 20% 20% 20% 20%;
   border: none;
-  padding: 4% 17.4%;
+  padding: 4% 14.5%;
   text-decoration:none;
 }  
 }
@@ -137,29 +131,29 @@ h1{
 <body>
 
 <div class="header">
-  <h1>BoostIQ Application</h1>
-  <p>Capacitatea de a invata este un <b>cadou</b>.</p>
-  <p>Abilitatea de a invata este <b>indemanare</b>.</p>
-  <p>Dorinta de a invata este o <b>alegere</b>.</p>
+  <h1 class="w3-animate-fading">BoostIQ Application</h1>
+  <p class="w3-animate-zoom">Capacitatea de a invata este un <b>cadou</b>.</p>
+  <p class="w3-animate-zoom">Abilitatea de a invata este <b>indemanare</b>.</p>
+  <p class="w3-animate-zoom">Dorinta de a invata este o <b>alegere</b>.</p>
 </div>
 
 <div class="row">
   <div class="side">
     <h2>PAVOC TEAM</h2><br>
     <img src="https://i.ibb.co/7p0VHvL/Capture.jpg" alt="Sargsian Petros">
-    <p><b>Sargsian Petros</b></p><br>
+    <p class="w3-animate-left"><b>Sargsian Petros</b></p><br>
     
     <img src="https://i.ibb.co/wdkRmY0/Capture3.jpg" alt="Popa Catalin">
-    <p><b>Popa Catalin Andrei</b></p><br>
+    <p class="w3-animate-zoom"><b>Popa Catalin Andrei</b></p><br>
 
     <img src="https://i.ibb.co/41tCxRH/64744470-2416033902013370-7076650539391385600-n.jpg" alt="Marculescu Octavian">
-    <p><b>Marculescu Octavian George</b></p><br>
+    <p class="w3-animate-zoom"><b>Marculescu Octavian George</b></p><br>
 
     <img src="https://i.ibb.co/MZ00txv/68634555-2427537457467270-197457599560417280-n.jpg" alt="Alexandru Emil">
-    <p><b>Alexandru Emil Adrian</b></p><br>
+    <p class="w3-animate-zoom"><b>Alexandru Emil Adrian</b></p><br>
 
     <img src="https://i.ibb.co/r5Y9ghv/Capture2.jpg" alt="Vangu Vlad">
-    <p><b>Vangu Constantin Vladut</b></p><br>
+    <p class="w3-animate-zoom"><b>Vangu Constantin Vladut</b></p><br>
 
     
 
@@ -167,8 +161,8 @@ h1{
   <div class="main">
 
     <h2>Ghid de utilizare</h2>
-    <h5>In aceast scurt articol, va vom prezenta modul de utilizare al aplicatiei noastre. <b>31 Ianuarie, 2021</b></h5><br>
-    <img src="https://www.enventsoft.com/asset/oimages/index/webapplication.png" alt="Ghid de utilizare"><br>
+    <h5>In acest scurt articol, va vom prezenta modul de utilizare al aplicatiei noastre. <b>31 Ianuarie, 2021</b></h5><br>
+    <img src="https://thumbs.gfycat.com/CalmKeyEidolonhelvum-small.gif" alt="Ghid de utilizare"><br>
     <p><b>LOGIN / REGISTER</b>: Pagina pentru inregistrarea unui cont nou si pentru logarea in aplicatie.</p>
     <p><b>HOME</b>: Pe aceasta pagina puteti gasi newsfeed-ul nostru, unde vom posta zilnic diferite stiri interesante din domeniu.</p>
     <p><b>NAVBAR</b>: Aici se gasesc toate functionalitatile aplicatiei, pe care le vom enumera mai jos.</p>
@@ -181,7 +175,7 @@ h1{
 
     <h2>Teoria Fericirii</h2>
     <h5>Teoria fericirii a lui Einstein s-a vândut de curând la licitație cu o avere, deși avea doar câteva rânduri și era scrisă pe o bucată de hărtie de la un hotel.   <b>1 Februarie, 2021</b></h5><br>
-    <img src="https://radiosud.ro/wp-content/uploads/2020/08/88899.jpg" alt="Albert Einstein"><br>
+    <img src="https://boingboing.net/wp-content/uploads/2015/01/albert-einstein.gif" alt="Albert Einstein"><br>
     <p>Dacă te-ai decis să-ți ghidezi viața după afirmații mai mult sau mai puțin filozofice, ar fi bine să ca respectivele cuvinte să aparțină unor oameni de seamă. De exemplu, Albert Einstein a scris teoria fericirii, pe lângă o serie stufoasă de principii fizice după care ne ghidăm și astăzi. Prea puțină lume știe că respectiva teorie a fericirii există, dar tocmai s-a comercializat cu 1,56 milioane de dolari. </p>
     <p>Ilustrată în imaginea de mai sus, hârtia cu cele câteva cuvinte ale fizicianului are o poveste foarte interesantă. Practic, detaliile de fond s-ar putea să fi transpus câteva rânduri de text într-o sumă astronomică.</p>
     <p>La vârsta de 43 de ani, Albert Einstein ajunsese la un punct în viața sa în care călătorea pentru a ține discursuri contra cost la diverse evenimente. În noiembrie 1922, omul de știință a primit aproximativ 2250 de euro pentru a ține o prelegere la Tokyo. În timpul respectivei călătorii care nu a fost deloc scurtă, a aflat vestea că tocmai devenise laureat al premiului Nobel pentru fizică. Acel detaliu s-a reflectat în mulțimi de oameni curioși care s-au grăbit să-l întâmpine la sosire.</p>
@@ -192,7 +186,7 @@ h1{
 
     <h2>Exemplu Negativ</h2>
     <h5>Lipsa de cultura generala in SUA. Unul dintre patru americani nu stie ca Pamantul se invarte in jurul Soarelui.   <b>2 Februarie, 2021</b></h5><br>
-    <img src="https://baby.unica.ro/wp-content/uploads/2020/06/sistemul-solar-planete.jpg" alt="Sistemul Solar"><br>
+    <img src="https://media4.giphy.com/media/APq0WQXgQQrKFcBbjP/giphy.gif" alt="Sistemul Solar"><br>
     <p>Lipsa de cultura generala din Statele Unite a devenit evidenta, in urma unui sondaj in cadrul caruia unul dintre patru americani nu a stiut sa raspunda corect la cea mai banala intrebare din domeniul stiintei</p>
     <p>Sondajul, la care au participat 2.200 de persoane, a aratat ca unul dintre patru americani nu stie ca Pamantul se invarte in jurul Soarelui, potrivit Phys.org.
        De asemenea, doar 48% dintre respondenti stiau ca oamenii au evoluat din specii timpurii de animale, in timp ce doar 39% au stiut ca Universul a aparut dupa o explozie imensa.
