@@ -43,7 +43,7 @@
         <div *ngIf="questionOrder > 1">
             <button (click)="previousQuestion()">Intrebarea anterioara</button>
         </div>
-        <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
+        <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
             <button (click)="nextQuestion()">Urmatoarea intrebare</button>
         </div>
         <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
