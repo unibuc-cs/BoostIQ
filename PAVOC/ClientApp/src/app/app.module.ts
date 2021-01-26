@@ -17,16 +17,18 @@ import {  MatCardModule,
           MatListModule, 
           //MatSelectionListModule,
           MatSortModule,
-          MatTableModule
+          MatTableModule,
+
         }
            from  '@angular/material';
-
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterLoginComponent } from './register-login/register-login.component';
 import { CommonModule } from '@angular/common';
 import { JwtTokenInterceptorService } from './shared/interceptors/jwt-token-interceptor';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { JwtTokenInterceptorService } from './shared/interceptors/jwt-token-inte
     AppComponent,
     routingComponents,
     RegisterLoginComponent,
+    AboutUsPageComponent,
+    AboutUsPageComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

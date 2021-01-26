@@ -8,27 +8,47 @@
       <a mat-button [routerLink]="'/play'"> PLAY </a>
       <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
       <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
+      <a mat-button [routerLink]="'/login-register'"> LOGIN/REGISTER </a>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<style>
-.menu-spacer {
-  margin: 20px;
-}
 
-h1{
-  font-size:30px;
-}
 
-@media screen and (min-width: 1500px)
-{
-  a{
-  font-size: 100%;
-  justify-content: center;
-  border-radius: 20% 20% 20% 20%;
-  border: none;
-  padding: 4% 31.5%;
-}  
-}
-</style>
+
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact</h2>
+      <p>Numele noastre sunt Marculescu Octavian-George, Popa Catalin-Andrei, Sargsian Petros, Vangu Constantin Vladut, Alexandru Emil Adrian suntem studenti in anul 4 la Facultatea de Matematica si Informatica, specializarea CTI, grupa 454 si ne-am decis sa realizam o aplicatie menita sa puna la incercare cunostintele utilizatorilor intr-un mediu interactiv.</p>
+      <p>DATE DE CONTACT PERSONALE</p>
+      <p>Popa Catalin Andrei -- Email: catalin.popa@pavoc.com</p>
+      <p>Marculescu Octavian George -- Email: octavian.marculescu@pavoc.com</p>
+      <p>Sargsian Petros -- Email: petros.sargsian@pavoc.com</p>
+      <p>Vangu Constantin Vladut -- Email: vlad.vangu@pavoc.com</p>
+      <p>Alexandru Emil Adrian -- Email: alex.adrian@pavoc.com</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="https://thehushhushdiary.com/wp-content/uploads/2017/05/blog-pic-4.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form  method="POST" action="/action_page.php">
+          <label for="fname">Prenume</label>
+          <input type="text" id="fname" name="firstname" placeholder="Prenumele dvs..">
+          <label for="lname">Nume</label>
+          <input type="text" id="lname" name="lastname" placeholder="Numele dvs..">
+          <label for="country">Tara</label>
+          <select id="country" name="country">
+            <option value="australia">Romania</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subiect</label>
+          <textarea id="subject" name="subject" placeholder="Scrie ceva.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>

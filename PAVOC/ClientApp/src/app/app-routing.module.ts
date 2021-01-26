@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { AboutUsPageComponent  } from './about-us-page/about-us-page.component';
 import { HomeComponent } from './home-page/home.component';
 import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.component';
 import { LearnCategoryComponent } from './learn-page/learn-category/learn-category.component';
