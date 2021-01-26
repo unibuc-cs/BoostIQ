@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PAVOC.Common.DTO;
 using PAVOC.DataModel.Models;
 using PAVOC.DataModel.Repository.Interface;
 using PAVOC.DataModel.UnitOfWork;
@@ -11,18 +13,31 @@ using PAVOC.DataModel.UnitOfWork;
 
 namespace PAVOC.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/TestLevel")]
     [ApiController]
     public class TestLevelController : ControllerBase
     {
-         // GET: api/LearnLevel
+        // GET: api/TestLevel
         [HttpGet]
-        public IEnumerable<TestLevelEntity> Get()
+        public IList<TestLevelDTO> Get()
         {
             using (var uow = new UnitOfWork())
             {
+
+
                 var repo = uow.GetRepository<ITestLevelRepository>();
-                return repo.GetAll();
+                var testLevels = repo.GetAll();
+                var config = new MapperConfiguration(cfg => {
+                    cfg.CreateMap<TestQuestionEntity, TestQuestionDTO>();
+                    cfg.CreateMap<TestQuestionAnswerEntity, TestQuestionAnswerDTO>();
+                    cfg.CreateMap<TestLevelEntity, TestLevelDTO>();
+                });
+                IMapper iMapper = config.CreateMapper();
+                var testLevelDTOs = iMapper.Map<List<TestLevelEntity>, List<TestLevelDTO>>(testLevels.ToList());
+                return testLevelDTOs;
+
+
+
             }
         }
 

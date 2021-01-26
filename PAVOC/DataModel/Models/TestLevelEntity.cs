@@ -8,6 +8,7 @@ namespace PAVOC.DataModel.Models
     {
         public Int32 TestLevelEntityId { get; set; }
 
+
         public int TestLevelNumber { get; set; }
 
         public int CategoryEntityId { get; set; }
