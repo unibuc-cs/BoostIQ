@@ -21,9 +21,12 @@
         <br><br>
       
         <img src="{{learnLevel.image}}" alt="">
-        <p>{{learnLevel.text}}</p>
+        <br><br><br>
+        <div class=w3-container>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{learnLevel.text}}</p>
+        </div>
     </div>
-    <button (click)="goToQuestions()">Questions</button>
+    <button (click)="goToQuestions()">Intrebari</button>
   </div>
 
   <!-- pagina cu intrebarile -->
@@ -38,10 +41,10 @@
         </ol>
 
         <div *ngIf="questionOrder > 1">
-            <button (click)="previousQuestion()">Previous Question</button>
+            <button (click)="previousQuestion()">Intrebarea anterioara</button>
         </div>
-        <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
-            <button (click)="nextQuestion()">Next Question</button>
+        <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
+            <button (click)="nextQuestion()">Urmatoarea intrebare</button>
         </div>
         <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
             <button (click)="finish()">Finish</button>
@@ -52,19 +55,57 @@
   <!-- pagina cu rezultatele -->
   <div *ngIf="resultDisplayed">
     <div *ngIf="passedLevel">
-        <h2>Good job. You passed the level!</h2>
-        <button (click)="reloadPage()">Next level</button>
+        <h2>Felicitari! Ai raspuns corect la toate intrebarile!</h2>
+        <button (click)="reloadPage()">Nivelul urmator</button>
     </div>
     <div *ngIf="!passedLevel">
-        <h2>We are sorry, but you failed the level.</h2>
-        <button (click)="reloadPage()">Try again</button>
+        <h2>Ai raspuns gresit!</h2>
+        <button (click)="reloadPage()">Incearca din nou</button>
     </div>
   </div>
 
   <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
   <div *ngIf="finishedAllLevels">
-    <h2>You finished all levels for this category!</h2>
+    <h2>Ai finalizat toate nivelele pentru aceasta categorie!</h2>
   </div>
   
+
+
+
+  <style>
+    .menu-spacer {
+      margin: 20px;
+    }
+
+    .w3-container{
+      font-size: 24px;
+    }
+    
+    h1{
+      font-size:30px;
+      text-align:center;
+    }
+
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 15%;;
+
+    }
+    
+    @media screen and (min-width: 1500px)
+    {
+      a{
+      font-size: 100%;
+      justify-content: center;
+      border-radius: 20% 20% 20% 20%;
+      border: none;
+      padding: 4% 31.5%;
+    }  
+    }
+
+
+    </style>
 
   
