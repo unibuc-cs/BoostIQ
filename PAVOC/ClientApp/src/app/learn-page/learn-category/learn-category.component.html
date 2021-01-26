@@ -1,3 +1,4 @@
+<body style="background-color:rgb(255, 153, 0);">
 <mat-toolbar>
     <mat-toolbar-row>
       <h1>BoostIQ</h1>
@@ -26,7 +27,7 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{learnLevel.text}}</p>
         </div>
     </div>
-    <button (click)="goToQuestions()">Intrebari</button>
+    <button type="button" class="btn btn-dark" (click)="goToQuestions()">Intrebari</button><br>
   </div>
 
   <!-- pagina cu intrebarile -->
@@ -69,6 +70,7 @@
     <h2>Ai finalizat toate nivelele pentru aceasta categorie!</h2>
   </div>
   
+  </body>
 
 
 
@@ -90,8 +92,16 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 15%;;
+      width: 15%;
 
+    }
+
+    button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    font-size: 30px;
     }
     
     @media screen and (min-width: 1500px)
@@ -102,6 +112,7 @@
       border-radius: 20% 20% 20% 20%;
       border: none;
       padding: 4% 31.5%;
+      text-decoration:none;
     }  
     }
 
