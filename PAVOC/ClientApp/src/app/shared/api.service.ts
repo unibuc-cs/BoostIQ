@@ -1,43 +1,57 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-
-
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class ApiService {
-
   constructor(private http: HttpClient) {}
 
   header = new HttpHeaders({
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   });
-  baseUrl = 'api/';
- 
+  baseUrl = "api/";
+
   getLevels() {
-    return this.http.get<any>(this.baseUrl + 'LearnLevel');
+    return this.http.get<any>(this.baseUrl + "LearnLevel");
+  }
+  getLevelsT() {
+    return this.http.get<any>(this.baseUrl + "TestLevel");
   }
 
-  getCategories(){
-    return this.http.get<any>(this.baseUrl + 'Categories');
+  getCategories() {
+    return this.http.get<any>(this.baseUrl + "Categories");
   }
 
-  getUserLearnLevelByCategoryId(userId: string, categoryId: string){
-    return this.http.get<any>(this.baseUrl + 'UserLearnLevel/user/' + userId + "/category/" + categoryId);
+  getUserLearnLevelByCategoryId(userId: string, categoryId: string) {
+    return this.http.get<any>(
+      this.baseUrl + "UserLearnLevel/user/" + userId + "/category/" + categoryId
+    );
   }
 
   passLearnLevel(userId: string, learnLevelId: string) {
-    return this.http.get<any>(this.baseUrl + 'User/passLearn/user/' + userId + "/learnLevel/" + learnLevelId);
+    return this.http.get<any>(
+      this.baseUrl +
+        "User/passLearn/user/" +
+        userId +
+        "/learnLevel/" +
+        learnLevelId
+    );
   }
 
   getUserTestLevelByCategoryId(userId: string, categoryId: string) {
-    return this.http.get<any>(this.baseUrl + 'UserTestLevel/user/' + userId + "/category/" + categoryId);
+    return this.http.get<any>(
+      this.baseUrl + "UserTestLevel/user/" + userId + "/category/" + categoryId
+    );
   }
 
   passTestLevel(userId: string, testLevelId: string) {
-    return this.http.get<any>(this.baseUrl + 'User/passTest/user/' + userId + "/testLevel/" + testLevelId);
+    return this.http.get<any>(
+      this.baseUrl +
+        "User/passTest/user/" +
+        userId +
+        "/testLevel/" +
+        testLevelId
+    );
   }
-  
 }
-

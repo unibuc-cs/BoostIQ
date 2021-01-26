@@ -94,7 +94,7 @@ export class PlayCategoryComponent implements OnInit {
     let totalQuestions = this.testLevel.testQuestions.length;
     let correctAnswers = 0.0;
 
-    this.testLevel.learnQuestions.forEach((testQuestion) => {
+    this.testLevel.testQuestions.forEach((testQuestion) => {
       let answer = this.answers[testQuestion.order];
       if (answer) {
         let correctAnswer = testQuestion.testQuestionAnswers.find(
@@ -110,7 +110,7 @@ export class PlayCategoryComponent implements OnInit {
     if (score >= 0.5) {
       this.passedLevel = true;
       this.api
-        .passLearnLevel(
+        .passTestLevel(
           this.authService.getUserId(),
           this.testLevel.testLevelEntityId
         )

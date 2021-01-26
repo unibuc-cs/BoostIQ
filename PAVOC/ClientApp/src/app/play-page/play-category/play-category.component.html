@@ -14,6 +14,27 @@
 
 <br />
 
+<!-- pagina cu textul -->
+<div *ngIf="textDisplayed">
+  <div *ngIf="testLevel">
+    <h1>Test Level {{ testLevel.testLevelNumber }}</h1>
+    <br /><br />
+
+    <img src="{{ testLevel.image }}" alt="" />
+    <br /><br /><br />
+    <div class="w3-container">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{
+          testLevel.text
+        }}
+      </p>
+    </div>
+  </div>
+  <button type="button" class="btn btn-dark" (click)="goToQuestions()">
+    Incepe testul</button
+  ><br />
+</div>
+
 <!-- pagina cu intrebarile -->
 <div *ngIf="questionsDisplayed">
   <div *ngIf="question">
