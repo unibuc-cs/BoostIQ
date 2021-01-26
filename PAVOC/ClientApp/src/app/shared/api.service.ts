@@ -30,6 +30,14 @@ export class ApiService {
   passLearnLevel(userId: string, learnLevelId: string) {
     return this.http.get<any>(this.baseUrl + 'User/passLearn/user/' + userId + "/learnLevel/" + learnLevelId);
   }
+
+  getUserTestLevelByCategoryId(userId: string, categoryId: string) {
+    return this.http.get<any>(this.baseUrl + 'UserTestLevel/user/' + userId + "/category/" + categoryId);
+  }
+
+  passTestLevel(userId: string, testLevelId: string) {
+    return this.http.get<any>(this.baseUrl + 'User/passTest/user/' + userId + "/testLevel/" + testLevelId);
+  }
   
 }
 

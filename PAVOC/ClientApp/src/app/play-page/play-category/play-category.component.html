@@ -1,0 +1,94 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1>BoostIQ</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> HOME </a>
+      <a mat-button [routerLink]="'/learn'"> LEARN </a>
+      <a mat-button [routerLink]="'/play'"> PLAY </a>
+      <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
+      <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+
+<!-- pagina cu intrebarile -->
+<div *ngIf="questionsDisplayed">
+  <div *ngIf="question">
+    <h2>{{ question.text }}</h2>
+    <ol>
+      <li *ngFor="let answer of question.testQuestionAnswers">
+        <p
+          [id]="'answer' + answer.testQuestionAnswerEntityId"
+          [style.background-color]="
+            getBackgroundColor(answer.testQuestionAnswerEntityId)
+          "
+          (click)="selectAnswer(answer.testQuestionAnswerEntityId)"
+        >
+          {{ answer.text }}
+        </p>
+      </li>
+    </ol>
+
+    <div *ngIf="questionOrder > 1">
+      <button (click)="previousQuestion()">Intrebarea anterioara</button>
+    </div>
+    <div *ngIf="questionOrder < testLevel.testQuestions.length">
+      <button (click)="nextQuestion()">Urmatoarea intrebare</button>
+    </div>
+    <div *ngIf="questionOrder == testLevel.testQuestions.length">
+      <button (click)="finish()">Finish</button>
+    </div>
+  </div>
+</div>
+
+<!-- pagina cu rezultatele -->
+<div *ngIf="resultDisplayed">
+  <div *ngIf="passedLevel">
+    <h2>Felicitari! Ai raspuns corect la toate intrebarile!</h2>
+    <button (click)="reloadPage()">Nivelul urmator</button>
+  </div>
+  <div *ngIf="!passedLevel">
+    <h2>Ai raspuns gresit!</h2>
+    <button (click)="reloadPage()">Incearca din nou</button>
+  </div>
+</div>
+
+<!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
+<div *ngIf="finishedAllLevels">
+  <h2>Ai finalizat toate nivelele pentru aceasta categorie!</h2>
+</div>
+
+<style>
+  .menu-spacer {
+    margin: 20px;
+  }
+
+  .w3-container {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+  @media screen and (min-width: 1500px) {
+    a {
+      font-size: 100%;
+      justify-content: center;
+      border-radius: 20% 20% 20% 20%;
+      border: none;
+      padding: 4% 31.5%;
+    }
+  }
+</style>
