@@ -1,7 +1,6 @@
-<body style="background-color:rgb(255, 153, 0);">
 <mat-toolbar>
     <mat-toolbar-row>
-      <h1>BoostIQ</h1>
+      <h1><a href="#"><img src = "https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"></a></h1>
       <span class="menu-spacer"></span>
       <div>
         <a mat-button [routerLink]="'/home'"> HOME </a>
@@ -69,8 +68,6 @@
   <div *ngIf="finishedAllLevels">
     <h2>Ai finalizat toate nivelele pentru aceasta categorie!</h2>
   </div>
-  
-  </body>
 
 
 
@@ -88,6 +85,8 @@
       text-align:center;
     }
 
+
+
     img{
       display: block;
       margin-left: auto;
@@ -95,6 +94,15 @@
       width: 15%;
 
     }
+
+    h1 img{
+      width: 63%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
 
     button{
     display: block;
@@ -111,7 +119,7 @@
       justify-content: center;
       border-radius: 20% 20% 20% 20%;
       border: none;
-      padding: 4% 31.5%;
+      padding: 4% 29%;
       text-decoration:none;
     }  
     }
