@@ -1,3 +1,4 @@
+<body style="background-color:rgb(255, 153, 0);">
 <mat-toolbar>
   <mat-toolbar-row>
     <h1>BoostIQ</h1>
@@ -11,22 +12,31 @@
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
-
 <br>
-<h1> Categories </h1>
+<h2> Categorii </h2>
 <br><br>
+
+<p>Selecteaza categoria pe care doresti sa o parcurgi</p>
 
 <div *ngFor="let category of categories">
   <!-- exemplu learn/1 -->
   <a href="learn/{{category.categoryEntityId}}"> 
     <div>
-      <p>{{category.name}}</p>
+      <button type="button" class="btn btn-dark">{{category.name}}</button><br>
+      <!-- <p>{{category.name}}</p> -->
     </div>
   </a>
   <div>
 </div>
+</div>
+
+
+</body>
 
 <style>
+
+
+
   .menu-spacer {
     margin: 20px;
   }
@@ -34,6 +44,33 @@
   h1{
     font-size:30px;
   }
+
+  h2{
+    font-size:50px;
+    text-align: center;
+  }
+
+
+  p{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    font-size: 30px;
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+  
+
+  
   
   @media screen and (min-width: 1500px)
   {
