@@ -941,7 +941,7 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Care sunt coordonatele geografie ale Braziliei?",
+                    Text = "Care sunt coordonatele geografice ale Braziliei?",
                 };
                 learnLevel3Geography.LearnQuestions.Add(learnQuestion2LearnLevel3Geography);
 
@@ -1041,9 +1041,9 @@ namespace PAVOC.Common
                     IsCorrect = true
                 };
 
-                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question1LearnLevel1Music);
-                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question1LearnLevel1Music);
-                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question1LearnLevel1Music);
+                learnQuestion1LearnLevel1Music.LearnQuestionAnswers.Add(learnQuestionAnswer2Question1LearnLevel1Music);
+                learnQuestion1LearnLevel1Music.LearnQuestionAnswers.Add(learnQuestionAnswer3Question1LearnLevel1Music);
+                learnQuestion1LearnLevel1Music.LearnQuestionAnswers.Add(learnQuestionAnswer4Question1LearnLevel1Music);
 
 
                 var learnQuestion2LearnLevel1Music = new LearnQuestionEntity()

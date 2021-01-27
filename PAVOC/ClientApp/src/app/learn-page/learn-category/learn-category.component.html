@@ -30,37 +30,42 @@
   </div>
 
   <!-- pagina cu intrebarile -->
+  <div class="w1-container">
   <div *ngIf="questionsDisplayed">
     <div *ngIf="question">
+      <br><br>
         <h2>{{question.text}}</h2>
-        <ol>
-            <li *ngFor="let answer of question.learnQuestionAnswers">
-                <p [id]="'answer' + answer.learnQuestionAnswerEntityId" [style.background-color]="getBackgroundColor(answer.learnQuestionAnswerEntityId)" 
-                (click)="selectAnswer(answer.learnQuestionAnswerEntityId)">{{answer.text}}</p>
-            </li>
-        </ol>
-
+        <br><br>
+        
+            <div class="intrebari" *ngFor="let answer of question.learnQuestionAnswers">
+                <button type="button" class="btn btn-dark"  [id]="'answer' + answer.learnQuestionAnswerEntityId" (click)="selectAnswer(answer.learnQuestionAnswerEntityId)">{{answer.text}}</button>
+            </div>
+        
+        <br><br><br>
         <div *ngIf="questionOrder > 1">
-            <button (click)="previousQuestion()">Intrebarea anterioara</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="previousQuestion()">Intrebarea anterioara</button>
         </div>
+        <br><br><br>
         <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
-            <button (click)="nextQuestion()">Urmatoarea intrebare</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="nextQuestion()">Urmatoarea intrebare</button>
         </div>
         <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
-            <button (click)="finish()">Finish</button>
+            <button type="button" class="btn btn-dark" (click)="finish()">Finish</button>
         </div>
     </div>
+  </div>
   </div>
 
   <!-- pagina cu rezultatele -->
   <div *ngIf="resultDisplayed">
     <div *ngIf="passedLevel">
         <h2>Felicitari! Ai raspuns corect la toate intrebarile!</h2>
-        <button (click)="reloadPage()">Nivelul urmator</button>
+
+        <button type="button" class="btn btn-dark" (click)="reloadPage()">Nivelul urmator</button>
     </div>
     <div *ngIf="!passedLevel">
         <h2>Ai raspuns gresit!</h2>
-        <button (click)="reloadPage()">Incearca din nou</button>
+        <button type="button" class="btn btn-dark" (click)="reloadPage()">Incearca din nou</button>
     </div>
   </div>
 
@@ -85,13 +90,29 @@
       text-align:center;
     }
 
+    h2{
+      text-align: center;
+      font-size: 300%;
+    }
+
+    .intrebari{
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .intrebari p{
+      font-size: 45px;
+      text-align: center;
+
+}
+
 
 
     img{
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 15%;
+      width: 20%;
 
     }
 
@@ -102,13 +123,15 @@
       margin-right: auto;
     }
 
+    
+
 
 
     button{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 55%;
     font-size: 30px;
     }
     
