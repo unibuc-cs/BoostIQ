@@ -931,6 +931,7 @@ namespace PAVOC.Common
         }
 
 
+
         private static void FillTestLevels()
         {
             using (var uow = new UnitOfWork())
@@ -943,6 +944,9 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
+                    Image = "https://www.europafm.ro/wp-content/uploads/2017/07/Stefan-Cel-Mare.jpg",
+                    Text = "ISTORIE " +
+                    " Level 1 "
                 };
                 historyCategory.TestLevels.Add(testLevel1History);
 
@@ -1025,6 +1029,10 @@ namespace PAVOC.Common
                 var testLevel2History = new TestLevelEntity()
                 {
                     TestLevelNumber = 2,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://upload.wikimedia.org/wikipedia/commons/4/40/Napoleon_in_His_Study.jpg",
+                    Text = "ISTORIE " +
+                    " Level 2 "
                 };
 
                 historyCategory.TestLevels.Add(testLevel2History);
@@ -1035,14 +1043,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Pe ce insula a fost exilat Napoleon Bonaparte?",
                 };
-                testLevel1History.TestQuestions.Add(testQuestion1TestLevel1History);
+                testLevel2History.TestQuestions.Add(testQuestion1TestLevel2History);
 
                 var testQuestionAnswer1Question1TestLevel2History = new TestQuestionAnswerEntity()
                 {
                     Text = "Insula Diavolului",
                     IsCorrect = false
                 };
-                testQuestion1TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2History);
+                testQuestion1TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2History);
 
                 var testQuestionAnswer2Question1TestLevel2History = new TestQuestionAnswerEntity()
                 {
@@ -1073,7 +1081,7 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Ce prieteni a luat in exil Napoleon Bonaparte?",
                 };
-                testLevel1History.TestQuestions.Add(testQuestion1TestLevel1History);
+                testLevel2History.TestQuestions.Add(testQuestion2TestLevel2History);
 
                 var testQuestionAnswer1Question2TestLevel2History = new TestQuestionAnswerEntity()
                 {
@@ -1081,7 +1089,7 @@ namespace PAVOC.Common
                     IsCorrect = false
                 };
 
-                testQuestion1TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2History);
+                testQuestion2TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2History);
 
                 var testQuestionAnswer2Question2TestLevel2History = new TestQuestionAnswerEntity()
                 {
@@ -1111,7 +1119,10 @@ namespace PAVOC.Common
                 var testLevel3History = new TestLevelEntity()
                 {
                     TestLevelNumber = 3,
-
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/0/0b/ColdWar.jpg/300px-ColdWar.jpg",
+                    Text = "ISTORIE " +
+                    " Level 3 "
                 };
 
                 historyCategory.TestLevels.Add(testLevel3History);
@@ -1122,14 +1133,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "In ce perioada a avut loc Razboiul Rece?",
                 };
-                testLevel1History.TestQuestions.Add(testQuestion1TestLevel3History);
+                testLevel3History.TestQuestions.Add(testQuestion1TestLevel3History);
 
                 var testQuestionAnswer1Question1TestLevel3History = new TestQuestionAnswerEntity()
                 {
                     Text = "1941-1972",
                     IsCorrect = false
                 };
-                testQuestion1TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3History);
+                testQuestion1TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3History);
 
                 var testQuestionAnswer2Question1TestLevel3History = new TestQuestionAnswerEntity()
                 {
@@ -1160,14 +1171,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Cum se numeau reformele de liberalizare introduce de Mihai Gorbaciov in anii '80?",
                 };
-                testLevel1History.TestQuestions.Add(testQuestion2TestLevel3History);
+                testLevel3History.TestQuestions.Add(testQuestion2TestLevel3History);
 
                 var testQuestionAnswer1Question2TestLevel3History = new TestQuestionAnswerEntity()
                 {
                     Text = "Otrezki",
                     IsCorrect = false
                 };
-                testQuestion1TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3History);
+                testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3History);
 
                 var testQuestionAnswer2Question2TestLevel3History = new TestQuestionAnswerEntity()
                 {
@@ -1191,6 +1202,8 @@ namespace PAVOC.Common
                 testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3History);
                 testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3History);
 
+                categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in test pt history
+
                 //--------------------
 
                 var sportsCategory = categoryRepository.GetCategoryByName("Sports");
@@ -1198,7 +1211,20 @@ namespace PAVOC.Common
                 var testLevel1Sports = new TestLevelEntity()
                 {
                     TestLevelNumber = 1,
-
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/e/ef/Romania_national_football_team_logo.svg/200px-Romania_national_football_team_logo.svg.png",
+                    Text = "Echipa națională de fotbal a României este prima reprezentativă a României și se află sub controlul Federației Române de Fotbal (FRF). România a fost una dintre cele patru țări care au participat la primele trei campionate mondiale de fotbal, alături de selecționatele Braziliei, Franței și Belgiei. Totuși, între edițiile 1950 și 1986, România a reușit să se califice numai la un singur turneu final. Între 1990 și 2000 selecționata României s-a calificat în șaisprezecimile sau chiar optimile a trei campionate mondiale consecutive. Această perioadă prielnică și-a atins culmea în cadrul turneului final al Campionatul Mondial din 1994, când România, avându-l căpitan pe Gheorghe Hagi, a ajuns în sferturile de finală învingând Argentina cu scorul de 3-2. Ulterior a pierdut cu Suedia la penaltiuri." +
+                    "România a făcut de asemenea o figură bună la Euro 2000, când a obținut un 1-1 cu Germania și a învins Anglia cu 3-2 în grupe, trecând mai departe în sferturile de finală, unde a fost învinsă de Italia." +
+                    "Din 1939 până în anii 1990 golgheterul absolut al echipei naționale de fotbal a României a fost Iuliu Bodola, cu 30 de goluri marcate. În prezent recordul de goluri marcate pentru echipa națională este deținut de Gheorghe Hagi și Adrian Mutu, amândoi cu 35 de reușite." +
+                    "Au urmat alți șase ani fără prezențe la turneele finale, până la Italia 1990, unde România revenea la un Mondial după 20 de ani. Din echipa condusă de Emeric Ienei făceau parte tinerii Gheorghe Hagi, Florin Răducioiu sau Ilie Dumitrescu. Campionul european cu Steaua București, Marius Lăcătuș avea să fie eroul primului meci, marcând două goluri în poarta U.R.S.S., de care România a trecut cu 2-0 la Bari. Același oraș a găzduit și al doilea meci al tricolorilor, cu reprezentativa Camerunului, pierdut cu 2-1. Golul României a fost marcat de Gavril Balint. În ultimul meci din grupă, România a întâlnit Argentina, campioana mondială en-titre și echipa în rândul căreia evolua Diego Maradona. Ca un făcut, jocul a avut loc la Napoli, orașul în care Maradona evolua la echipa de club. Sud-americanii au marcat primii, dar Balint avea să egaleze și să ducă România în optimile de finală. Aici a urmat înfruntarea cu Irlanda, și după un 0-0 la capătul a 120 de minute, disputa s-a decis la executarea loviturilor de departajare, unde singura ratare i-a aparținut lui Daniel Timofte și România rata întâlnirea cu Italia, în sferturi." +
+                    "După ratarea calificării la EURO 1992, România a fost aproape să rateze și accesul la Mondialul din 1994. La jumătatea preliminariilor a fost adus însă Anghel Iordănescu în postul de selecționer, și cu trei victorii în ultimele trei meciuri, între care un succes cu Belgia la București și unul în Țara Galilor, România avea să meargă la turneul final din Statele Unite." +
+                    "Pe 18 iunie 1994, la Los Angeles, România a întâlnit Columbia, echipă considerată favorită la titlu de brazilianul Pelé. Florin Răducioiu a deschis scorul, iar Gheorghe Hagi l-a majorat cu un gol incredibil, un șut din apropierea tușei din stânga a terenului, de la peste 30 de metri de poartă. Pe final, pe un contraatac, Răducioiu consfințea scorul final, 3-1, după ce columbienii reduseseră din handicap." +
+                    "Patru zile mai târziu, la Detroit, într-un stadion acoperit, România a întâlnit Elveția în fața căreia avea să piardă cu 4-1. Doar un succes în fața Statelor Unite, organizatoarea competiției, ducea România în faza eliminatorie, și victoria a venit din nou pe stadionul Rose Bowl din Los Angeles. Dan Petrescu a marcat unicul gol al partidei." +
+                    "În optimile de finală, adversar a fost Argentina, fără Diego Maradona care tocmai fusese suspendat pentru consum de droguri. La tricolori nu juca Răducioiu, din cauza acumulării de cartonașe galbene, dar absența lui a fost suplinită perfect de Ilie Dumitrescu, autorul unei duble, iar Gheorghe Hagi a înscris și el într-o victorie cu 3-2 care a dus în premieră pe tricolori în sferturile de finală mondiale. Aici, tot loviturile de departajare aveau să oprească România, ca și în 1990. Împotriva Suediei, Răducioiu a împins meciul în prelungiri după ce scandinavii marcaseră primii, pentru ca din nou Răducioiu să înscrie pentru 2-1 în minutul 101. Însă cu cinci minute înainte de finalul jocului, Kennet Andersson a readus egalitatea și la șuturile de la 11 metri Dan Petrescu și Miodrag Belodedici au ratat pentru tricolori după ce prima ratare aparținuse suedezilor." +
+                    "În 1996, România a revenit și la Campionatul European, participând la EURO 1996 din Anglia, unde însă a pierdut toate meciurile din grupă: 0-1 cu Franța și Bulgaria și 1-2 cu Spania, golul României fiind marcat de Florin Răducioiu." +
+                    "A treia prezență consecutivă la Campionatul Mondial a fost consemnată în Franța 1998, unde România a fost cap de serie la tragerea la sorți. În ciuda acestui avantaj, grupa a fost una dificilă, cu Columbia, de care tricolorii au trecut cu 1-0, gol Adrian Ilie, și Anglia. La Toulouse, Viorel Moldovan a deschis scorul, Michael Owen a egalat, dar Dan Petrescu a adus victoria și calificarea în minutele de final. În ultimul meci, contra Tunisiei, echipa condusă de Anghel Iordănescu avea nevoie de un punct pentru a termina pe primul loc în grupă și meciul se încheia 1-1, Viorel Moldovan egalând în repriza secundă. Însă în optimile de finală adversar a fost Croația care s-a impus la limită, 1-0, Davor Suker transformând un penalti înainte de pauză." +
+                    "Ultimul turneu final al Generației de Aur a fost EURO 2000, în Olanda și Belgia. Anghel Iordănescu plecase după Franța 1998, Victor Pițurcă a calificat echipa dar a fost demis înainte de turneul final unde selecționer a fost Emeric Ienei. Dintr-o grupă imposibilă, România obținea calificarea după 1-1 cu Germania, gol Viorel Moldovan, 0-1 cu Portugalia și 3-2 în ultimul meci, contra Angliei. Disputa de la Charleroi a început cu golul lui Cristian Chivu, dar englezii au intrat în avantaj de un gol la cabine. Dorinel Munteanu a egalat la 2, iar Ionel Ganea a transformat un penalti în minutul 89, aducând victoria și calificarea." +
+                    "Adversar în sferturile de finală a fost Italia, la Bruxelles. În minutul 35, Gheorghe Hagi a fost eliminat pentru proteste, iar cu un jucător în plus italienii s-au impus cu 2-0."
                 };
 
                 sportsCategory.TestLevels.Add(testLevel1Sports);
@@ -1282,6 +1308,16 @@ namespace PAVOC.Common
                 var testLevel2Sports = new TestLevelEntity()
                 {
                     TestLevelNumber = 2,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://playtech.ro/stiri/wp-content/uploads/2020/03/nadia-comaneci.jpg",
+                    Text = "Nadia Elena Comăneci (n. 12 noiembrie 1961, Onești, România) este o gimnastă română, prima gimnastă din lume care a primit nota zece într-un concurs olimpic de gimnastică. Este câștigătoare a cinci medalii olimpice de aur. Este considerată a fi una dintre cele mai bune sportive ale secolului XX și una dintre cele mai bune gimnaste ale lumii, din toate timpurile, „Zeița de la Montreal”, prima gimnastă a epocii moderne care a luat 10 absolut. Este primul sportiv român inclus în memorialul International Gymnastics Hall of Fame." +
+                    "Nadia s-a născut la Onești, find fiica lui Gheorghe și Ștefania-Alexandrina Comăneci[3]; a fost botezată după „Nadejda” („Speranță”), eroină a unui film. Unele surse susțin că s-ar fi născut ca „Anna Kemenes”.[4][5][6] Această variantă a fost dezmințită în noiembrie 2016 atât de Nadia cât și de mama sa, Ștefania" +
+                    "A concurat pentru prima dată la nivel național în România, în 1970, ca membră a echipei orașului său. Curând, a început antrenamentele cu Béla Károlyi și soția acestuia, Márta Károlyi, care au emigrat mai târziu în Statele Unite, devenind antrenori ai multor gimnaste americane. La vârsta de 13 ani, primul succes major al lui Comăneci a fost câștigarea a trei medalii de aur și una de argint la Campionatele Europene din 1975, de la Skien, Norvegia. În același an, agenția de știri Associated Press a numit-o --Atleta Anului--." +
+                    "La 14 ani, Comăneci a devenit o stea a Jocurilor Olimpice de Vară din 1976 de la Montreal, Québec. Nu numai că a devenit prima gimnastă care a obținut scorul perfect de zece la olimpiadă (de șapte ori), dar a și câștigat trei medalii de aur (la individual compus, bârnă și paralele), o medalie de argint (echipă compus) și bronz (sol). Acasă, succesul său i-a adus distincția de „Erou al Muncii Socialiste”, fiind cea mai tânără româncă distinsă cu acest titlu." +
+                    "Comăneci și-a apărat titlul european în 1977, dar echipa României a ieșit din competiție în finale, în semn de protest contra arbitrajului. La Campionatele Mondiale din 1978 a concurat o Nadia Comăneci cu greutate peste medie și ieșită din formă. Căderea la paralele a trimis-o pe locul 4, însă a câștigat titlul de campioană mondială la bârnă." +
+                    "În 1979, Comăneci, din nou la greutate normală, a câștigat cel de-al treilea titlu european la individual compus (devenind primul sportiv din istoria gimnasticii care a reușit această performanță). La Campionatele Mondiale din decembrie, ea a câștigat concursul preliminar, dar a fost spitalizată înainte de a participa la concursul pe echipe, din cauza unei infecții, în urma unei tăieturi la încheietura mâinii, cauzată de o cataramă din metal. În ciuda recomandărilor doctorilor, ea a părăsit spitalul și a concurat la bârnă, unde a obținut nota 9,95. Performanța sa a conferit României prima medalie de aur în concursul pe echipe." +
+                    "A participat și la Jocurile Olimpice din 1980 de la Moscova, clasându-se a doua după Elena Davîdova la individual compus, când a fost nevoită să aștepte pentru notă până ce Davîdova și-a încheiat exercițiul. Nadia și-a păstrat titlul la bârnă, dar a câștigat și o nouă medalie de aur, la sol, și una de argint, împreună cu echipa"
+
                 };
 
                 sportsCategory.TestLevels.Add(testLevel2Sports);
@@ -1292,14 +1328,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Caderea de la paralele a Nadiei Comaneci de la Campionatele Mondiale din 1978, au trimis-o pe locul?",
                 };
-                testLevel1Sports.TestQuestions.Add(testQuestion1TestLevel1Sports);
+                testLevel2Sports.TestQuestions.Add(testQuestion1TestLevel2Sports);
 
                 var testQuestionAnswer1Question1TestLevel2Sports = new TestQuestionAnswerEntity()
                 {
                     Text = "3",
                     IsCorrect = false
                 };
-                testQuestion1TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2Sports);
+                testQuestion1TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2Sports);
 
                 var testQuestionAnswer2Question1TestLevel2Sports = new TestQuestionAnswerEntity()
                 {
@@ -1330,7 +1366,7 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Care a fost nota exacta obtinuta de Nadia Comanescu la barna in anul 1979?",
                 };
-                testLevel1History.TestQuestions.Add(testQuestion1TestLevel1History);
+                testLevel2Sports.TestQuestions.Add(testQuestion2TestLevel2Sports);
 
                 var testQuestionAnswer1Question2TestLevel2Sports = new TestQuestionAnswerEntity()
                 {
@@ -1338,7 +1374,7 @@ namespace PAVOC.Common
                     IsCorrect = false
                 };
 
-                testQuestion1TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Sports);
+                testQuestion2TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Sports);
 
                 var testQuestionAnswer2Question2TestLevel2Sports = new TestQuestionAnswerEntity()
                 {
@@ -1367,6 +1403,13 @@ namespace PAVOC.Common
                 var testLevel3Sports = new TestLevelEntity()
                 {
                     TestLevelNumber = 3,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://image-cdn.essentiallysports.com/wp-content/uploads/20200912202247/michael-jordan-t.jpg",
+                    Text = "Jordan s-a născut în Brooklyn, New York, fiul lui Deloris , care a lucrat în domeniul bancar, și James R. Jordan, un supraveghetor de echipamente. Familia sa s-a mutat la Wilmington, Carolina de Nord, atunci când era copil. Jordan a mers la școală la Emsley A. Laney High School din Wilmington, unde a ancorat cariere atletice jucând baseball, fotbal american și baschet. El a încercat pentru echipa de baschet Varsity în al doilea an de studenție, dar la abia 1,80 m, el a fost considerat prea scund pentru a juca la acest nivel. Prietenul lui mai înalt, Harvest Leroy Smith, a fost singurul care a fost ales dintre Sophomores pentru a face parte din echipă." +
+                    "Motivat să își dovedească valoarea, Jordan a devenit steaua echipei de juniori și a fost cel mai bun marcator în 40 de jocuri. În vara următoare, el a crescut 10 cm în înălțime,și antrenându-se în mod riguros a câștigat un loc în echipa mare, obținând o medie de aproximativ 20 de puncte pe meci.. Ca senior, a fost selectat la McDonald's All-American-Team după un sezon încheiat cu o triplă dublă ca medie: 29.2 puncte, 11.6 recuperări și 10.1 pase decisive. În 1981, Jordan a câștigat o bursă de baschet la Universitatea din Carolina de Nord la Chapel Hill, unde s-a specializat în geografie culturală. Ca un boboc în echipa condusă de Dean Smith, a fost numit bobocul ACC al anului, cu o medie de 13.4 puncte pe meci (PPG) și o medie de 53,4% la aruncarea la coș. El a realizat coșul decisiv în finala campionatului NCAA din 1982 împotriva celor de la Georgetown, la care juca viitorul său rival din NBA Patrick Ewing. Jordan a descris acel coș un moment decisiv în cariera lui de baschet. În timpul celor trei sezoane de la Carolina de Nord, el a avut o medie de 17.7 puncte pe meci la 54,0% și a adăugat 5.0 recuperări pe meci (RPG)." +
+                    "Michael Jordan în timp ce joacă cu Scorpions Scottsdale,în data de 6 octombrie 1993, își anunță retragerea, citând o pierdere din dorința de a juca acest joc. Jordan a declarat mai târziu că uciderea tatălui sau mai devreme in acel i-a schimbat deciziile.. James R. Jordan Sr. a fost ucis la 23 iulie 1993, intr-o de odihna de pe autostrada în Lumberton, Carolina de Nord, de către doi adolescenți , Daniel Martin Demery verde și Larry. Atacatorii au fost trasate de apeluri au făcut apeluri de pe telefonul celular James Jordan, prins, condamnat, și condamnat la închisoare pe viață. Jordan a fost aproape de tatăl său ca un copil, având o înclinație de la el de a scoate limba în timp ce e absorbit în muncă. El,mai târziu a adoptat și semnătura proprie, de la afișarea ei de fiecare dată, la coș după coș. În 1996 el a fondat zona Chicago Boys & Girls Club și dedicat tatălui său." +
+                    "Jordan a scris că el a făcut pregătirea pentru pensionare cât mai devreme,in vara anului 1992. Epuizarea adăugată datorită „Dream Team”,în timpul Jocurile Olimpice de vară din 1992 a solidificat sentimentele lui Jordan despre joc și statutul său de celebritate în continuă creștere. Anuntul lui Jordan a trimis unde de șoc în întregul NBA și a apărut pe primele pagini ale ziarelor din întreaga lume. Jordan a surprins și mai mult lumea sportului prin semnarea unui contract de baseball minor in liga cu Chicago White Sox. El a confirmat la primvara de formare și a fost repartizat la sistemul echipei de ligă minoră pe 31 martie 1994.[43] Jordan a declarat că această decizie a fost luată ca să urmarească visul tatălui său, care și l-a imaginat mereu pe fiul său ca un jucător Major League Baseball." +
+                    "Jordan a jucat în două echipe olimpice care au câștigat aurul la basket. În facultate a participat la jocurile olimpice de vară din anul Jocurile Olimpice de vară din 1984 și a câștigat. Jordan a condus echipa marcând în medie 17,1 puncte pe meci în timpul campionatului. În jocurile olimpice din anul Jocurile Olimpice de vară din 1992 a fost membru al unei echipe pline de staruri împreună cu Magic Johnson, Larry Bird, and David Robinson echipa a fost denumită ”Dream team”(echipa de vis). A jucat minute limitate datorită unor probleme personale, jordan a înscris în medie 12,7 puncte pe meci, ieșind al patrulea din echipă la marcaj. Jordan, Patrick Ewing și un alt membru alt membru al „Echipei de vis”, Chris Mullin sunt singurii jucători de basket masculin din America care au câștigat aurul olimpic atât ca amatori (în 1984), dar și ca profesioniști. În plus jordan și un alt membru al „Echipei de vis” (un coechipier de la Bulls) Scottie Pippen sunt singurii jucători care au câștigat atât campionatul de NBA cât și aurul olimpic în același an (1992)."
                 };
 
                 sportsCategory.TestLevels.Add(testLevel3Sports);
@@ -1377,14 +1420,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Cate puncte a marcat in echipa McDonald's All-American-Team la finalul sezonului in anul 1980 ?",
                 };
-                testLevel1Sports.TestQuestions.Add(testQuestion1TestLevel3Sports);
+                testLevel3Sports.TestQuestions.Add(testQuestion1TestLevel3Sports);
 
                 var testQuestionAnswer1Question1TestLevel3Sports = new TestQuestionAnswerEntity()
                 {
                     Text = "19.3",
                     IsCorrect = false
                 };
-                testQuestion1TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Sports);
+                testQuestion1TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Sports);
 
                 var testQuestionAnswer2Question1TestLevel3Sports = new TestQuestionAnswerEntity()
                 {
@@ -1415,14 +1458,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Dupa moartea tatalui sau, ce zona a fondat Michael Jordan, in semn de recunostinta?",
                 };
-                testLevel1Sports.TestQuestions.Add(testQuestion2TestLevel3Sports);
+                testLevel3Sports.TestQuestions.Add(testQuestion2TestLevel3Sports);
 
                 var testQuestionAnswer1Question2TestLevel3Sports = new TestQuestionAnswerEntity()
                 {
                     Text = "Orlando Magic",
                     IsCorrect = false
                 };
-                testQuestion1TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Sports);
+                testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Sports);
 
                 var testQuestionAnswer2Question2TestLevel3Sports = new TestQuestionAnswerEntity()
                 {
@@ -1446,18 +1489,296 @@ namespace PAVOC.Common
                 testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3Sports);
                 testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3Sports);
 
+                categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt sports
+
 
                 //--------------
 
 
 
+                var geographyCategory = categoryRepository.GetCategoryByName("Geography");
+
+                var testLevel1Geography = new TestLevelEntity()
+                {
+                    TestLevelNumber = 1,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://i.ibb.co/vVz0Gqs",
+                    Text = "GEOGRAFIE " +
+                    " Level 1 "
+                };
+                geographyCategory.TestLevels.Add(testLevel1Geography);
+
+                var testQuestion1TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 1,
+                    //TODO Petros -> change this
+                    Text = "Din ce tara izvoraste Dunarea?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion1TestLevel1Geography);
+
+                var testQuestionAnswer1Question1TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Romania",
+                    IsCorrect = false
+                };
+                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1Geography);
+
+                var testQuestionAnswer2Question1TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Germania",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question1TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Ungaria",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question1TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Serbia",
+                    IsCorrect = false
+                };
+
+                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel1Geography);
+                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel1Geography);
+                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel1Geography);
 
 
+                var testQuestion2TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 2,
+                    //TODO Petros -> change this
+                    Text = "Care este capitala Portugaliei?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion2TestLevel1Geography);
 
-                categoryRepository.Update(historyCategory);
+                var testQuestionAnswer1Question2TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lisabona",
+                    IsCorrect = true
+                };
+                testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1Geography);
+
+                var testQuestionAnswer2Question2TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Porto",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question2TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Aveiro",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question2TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Funchal",
+                    IsCorrect = true
+                };
+                testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Geography);
+                testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Geography);
+                testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel1Geography);
+
+                //-------------------------
+
+                var testLevel2Geography = new TestLevelEntity()
+                {
+                    TestLevelNumber = 2,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://i.ibb.co/vVz0Gqs",
+                    Text = "GEOGRAFIE " +
+                    " Level 2 "
+                };
+
+                geographyCategory.TestLevels.Add(testLevel2Geography);
+
+                var testQuestion1TestLevel2Geography = new TestQuestionEntity()
+                {
+                    Order = 1,
+                    //TODO Petros -> change this
+                    Text = "Care este cel mai inalt munte de pe glob?",
+                };
+                testLevel2Geography.TestQuestions.Add(testQuestion1TestLevel2Geography);
+
+                var testQuestionAnswer1Question1TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Muntele K2",
+                    IsCorrect = false
+                };
+                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2Geography);
+
+                var testQuestionAnswer2Question1TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Muntele Lhotse",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question1TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Muntele Everest",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question1TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Muntele Makalu",
+                    IsCorrect = false
+                };
+
+                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel2Geography);
+                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel2Geography);
+                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel2Geography);
+
+
+                var testQuestion2TestLevel2Geography = new TestQuestionEntity()
+                {
+                    Order = 2,
+                    //TODO Petros -> change this
+                    Text = "Cate state are USA?",
+                };
+                testLevel2Geography.TestQuestions.Add(testQuestion2TestLevel2Geography);
+
+                var testQuestionAnswer1Question2TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "48",
+                    IsCorrect = false
+                };
+
+                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Geography);
+
+                var testQuestionAnswer2Question2TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "50",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question2TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "25",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question2TestLevel2Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "16",
+                    IsCorrect = false
+                };
+
+                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel2Geography);
+                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel2Geography);
+                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel2Geography);
+
+
+                //---------------------
+
+                var testLevel3Geography = new TestLevelEntity()
+                {
+                    TestLevelNumber = 3,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://i.ibb.co/vVz0Gqs",
+                    Text = "GEOGRAFIE " +
+                    " Level 3 "
+                };
+
+                geographyCategory.TestLevels.Add(testLevel3Geography);
+
+                var testQuestion1TestLevel3Geography = new TestQuestionEntity()
+                {
+                    Order = 1,
+                    //TODO Petros -> change this
+                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
+                };
+                testLevel3Geography.TestQuestions.Add(testQuestion1TestLevel3Geography);
+
+                var testQuestionAnswer1Question1TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Cristofor Columb",
+                    IsCorrect = false
+                };
+                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Geography);
+
+                var testQuestionAnswer2Question1TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Amerigo Vespucci",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question1TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Fernando Magellan",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question1TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Phileas Fogg",
+                    IsCorrect = false
+                };
+
+                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel3Geography);
+                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel3Geography);
+                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel3Geography);
+
+
+                var testQuestion2TestLevel3Geography = new TestQuestionEntity()
+                {
+                    Order = 2,
+                    //TODO Petros -> change this
+                    Text = "Ce tip de lac este lacul Sf Ana?",
+                };
+                testLevel3Geography.TestQuestions.Add(testQuestion2TestLevel3Geography);
+
+                var testQuestionAnswer1Question2TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Tectonic",
+                    IsCorrect = false
+                };
+                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Geography);
+
+                var testQuestionAnswer2Question2TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Glaciar",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question2TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Vulcanic",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question2TestLevel3Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Artificial",
+                    IsCorrect = false
+                };
+
+                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel3Geography);
+                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3Geography);
+                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3Geography);
+
+                categoryRepository.Update(geographyCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt geography
 
                 uow.Save();
             }
         }
+
+
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
