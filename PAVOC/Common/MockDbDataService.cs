@@ -54,9 +54,15 @@ namespace PAVOC.Common
                     Name = "Sports"
                 };
 
+                var musicCategory = new CategoryEntity()
+                {
+                    Name = "Music"
+                };
+
                 repo.Add(historyCategory);
                 repo.Add(geographyCategory);
                 repo.Add(sportsCategory);
+                repo.Add(musicCategory);
 
                 uow.Save();
             }
@@ -346,6 +352,8 @@ namespace PAVOC.Common
                 learnQuestion2LearnLevel3History.LearnQuestionAnswers.Add(learnQuestionAnswer3Question2LearnLevel3History);
                 learnQuestion2LearnLevel3History.LearnQuestionAnswers.Add(learnQuestionAnswer4Question2LearnLevel3History);
 
+                categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in learn pt history
+
                 //--------------------
 
                 var sportsCategory = categoryRepository.GetCategoryByName("Sports");
@@ -631,15 +639,292 @@ namespace PAVOC.Common
                 learnQuestion2LearnLevel3Sports.LearnQuestionAnswers.Add(learnQuestionAnswer3Question2LearnLevel3Sports);
                 learnQuestion2LearnLevel3Sports.LearnQuestionAnswers.Add(learnQuestionAnswer4Question2LearnLevel3Sports);
 
+                categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in learn pt sports
+
 
                 //--------------
 
 
 
+                var geographyCategory = categoryRepository.GetCategoryByName("Geography");
+
+                var learnLevel1Geography = new LearnLevelEntity()
+                {
+                    LearnLevelNumber = 1,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://www.europafm.ro/wp-content/uploads/2017/07/Stefan-Cel-Mare.jpg",
+                    Text = "La 3 februarie 1531, la nici trei decenii de la trecerea în nefiinţă, Ştefan al III-lea, principele Ţării Moldovei, era amintit de Sigismund I, regele Poloniei (1506-1548), ca Stephanus ille magnus („acel mare Ştefan”). Bernard Wapowski, cartograful şi istoriograful oficial al aceluiaşi rege, consemna că domnul moldovean era „principele şi războinicul cel mai vestit” din epoca sa. Doctorul Matteo Muriano, trimis de Veneţia la Suceava, în vara anului 1502, spre a-i acorda asistenţa medicală principelui moldovean, consemna în raportul său că acesta „este un om foarte înţelept, vrednic de multă laudă, iubit mult de supuşii săi, pentru că este îndurător şi drept, veşnic treaz şi darnic”. Văzut de contemporanii lui europeni ca un şef de stat care a reuşit să se menţină la cârma ţării 47 de ani, pe plan intern el a simbolizat stabilitatea, continuitatea, dezvoltarea economică, dreptatea, încât la înmormântarea sa în Moldova „jale era, că plângea toţi ca pe un părinte al său …” (Grigore Ureche)." +
+                    "Ştefan cel Mare, fiul lui Bogdan al II-lea (1449-1451) şi al soţiei sale Oltea, s-a născut cel mai probabil în anul 1438. După moartea tatălui său, Ştefan s-a refugiat în Transilvania stăpânită de către Iancu de Hunedoara (1441-1456), unde s-a familiarizat cu tacticile militare ale acestuia, care îmbinau elemente de artă militară din estul, centrul şi apusul Europei. Cu o forţă militară pusă la dispoziţie de către Vlad Ţepeş (1448; 1456-1472; 1476), la care s-au adăugat partizanii săi din sudul Moldovei, Ştefan cel Mare l-a învins pe Petru Aron la Doljeşti (Dolheşti), cucerind tronul Moldovei pe data de 12 aprilie 1457. A găsit o ţară sărăcită, sfâşiată de luptele dintre diverşii pretendenţi la domnia Moldovei, o ţară ce plătea tribut turcilor începând cu anul 1456." +
+                    "În asemenea circumstanţe, domnitorul a trebuit să iniţieze ample măsuri de redresare a situaţiei social-economice. Pentru a-şi asigura suportul politic necesar stabilităţii guvernării, Ştefan cel Mare a eliminat tendinţele marii boierimi de anarhie şi de nesupunere faţă de puterea centrală, a favorizat consolidarea economică a ţărănimi libere (răzeşii), a încurajat clasa negustorească şi legăturile comerciale externe. În plus, a acordat o atenţie aparte structurilor militare tradiţionale ale ţării („oastea cea mică” – structură militară permanentă, şi „oastea cea mare” – chemată numai în caz de atac extern), susţinând introducerea unei discipline mai riguroase şi ameliorarea dotării. Măsurile sale militare au vizat şi întărirea capacităţii defensive a ţării, prin consolidarea şi modernizarea cetăţilor Hotin, Tighina, Soroca, Chilia, Cetatea Albă, Suceava, Neamţ, Crăciuna." +
+                    "Prosperitatea economică a ţării i-a permis lui Ştefan cel Mare punerea în aplicare a unei politici de construire a unor edificii religioase, cu important rol cultural-artistic, dar şi militar. Acest fapt este considerat realizarea cea mai perenă a domniei voievodului moldovean. Epoca lui Ştefan cel Mare rămâne una de referinţă în istoria artei moldoveneşti, deoarece atunci se pun bazele aşa-numitului „stil moldovenesc” în arhitectura şi pictura religioasă. Arta iconografică din perioada ştefaniană este ilustrată de frescele din biserica de la Lujeni (astăzi Ucraina), Dolheşti, Bălineşti, Sf. Nicolae din Rădăuţi, Pătrăuţi, Voroneţ şi Sf. Ilie. Primele ansambluri complete ce s-au păstrat din vechea pictură ştefaniană sunt cele de la Pătrăuţi (1487), Voroneţ (1488), Sf. Ilie (1488), la care mai poate fi adăugat cu titlu de inventar şi cel de la Milişăuţi, distrus odată cu biserica în primul război mondial. Este interesant de menţionat faptul că reprezentările evangheliştilor de la Voroneţ sunt reproduceri fidele ale prototipurilor fixate de Gavril Uric în tetraevanghelul său din 1429, fapt ce sugerează o anumită continuitate de tradiţie a picturii moldoveneşti din veacul al XV-lea. Zugrăveala din altarul şi naosul bisericii mănăstirii Nemţ (1497) constituie ultimul ansamblu de pictură ce ne-a mai rămas din epoca lui Ştefan cel Mare." +
+                    "Victoriile militare spectaculoase ale lui Ştefan cel Mare, repurtate practic împotriva tuturor vecinilor săi (turci, tătari, maghiari, poloni) au fost pregătite întotdeauna de o politică externă foarte abilă, ce a permis voievodului ca, înconjurat de trei adversari redutabili (Ungaria, Polonia şi Imperiul Otoman), să nu se angajeze niciodată într-un conflict pe două fronturi. Din punct de vedere diplomatic, Ştefan cel Mare a purtat negocieri şi a încheiat alianţe, în funcţie de împrejurări, cu o serie de state puternice din estul, centrul şi vestul Europei (Hanatul de Crimeea, Imperiul Otoman, cnezatul de Moscova, Polonia, Ungaria, Veneţia, Statul Papal). La acestea se adaugă şi tratativele iniţiate în vederea organizării unei alianţe antiotomane cu Uzun Hassan, şahul statului turcoman din Anatolia orientală şi Iranul Occidental."
+                };
+                geographyCategory.LearnLevels.Add(learnLevel1Geography);
+
+                var learnQuestion1LearnLevel1Geography = new LearnQuestionEntity()
+                {
+                    Order = 1,
+                    //TODO Petros -> change this
+                    Text = "Pe cine a invins Stefan cel Mare pentru a cuceri tronul Moldovei?",
+                };
+                learnLevel1Geography.LearnQuestions.Add(learnQuestion1LearnLevel1Geography);
+
+                var learnQuestionAnswer1Question1LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Iancu de Hunedoara",
+                    IsCorrect = false
+                };
+                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel1Geography);
+
+                var learnQuestionAnswer2Question1LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Petru Aron",
+                    IsCorrect = true
+                };
+
+                var learnQuestionAnswer3Question1LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Vlad Tepes",
+                    IsCorrect = false
+                };
+
+                var learnQuestionAnswer4Question1LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Gavril Uric",
+                    IsCorrect = false
+                };
+
+                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question1LearnLevel1Geography);
+                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question1LearnLevel1Geography);
+                learnQuestion1LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question1LearnLevel1Geography);
 
 
+                var learnQuestion2LearnLevel1Geography = new LearnQuestionEntity()
+                {
+                    Order = 2,
+                    //TODO Petros -> change this
+                    Text = "Care sunt primele ansambluri complete ce s-au pastrat din vechea pictura stefaniana?",
+                };
+                learnLevel1Geography.LearnQuestions.Add(learnQuestion2LearnLevel1Geography);
 
-                categoryRepository.Update(historyCategory);
+                var learnQuestionAnswer1Question2LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Voronet",
+                    IsCorrect = true
+                };
+                learnQuestion2LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel1Geography);
+
+                var learnQuestionAnswer2Question2LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Doljesti",
+                    IsCorrect = false
+                };
+
+                var learnQuestionAnswer3Question2LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Chilia",
+                    IsCorrect = false
+                };
+
+                var learnQuestionAnswer4Question2LearnLevel1Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Patrauti",
+                    IsCorrect = true
+                };
+                learnQuestion2LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel1Geography);
+                learnQuestion2LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question2LearnLevel1Geography);
+                learnQuestion2LearnLevel1Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question2LearnLevel1Geography);
+
+                //-------------------------
+
+                var learnLevel2Geography = new LearnLevelEntity()
+                {
+                    LearnLevelNumber = 2,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://upload.wikimedia.org/wikipedia/commons/4/40/Napoleon_in_His_Study.jpg",
+                    Text = "Napoleon Bonaparte (n. 15 august 1769, Ajaccio, Corsica - d. 5 mai 1821, în Insula Sfânta Elena), cunoscut mai târziu ca Napoleon I și inițial ca Napoleone di Buonaparte, a fost un lider politic și militar al Franței, ale cărui acțiuni au influențat puternic politica europeană de la începutul secolului al XIX-lea." +
+                    "Născut în Corsica și specializat pe profilul de ofițer de artilerie în Franța continentală, Bonaparte a devenit cunoscut în timpul Primei Republici Franceze și a condus campanii reușite împotriva Primei și celei de-a Doua Coaliții, care luptau împotriva Franței. În 1799 a organizat o lovitură de stat și s-a proclamat Prim Consul; cinci ani mai târziu s-a încoronat ca Împărat al francezilor. În prima decadă a secolului al XIX-lea a opus armatele Imperiului Francez împotriva fiecărei puteri majore europene și a dominat Europa continentală printr-o serie de victorii militare. A menținut sfera de influență a Franței prin constituirea unor alianțe extensive și prin numirea prietenilor și membrilor familiei în calitate de conducători ai altor țări europene sub forma unor state clientelare franceze." +
+                    "Invazia franceză a Rusiei din 1812 a marcat un punct de cotitură în destinul lui Napoleon. Marea sa Armată a suferit pierderi covârșitoare în timpul campaniei și nu s-a recuperat niciodată pe deplin. În 1813, a Șasea Coaliție l-a înfrânt la Leipzig; în anul următor Coaliția a invadat Franța, l-a forțat pe Napoleon să abdice și l-a exilat pe insula Elba. În mai puțin de un an, a scăpat de pe Elba și s-a întors la putere, însă a fost învins în bătălia de la Waterloo din iunie 1815. Napoleon și-a petrecut ultimii șase ani ai vieții sub supraveghere britanică pe insula Sfânta Elena. O autopsie a concluzionat că a murit de cancer la stomac, deși Sten Forshufvud și alți oameni de știință au continuat să susțină că a fost otrăvit cu arsenic." +
+                    "Conflictul cu restul Europei a condus la o perioadă de război total de-a lungul continentului, iar campaniile sale sunt studiate la academii militare din întreaga lume. Deși considerat un tiran de către oponenții săi, el a rămas în istorie și datorită creării Codului Napoleonian, care a pus fundațiile legislației administrative și judiciare în majoritatea țărilor Europei de Vest." +
+                    "Devenit absolvent în septembrie 1785, Bonaparte este numit ofițer cu gradul de sublocotenent în regimentul de artilerie La Fère. A servit în garnizoanele de la Valence și Auxonne până după izbucnirea Revoluției Franceze în 1789, deși în această perioadă a fost în permisie timp de aproape două luni în Corsica și Paris. Un naționalist corsican fervent, Bonaparte i-a scris liderului corsican Pasquale Paoli în mai 1789: „Pe când națiunea pierea, m-am născut eu. Treizeci de mii de francezi au fost vomitați pe malurile noastre, înecând tronul libertății în valuri de sânge. Astfel arăta priveliștea odioasă care a fost prima ce m-a impresionat.”" +
+                    "A petrecut primii ani ai Revoluției în Corsica, luptând într-o bătălie complexă între regaliști, revoluționari și naționaliștii corsicani. El a sprijinit facțiunea revoluționară iacobină, a câștigat gradul de locotenent-colonel și comanda unui batalion de voluntari. După ce depășise termenul permisiei și a condus o revoltă împotriva unei armate franceze din Corsica, a reușit totuși să convingă autoritățile militare din Paris să-l promoveze în gradul de căpitan în iulie 1792. S-a întors în Corsica din nou și a intrat în conflict cu Paoli, care hotărâse să se despartă de Franța și să saboteze un asalt francez asupra insulei sardiniene La Maddalena, unul dintre liderii expediției fiind chiar Bonaparte. Acesta și familia sa au trebuit să fugă în Franța continentală în iunie 1793 din cauza înrăutățirii relațiilor cu Paoli." +
+                    "Lui Napoleon i se permisese să ia cu el în exil câțiva prieteni și servitori, printre care Henri-Gratien Bertrand, fostul mareșal al palatului, și contele Charles-Tristan de Montholon, un membru al aristocrației prerevoluționare. Bertrand era în slujba lui Napoleon din 1798, dar Montholon era un aderent de ultima oră – după prima abdicare a lui Napoleon se grăbise să-și ofere serviciile monarhiei restaurate, dar a trecut de partea împăratului când acesta s-a întors de pe Insula Elba. El o adusese cu sine și pe tânăra și atrăgătoarea lui soție, ale cărei atenții față de Napoleon și vizitele nocturne pe care le făcea în dormitorul acestuia deveniseră curând subiect de bârfa pe insulă." +
+                    "La un an după înfrângerea de la Leipzig, întreg imperiul s-a prăbușit. Burbonii au fost readuși la tronul Franței prin Ludovic al XVIII-lea. Aceasta revenire nu s-a bucurat însă de unanimitatea aliaților, între care au intervenit repede divergențe. Unitatea coaliției a fost însă salvată chiar de Napoleon. Înconjurat de dezbinarea aliaților, Napoleon părăsește insula Elba și începe ceea ce avea să fie aventura „celor o sută de zile”. Reîntronat, acesta începe să viseze la refacerea marelui imperiu[necesită citare]. Obține chiar câteva victorii. Pentru scurt timp însă, căci este înfrânt în bătălia de la Waterloo (18 iunie 1815). Silit să abdice din nou, Napoleon a fost exilat pe insula Sf. Elena, unde a murit în condiții neclare, câțiva ani mai târziu, la vârsta de 51 de ani (5 mai 1821). Există două teorii importante cu privire la moartea sa: otrăvirea cronică cu arsenic și cancerul la stomac. A fost înmormântat cu onoruri militare" +
+                    "Controversele asupra morții împăratului Napoleon nu se mai termină... Specialiști în domeniul medicinei legale, istorici ai vieții și morții lui Napoleon s-au dedicat încă din anul 1961 cercetărilor cauzei morții acestui om de stat francez. Unii spun că moartea s-ar datora unei erori medicale, cancerului de stomac și, în cele din urmă, otrăvirii acestuia cu arsenic. Primele două supoziții - eroare medicală sau cancer de stomac, sunt definitiv respinse de Dr. Pascal Kintz."
+                };
+
+                geographyCategory.LearnLevels.Add(learnLevel2Geography);
+
+                var learnQuestion1LearnLevel2Geography = new LearnQuestionEntity()
+                {
+                    Order = 1,
+                    //TODO Petros -> change this
+                    Text = "Pe ce insula a fost exilat Napoleon Bonaparte?",
+                };
+                learnLevel2Geography.LearnQuestions.Add(learnQuestion1LearnLevel2Geography);
+
+                var learnQuestionAnswer1Question1LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Insula Diavolului",
+                    IsCorrect = false
+                };
+                learnQuestion1LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2Geography);
+
+                var learnQuestionAnswer2Question1LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Insula Sfantul Paul",
+                    IsCorrect = false
+                };
+
+                var learnQuestionAnswer3Question1LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Insula Sfanta Elena",
+                    IsCorrect = true
+                };
+
+                var learnQuestionAnswer4Question1LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Insula Man",
+                    IsCorrect = false
+                };
+
+                learnQuestion1LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question1LearnLevel2Geography);
+                learnQuestion1LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question1LearnLevel2Geography);
+                learnQuestion1LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question1LearnLevel2Geography);
+
+
+                var learnQuestion2LearnLevel2Geography = new LearnQuestionEntity()
+                {
+                    Order = 2,
+                    //TODO Petros -> change this
+                    Text = "Ce prieteni a luat in exil Napoleon Bonaparte?",
+                };
+                learnLevel2Geography.LearnQuestions.Add(learnQuestion2LearnLevel2Geography);
+
+                var learnQuestionAnswer1Question2LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Pierre Simon Laplace",
+                    IsCorrect = false
+                };
+
+                learnQuestion2LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel2Geography);
+
+                var learnQuestionAnswer2Question2LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Henri-Gratien Bertrand",
+                    IsCorrect = true
+                };
+
+                var learnQuestionAnswer3Question2LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Charles-Tristan de Montholon",
+                    IsCorrect = true
+                };
+
+                var learnQuestionAnswer4Question2LearnLevel2Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Jacques-Louis David",
+                    IsCorrect = false
+                };
+
+                learnQuestion2LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel2Geography);
+                learnQuestion2LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question2LearnLevel2Geography);
+                learnQuestion2LearnLevel2Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question2LearnLevel2Geography);
+
+
+                //---------------------
+
+                var learnLevel3Geography = new LearnLevelEntity()
+                {
+                    LearnLevelNumber = 3,
+                    //TODO Petros -> change these 2 lines
+                    Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/0/0b/ColdWar.jpg/300px-ColdWar.jpg",
+                    Text = "Războiul Rece (1947–1991) a fost o perioadă de tensiuni și confruntări politice și ideologice, o stare de tensiune întreținută care a apărut după sfârșitul celui de-al Doilea Război Mondial și a durat până la revoluțiile din 1989. În Războiul Rece s-au confruntat două grupuri de state care aveau ideologii și sisteme politice foarte diferite. Într-un grup se aflau URSS și aliații ei, grup căruia i se spunea uzual „Blocul răsăritean” (sau oriental). Celălalt grup cuprindea SUA și aliații săi, fiind numit, uzual, „Blocul apusean” (sau occidental). La nivel politico-militar, în Europa, cele două blocuri erau reprezentate de către două alianțe internaționale. Blocul apusean era reprezentat de către Organizația Tratatului Atlanticului de Nord (NATO, North Atlantic Treaty Organization), iar cel răsăritean de către Pactul de la Varșovia. După sfârșitul celui de-al Doilea Război Mondial în Europa, Germania a fost divizată în patru zone de ocupație. Vechea capitală a Germaniei, Berlinul, ca sediu al Comisiei Aliate de Control, a fost împărțită în patru zone de ocupație corespunzătoare. Zidul Berlinului, un simbol al Războiului Rece, a fost construit, constituind, timp de aproape 28 de ani, o barieră de separare între Republica Federală Germană și Republica Democrată Germană." +
+                    "Războiul Rece a fost, însă, un conflict la scară mondială, SUA și URSS mai având și multe alte state aliate în afara Europei, ce nu făceau parte din cele două alianțe militare oficiale. La nivel economic, Războiul Rece a fost o confruntare între capitalism și comunism. Pe plan ideologico-politic, a fost o confruntare între democrațiile liberale occidentale și regimurile comuniste totalitare. Ambele tabere se autodefineau în termeni pozitivi: statele blocului occidental își spuneau „lumea liberă” sau „societatea deschisă”, iar statele blocului oriental își spuneau „lumea anti-imperialistă” sau „democrațiile populare”." +
+                    "Înfruntarea dintre cele două blocuri a fost numită „Război Rece”, deoarece nu s-a ajuns la confruntări militare directe între cele două superputeri, care ar fi constituit un „Război Cald”, cu toate că perioada a generat o cursă a înarmării. Din punctul de vedere al studiilor strategice, există opinia că nu s-a ajuns și nu se putea ajunge la un „Război Cald”, la o confruntare militară convențională, datorită faptului că ambele superputeri, SUA și URSS, s-au dotat cu arme nucleare, ceea ce a creat o situație militară strategică de „deterrence”, adică de descurajare și blocare reciprocă. În cazul unui război real, s-ar fi ajuns la o distrugere reciprocă totală și, totodată, la o catastrofă mondială. Un rol important l-au jucat serviciile secrete, confruntându-se, în primul rând, cele americane (CIA, NSA) cu KGB-ul sovietic. Au fost implicate, însă, și serviciile secrete vest-europene (britanice, vest-germane, franceze, italiene, etc.) și est-europene (Securitatea, STASI, etc.). Denumirea de „Război Rece” mai provine și din faptul că a fost purtat între foștii aliați din războiul împotriva regimului totalitar nazist. Din punct de vedere al mijloacelor utilizate, Războiul Rece a fost un conflict în care s-au utilizat presiunea diplomatică, militară, economică, ajutorul pe scară largă pentru statele-client, manevrele diplomatice, spionajul, curse ale înarmărilor convenționale și nucleare, coaliții militare, rivalitate la evenimentele sportive, competiție tehnologică, campanii masive de propagandă, asasinatul, operațiunile militare de intensitate mică și iminența unui război pe scară mare. Un moment în care Războiul Rece putea să devină unul „cald” îl reprezintă anul 1962, când sovieticii au plasat în Cuba, devenită comunistă sub Fidel Castro, rachete cu rază medie de acțiune. Americanii au răspuns prin instalarea unei blocade maritime, ajungând foarte aproape de a declanșa o bătălie navală cu sovieticii. În cele din urmă, însă, prin intervenția președintelui american Kennedy, s-a ajuns la normalizarea relațiilor cu sovieticii. A urmat o perioadă de destindere, marcată de întâlnirea dintre Kennedy și Nichita Hrușciov, în 1963, când au stabilit ca, în viitor, pentru comunicări urgente și de importanță majoră între Casa Albă și Kremlin să folosească „telefonul roșu” (care era, de fapt, un telex)." +
+                    "Alte momente tensionate ale Războiului Rece au fost, cronologic: Blocada Berlinului (1948–1949), Războiul din Coreea (1950–1953), Criza Berlinului din 1961, Criza Suezului (1962), Războiul din Vietnam (1959–1975), Războiul de Iom Kippur (1973), Războiul Afgano-Sovietic (1979–1989), Doborârea cursei KAL 007 (1983) și Exercițiul militar NATO „Able Archer” (1983). La mijlocul anilor 1980, noul lider sovietic, Mihail Gorbaciov a introdus reformele de liberalizare numite „perestroika” (reorganizare sau restructurare) și „glasnost” (deschidere sau transparență) și a retras trupele sovietice din Afghanistan. Presat de cererile de independență națională a sateliților sovietici din estul Europei (Polonia, în special), Gorbaciov a refuzat să trimită trupele sovietice pentru a reprima revoluțiile ce se desfășurau pe cale pașnică (exceptând Revoluția din România)." +
+                    "Războiul Rece s-a atenuat odată cu prăbușirea regimurilor comuniste din Europa Centrală și de Est, precum și din Mongolia, Cambodgia și Yemenul de Sud, urmată, doi ani mai târziu, în decembrie 1991, și de destrămarea Uniunii Sovietice. Lumea care a rămas este dominată de o singură superputere, SUA. Această situație este, de regulă, descrisă drept hegemonie globală a SUA într-o lume unipolară, deși unii autori consideră că lumea actuală este multipolară.Statele central-europene și est-europene (care, timp de patru decenii, se aflaseră sub dominația sovieticǎ), s-au democratizat și au ales să se integreze în NATO și Uniunea Europeană. SUA au fost ancorate în Războiul împotriva terorismului și în rǎzboaiele locale din Orientul Mijlociu (precum sunt cele din Afghanistan și Irak), mal ales, după Atentatele din 11 septembrie 2001. China a atins cea mai rapidă creștere economică, iar între anii 2004 și 2010 a depășit toate prognozele, devenind un concurent serios pentru SUA.De asemenea, criza economică mondială începută în 2008 a afectat, în special, zona occidentală, astfel că, în timp ce în Statele Unite marile bănci aveau probleme sau intrau în faliment, China a beneficiat de pe urma investițiilor strategice și au stimulat-o să declanșeze rǎzboiul economic cu SUA pentru supremația mondială. După douǎ decenii de destindere a relațiilor americano-ruse, urmatǎ, în 2008, de rǎcirea relațiilor diplomatice - consecință a rǎzboiului din Georgia - și, mai ales, pe fondul crizei din Ucraina, tensiunile, ostilitățile și rivalitǎțile anterioare dintre cele două puteri s-au acutizat, astfel că, în 2014, a reizbucnit Războiul Rece între Statele Unite ale Americii/ statele membre ale Uniunii Europene/ Organizației Tratatului Atlanticului de Nord și Federația Rusă - condusă de Vladimir Putin - și aliații acesteia. Acest rǎzboi este cunoscut în Mass-Media ca „Al Doilea Război Rece”,[2][3][4][5] însă, spre deosebire de Războiul Rece anterior, de această dată, Germania reunificată are un rol geopolitic major în Europa. Reizbucnirea și amplificarea Războiul Rece dintre SUA și Rusia, pe fondul creșterii amenințării terorismului în Orientul Mijlociu devastat de războaie civile, revoluții în nordul Africii și ascensiunea economicǎ fulminantă a Chinei, generează noi și justificate neliniști privind redimensionarea galopantă a raporturilor de putere în lumea contemporană." +
+                    "Războiul Rece a lăsat în urma sa o moștenire importantă, adesea menținută în cultura populară și în mass-media, teme precum spionajul (cum este, spre exemplu, seria filmelor de succes internațional avându-l ca erou pe James Bond) și amenințarea războiului nuclear bucurându-se de o mare și constantă popularitate."
+                };
+
+                geographyCategory.LearnLevels.Add(learnLevel3Geography);
+
+                var learnQuestion1LearnLevel3Geography = new LearnQuestionEntity()
+                {
+                    Order = 1,
+                    //TODO Petros -> change this
+                    Text = "In ce perioada a avut loc Razboiul Rece?",
+                };
+                learnLevel3Geography.LearnQuestions.Add(learnQuestion1LearnLevel3Geography);
+
+                var learnQuestionAnswer1Question1LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "1941-1972",
+                    IsCorrect = false
+                };
+                learnQuestion1LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel3Geography);
+
+                var learnQuestionAnswer2Question1LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "1943-1989",
+                    IsCorrect = false
+                };
+
+                var learnQuestionAnswer3Question1LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "1947-1991",
+                    IsCorrect = true
+                };
+
+                var learnQuestionAnswer4Question1LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "1914-1918",
+                    IsCorrect = false
+                };
+
+                learnQuestion1LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question1LearnLevel3Geography);
+                learnQuestion1LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question1LearnLevel3Geography);
+                learnQuestion1LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question1LearnLevel3Geography);
+
+
+                var learnQuestion2LearnLevel3Geography = new LearnQuestionEntity()
+                {
+                    Order = 2,
+                    //TODO Petros -> change this
+                    Text = "Cum se numeau reformele de liberalizare introduce de Mihai Gorbaciov in anii '80?",
+                };
+                learnLevel3Geography.LearnQuestions.Add(learnQuestion2LearnLevel3Geography);
+
+                var learnQuestionAnswer1Question2LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Otrezki",
+                    IsCorrect = false
+                };
+                learnQuestion2LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel3Geography);
+
+                var learnQuestionAnswer2Question2LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Bolșevica",
+                    IsCorrect = false
+                };
+
+                var learnQuestionAnswer3Question2LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Glasnost",
+                    IsCorrect = true
+                };
+
+                var learnQuestionAnswer4Question2LearnLevel3Geography = new LearnQuestionAnswerEntity()
+                {
+                    Text = "Perestroika",
+                    IsCorrect = true
+                };
+
+                learnQuestion2LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel3Geography);
+                learnQuestion2LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer3Question2LearnLevel3Geography);
+                learnQuestion2LearnLevel3Geography.LearnQuestionAnswers.Add(learnQuestionAnswer4Question2LearnLevel3Geography);
+
+                categoryRepository.Update(geographyCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in learn pt geography
 
                 uow.Save();
             }
