@@ -1570,8 +1570,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
                     Image = "https://www.europafm.ro/wp-content/uploads/2017/07/Stefan-Cel-Mare.jpg",
-                    Text = "ISTORIE " +
-                    " Level 1 "
+                    Text = ""
                 };
                 historyCategory.TestLevels.Add(testLevel1History);
 
@@ -1649,6 +1648,86 @@ namespace PAVOC.Common
                 testQuestion2TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1History);
                 testQuestion2TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel1History);
 
+
+                //add 2 more questions
+
+                var testQuestion3TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 3,
+                    //TODO Petros -> change this
+                    Text = "Pe cine a invins Stefan cel Mare pentru a cuceri tronul Moldovei?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion3TestLevel1History);
+
+                var testQuestionAnswer1Question3TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Iancu de Hunedoara",
+                    IsCorrect = false
+                };
+                testQuestion3TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1History);
+
+                var testQuestionAnswer2Question3TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Petru Aron",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question3TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Vlad Tepes",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question3TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Gavril Uric",
+                    IsCorrect = false
+                };
+
+                testQuestion3TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question3TestLevel1History);
+                testQuestion3TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question3TestLevel1History);
+                testQuestion3TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question3TestLevel1History);
+
+
+                var testQuestion4TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 4,
+                    //TODO Petros -> change this
+                    Text = "Care sunt primele ansambluri complete ce s-au pastrat din vechea pictura stefaniana?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion4TestLevel1History);
+
+                var testQuestionAnswer1Question4TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Voronet",
+                    IsCorrect = true
+                };
+                testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1History);
+
+                var testQuestionAnswer2Question4TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Doljesti",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question4TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Chilia",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question4TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Patrauti",
+                    IsCorrect = true
+                };
+                testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1History);
+                testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1History);
+                testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question4TestLevel1History);
+
+
+
+
                 //-------------------------
 
                 var testLevel2History = new TestLevelEntity()
@@ -1656,8 +1735,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
                     Image = "https://upload.wikimedia.org/wikipedia/commons/4/40/Napoleon_in_His_Study.jpg",
-                    Text = "ISTORIE " +
-                    " Level 2 "
+                    Text = ""
                 };
 
                 historyCategory.TestLevels.Add(testLevel2History);
@@ -1746,8 +1824,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
                     Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/0/0b/ColdWar.jpg/300px-ColdWar.jpg",
-                    Text = "ISTORIE " +
-                    " Level 3 "
+                    Text = ""
                 };
 
                 historyCategory.TestLevels.Add(testLevel3History);
@@ -1838,8 +1915,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
                     Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/e/ef/Romania_national_football_team_logo.svg/200px-Romania_national_football_team_logo.svg.png",
-                    Text = "SPORT " +
-                    " Level 1 "
+                    Text = ""
                 };
 
                 sportsCategory.TestLevels.Add(testLevel1Sports);
@@ -1925,8 +2001,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
                     Image = "https://playtech.ro/stiri/wp-content/uploads/2020/03/nadia-comaneci.jpg",
-                    Text = "SPORT " +
-                    " Level 2 "
+                    Text = ""
                 };
 
                 sportsCategory.TestLevels.Add(testLevel2Sports);
@@ -2014,8 +2089,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
                     Image = "https://image-cdn.essentiallysports.com/wp-content/uploads/20200912202247/michael-jordan-t.jpg",
-                    Text = "SPORT " +
-                    " Level 3 "
+                    Text = ""
                 };
 
                 sportsCategory.TestLevels.Add(testLevel3Sports);
@@ -2109,8 +2183,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
                     Image = "https://i.ibb.co/vVz0Gqs",
-                    Text = "GEOGRAFIE " +
-                    " Level 1 "
+                    Text = ""
                 };
                 geographyCategory.TestLevels.Add(testLevel1Geography);
 
@@ -2195,8 +2268,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
                     Image = "https://i.ibb.co/vVz0Gqs",
-                    Text = "GEOGRAFIE " +
-                    " Level 2 "
+                    Text = ""
                 };
 
                 geographyCategory.TestLevels.Add(testLevel2Geography);
@@ -2285,8 +2357,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
                     Image = "https://i.ibb.co/vVz0Gqs",
-                    Text = "GEOGRAFIE " +
-                    " Level 3 "
+                    Text = ""
                 };
 
                 geographyCategory.TestLevels.Add(testLevel3Geography);
@@ -2377,8 +2448,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
                     Image = "https://i.ytimg.com/vi/GhNkPKzp-NE/maxresdefault.jpg",
-                    Text = "MUZICA " +
-                    " Level 1 "
+                    Text = ""
                 };
 
                 musicCategory.TestLevels.Add(testLevel1Music);
@@ -2463,8 +2533,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
                     Image = "https://www.rollingstone.com/wp-content/uploads/2018/08/best-deepcut-abba-songs-sheffield.jpg?resize=1800,1200&w=1800",
-                    Text = "MUZICA " +
-                    " Level 2 "
+                    Text = ""
                 };
 
                 musicCategory.TestLevels.Add(testLevel2Music);
@@ -2553,8 +2622,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
                     Image = "https://api.time.com/wp-content/uploads/2015/12/the-beatles2.jpg",
-                    Text = "MUZICA " +
-                    " Level 3 "
+                    Text = ""
                 };
 
                 musicCategory.TestLevels.Add(testLevel3Music);
@@ -2645,8 +2713,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
                     Image = "",
-                    Text = "CELEBRITATI " +
-                    " Level 1 "
+                    Text = ""
                 };
 
                 celebritiesCategory.TestLevels.Add(testLevel1Celebrities);
@@ -2732,8 +2799,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
                     Image = "",
-                    Text = "CELEBRITATI " +
-                    " Level 2 "
+                    Text = ""
                 };
 
                 celebritiesCategory.TestLevels.Add(testLevel2Celebrities);
@@ -2822,8 +2888,7 @@ namespace PAVOC.Common
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
                     Image = "",
-                    Text = "CELEBRITATI " +
-                    " Level 3 "
+                    Text = ""
                 };
 
                 celebritiesCategory.TestLevels.Add(testLevel3Celebrities);
