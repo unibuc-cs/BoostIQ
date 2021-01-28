@@ -1768,7 +1768,7 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "In ce oras au fost executat Nicolae Ceausescu?",
+                    Text = "In ce oras a fost executat Nicolae Ceausescu?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion6TestLevel1History);
 
@@ -1915,6 +1915,43 @@ namespace PAVOC.Common
                 testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1History);
                 testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1History);
 
+                var testQuestion10TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "In ce an a avut loc 'Partida de ceai de la Boston' ?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion9TestLevel1History);
+
+                var testQuestionAnswer1Question10TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1789",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1History);
+
+                var testQuestionAnswer2Question10TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1816",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question10TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1712",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question10TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1773",
+                    IsCorrect = true
+                };
+
+                testQuestion10TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1History);
+                testQuestion10TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1History);
+                testQuestion10TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1History);
+
 
 
                 categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in test pt history
@@ -2040,7 +2077,7 @@ namespace PAVOC.Common
                 var testQuestionAnswer4Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
                     Text = "PSG",
-                    IsCorrect = true
+                    IsCorrect = false
                 };
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Sports);
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Sports);
@@ -2058,15 +2095,16 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer1Question3TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Kobe Bryant",
-                    IsCorrect = false
+                    
+                    Text = "Michael Jordan",
+                    IsCorrect = true
                 };
                 testQuestion3TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Sports);
 
                 var testQuestionAnswer2Question3TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Michael Jordan",
-                    IsCorrect = true
+                    Text = "Kobe Bryant",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question3TestLevel1Sports = new TestQuestionAnswerEntity()
@@ -2181,8 +2219,9 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer2Question6TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lionel Messi",
-                    IsCorrect = true
+                    
+                    Text = "Zlatan Ibrahimovic",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question6TestLevel1Sports = new TestQuestionAnswerEntity()
@@ -2193,8 +2232,8 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer4Question6TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Zlatan Ibrahimovic",
-                    IsCorrect = false
+                    Text = "Lionel Messi",
+                    IsCorrect = true
                 };
 
                 testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Sports);
@@ -2473,7 +2512,7 @@ namespace PAVOC.Common
                 var testQuestionAnswer4Question2TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
                     Text = "Funchal",
-                    IsCorrect = true
+                    IsCorrect = false
                 };
                 testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Geography);
                 testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Geography);
@@ -2522,33 +2561,33 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Care este forma de relief predominanta in Romania?",
+                    Text = "Pana la ce adancime (metri) ajunge Groapa Marianelor, Oceanul Pacific? ",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion4TestLevel1Geography);
 
                 var testQuestionAnswer1Question4TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lisabona",
+                    Text = "11022",
                     IsCorrect = true
                 };
                 testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Geography);
 
                 var testQuestionAnswer2Question4TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Porto",
+                    Text = "24500",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question4TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Aveiro",
+                    Text = "5802",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question4TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Funchal",
-                    IsCorrect = true
+                    Text = "8922",
+                    IsCorrect = false
                 };
                 testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Geography);
                 testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1Geography);
@@ -2559,32 +2598,32 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "Din ce tara izvoraste Dunarea?",
+                    Text = "Care din urmatoarele fluvii are cea mai mare lungime?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion5TestLevel1Geography);
 
                 var testQuestionAnswer1Question5TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Romania",
-                    IsCorrect = false
+                    Text = "Nil",
+                    IsCorrect = true
                 };
                 testQuestion5TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Geography);
 
                 var testQuestionAnswer2Question5TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Germania",
-                    IsCorrect = true
+                    Text = "Amazon",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question5TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ungaria",
+                    Text = "Dunarea",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question5TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Serbia",
+                    Text = "Mississippi",
                     IsCorrect = false
                 };
 
@@ -2597,33 +2636,33 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "Care este capitala Portugaliei?",
+                    Text = "A carei tari este capitala Reykjavík?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion6TestLevel1Geography);
 
                 var testQuestionAnswer1Question6TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lisabona",
-                    IsCorrect = true
+                    Text = "Danemarca",
+                    IsCorrect = false
                 };
                 testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Geography);
 
                 var testQuestionAnswer2Question6TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Porto",
+                    Text = "Norvegia",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question6TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Aveiro",
-                    IsCorrect = false
+                    Text = "Islanda",
+                    IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question6TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Funchal",
-                    IsCorrect = true
+                    Text = "Finlanda",
+                    IsCorrect = false
                 };
                 testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Geography);
                 testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question6TestLevel1Geography);
@@ -2672,14 +2711,14 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "Ce tip de lac este lacul Sf Ana?",
+                    Text = "Din ce categorie face parte lacul Sfanta Ana?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
 
                 var testQuestionAnswer1Question8TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Tectonic",
-                    IsCorrect = false
+                    Text = "Vulcanic",
+                    IsCorrect = true
                 };
                 testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Geography);
 
@@ -2691,8 +2730,8 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer3Question8TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Vulcanic",
-                    IsCorrect = true
+                    Text = "Tectonic",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question8TestLevel1Geography = new TestQuestionAnswerEntity()
@@ -2711,33 +2750,33 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
+                    Text = "Ce tara detine titlul pentru cea mai mare densitate a populatiei ?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion9TestLevel1Geography);
 
                 var testQuestionAnswer1Question9TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Cristofor Columb",
+                    Text = "India",
                     IsCorrect = false
                 };
                 testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Geography);
 
                 var testQuestionAnswer2Question9TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Amerigo Vespucci",
+                    Text = "China",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question9TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Fernando Magellan",
-                    IsCorrect = true
+                    Text = "Singapore",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question9TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Phileas Fogg",
-                    IsCorrect = false
+                    Text = "Monaco",
+                    IsCorrect = true
                 };
 
                 testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Geography);
@@ -2749,32 +2788,32 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "Ce tip de lac este lacul Sfanta Ana?",
+                    Text = "Cate continente are Terra?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
 
                 var testQuestionAnswer1Question10TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Tectonic",
+                    Text = "5",
                     IsCorrect = false
                 };
                 testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Geography);
 
                 var testQuestionAnswer2Question10TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Glaciar",
-                    IsCorrect = false
+                    Text = "7",
+                    IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question10TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Vulcanic",
-                    IsCorrect = true
+                    Text = "6",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question10TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Artificial",
+                    Text = "4",
                     IsCorrect = false
                 };
 
@@ -2849,31 +2888,31 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "Câte albume au reeditat trupa Holograf?",
+                    Text = "In ce an a fost formata trupa AC/DC?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion1TestLevel1Music);
 
                 var testQuestionAnswer1Question1TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "1",
+                    Text = "1981",
                     IsCorrect = false
                 };
                 testQuestion1TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1Music);
 
                 var testQuestionAnswer2Question1TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "2",
+                    Text = "1985",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question1TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "1970",
                     IsCorrect = false
                 };
                 var testQuestionAnswer4Question1TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
+                    Text = "1973",
                     IsCorrect = true
                 };
 
@@ -2886,32 +2925,32 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                    Text = "Care este originea trupei Led Zeppelin?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion2TestLevel1Music);
 
                 var testQuestionAnswer1Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Umbre pe cer",
+                    Text = "Germana",
                     IsCorrect = false
                 };
                 testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1Music);
 
                 var testQuestionAnswer2Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Banii vorbesc",
+                    Text = "Australiana",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lungul drum al zilei către noapte",
+                    Text = "Britanica",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Singur pe drum",
+                    Text = "Franceza",
                     IsCorrect = false
                 };
                 testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Music);
@@ -2924,31 +2963,31 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Câte albume au reeditat trupa Holograf?",
+                    Text = "Cum este supranumita trupa Aerosmith?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion3TestLevel1Music);
 
                 var testQuestionAnswer1Question3TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "1",
+                    Text = "Men in Black",
                     IsCorrect = false
                 };
                 testQuestion3TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Music);
 
                 var testQuestionAnswer2Question3TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "2",
+                    Text = "The Smithers",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question3TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "The Good Boys from New York",
                     IsCorrect = false
                 };
                 var testQuestionAnswer4Question3TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
+                    Text = "The Bad Boys from Boston",
                     IsCorrect = true
                 };
 
@@ -2961,32 +3000,32 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                    Text = "Cum il cheama pe solistul trupei Metallica?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion4TestLevel1Music);
 
                 var testQuestionAnswer1Question4TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Umbre pe cer",
-                    IsCorrect = false
+                    Text = "James Hatfield",
+                    IsCorrect = true
                 };
                 testQuestion4TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Music);
 
                 var testQuestionAnswer2Question4TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Banii vorbesc",
+                    Text = "Bruce Dickson",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question4TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lungul drum al zilei către noapte",
-                    IsCorrect = true
+                    Text = "Lars Ulrich",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question4TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Singur pe drum",
+                    Text = "Axl Rose",
                     IsCorrect = false
                 };
                 testQuestion4TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Music);
@@ -2998,31 +3037,31 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "Câte albume au reeditat trupa Holograf?",
+                    Text = "In ce an a murit Michael Jackson?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion5TestLevel1Music);
 
                 var testQuestionAnswer1Question5TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "1",
+                    Text = "2010",
                     IsCorrect = false
                 };
                 testQuestion5TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Music);
 
                 var testQuestionAnswer2Question5TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "2",
+                    Text = "2007",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question5TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "2011",
                     IsCorrect = false
                 };
                 var testQuestionAnswer4Question5TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
+                    Text = "2009",
                     IsCorrect = true
                 };
 
@@ -3035,32 +3074,33 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                    Text = "Ce artist a facut melodia 'Non, je ne regrette rien'?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion6TestLevel1Music);
 
                 var testQuestionAnswer1Question6TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Umbre pe cer",
-                    IsCorrect = false
+                    
+                    Text = "Edith Piaf",
+                    IsCorrect = true
                 };
                 testQuestion6TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Music);
 
                 var testQuestionAnswer2Question6TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Banii vorbesc",
+                    Text = "Ramid Djawadi",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question6TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lungul drum al zilei către noapte",
-                    IsCorrect = true
+                    Text = "Honoré de Balzac",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question6TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Singur pe drum",
+                    Text = "Maître Gims",
                     IsCorrect = false
                 };
                 testQuestion6TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Music);
@@ -3072,32 +3112,32 @@ namespace PAVOC.Common
                 {
                     Order = 7,
                     //TODO Petros -> change this
-                    Text = "Câte albume au reeditat trupa Holograf?",
+                    Text = "Câte simfonii a compus Ludwig van Beethoven?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion7TestLevel1Music);
 
                 var testQuestionAnswer1Question7TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "1",
+                    Text = "6",
                     IsCorrect = false
                 };
                 testQuestion7TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Music);
 
                 var testQuestionAnswer2Question7TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "2",
-                    IsCorrect = false
+                    Text = "9",
+                    IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question7TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "7",
                     IsCorrect = false
                 };
                 var testQuestionAnswer4Question7TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
-                    IsCorrect = true
+                    Text = "12",
+                    IsCorrect = false
                 };
 
                 testQuestion7TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1Music);
@@ -3109,32 +3149,32 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                    Text = "Cu ce melodie a câştigat Eurovision trupa ABBA?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion8TestLevel1Music);
 
                 var testQuestionAnswer1Question8TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Umbre pe cer",
+                    Text = "Gimme, Gimme, Gimme",
                     IsCorrect = false
                 };
                 testQuestion8TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Music);
 
                 var testQuestionAnswer2Question8TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Banii vorbesc",
+                    Text = "Mamma Mia",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question8TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lungul drum al zilei către noapte",
+                    Text = "Waterloo",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question8TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Singur pe drum",
+                    Text = "The Winner Takes It All",
                     IsCorrect = false
                 };
                 testQuestion8TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Music);
@@ -3146,32 +3186,32 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "Câte albume au reeditat trupa Holograf?",
+                    Text = "Care este numele real al lui Eminem ?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion9TestLevel1Music);
 
                 var testQuestionAnswer1Question9TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "1",
-                    IsCorrect = false
+                    Text = "Marshall Mathers",
+                    IsCorrect = true
                 };
                 testQuestion9TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Music);
 
                 var testQuestionAnswer2Question9TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "2",
+                    Text = "Michael Eminem",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question9TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "Slim Shady",
                     IsCorrect = false
                 };
                 var testQuestionAnswer4Question9TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
-                    IsCorrect = true
+                    Text = "John Matress",
+                    IsCorrect = false
                 };
 
                 testQuestion9TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Music);
@@ -3183,32 +3223,32 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                    Text = "Cine a compus versurile din 'Deșteaptă-te,române!'?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion10TestLevel1Music);
 
                 var testQuestionAnswer1Question10TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Umbre pe cer",
+                    Text = "Anton Pann",
                     IsCorrect = false
                 };
-                testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Music);
+                testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Music);
 
                 var testQuestionAnswer2Question10TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Banii vorbesc",
+                    Text = "George Enescu",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question10TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Lungul drum al zilei către noapte",
+                    Text = "Andrei Mureșanu",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question10TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Singur pe drum",
+                    Text = "Gheorghe Zamfir",
                     IsCorrect = false
                 };
                 testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Music);
@@ -3272,32 +3312,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Ce actor a avut rolul principal in filmul Interstellar?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion1TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question1TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Tom Hardy",
                     IsCorrect = false
                 };
                 testQuestion1TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question1TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Matthew McConaughey",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question1TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Leonardo DiCaprio",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question1TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Brad Pitt",
                     IsCorrect = false
                 };
 
@@ -3310,33 +3350,33 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cati copii are Angelina Jolie",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion2TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question2TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "6",
                     IsCorrect = true
                 };
                 testQuestion2TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question2TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "2",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question2TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "1",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question2TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "4",
+                    IsCorrect = false
                 };
                 testQuestion2TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Celebrities);
                 testQuestion2TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Celebrities);
@@ -3349,32 +3389,32 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Al catelea presedinte al SUA a fost Barack Obama? ",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion3TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "42",
                     IsCorrect = false
                 };
                 testQuestion3TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "44",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "48",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "40",
                     IsCorrect = false
                 };
 
@@ -3387,33 +3427,33 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cine a interpretat rolul capitanului Jack Sparrow ?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion4TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Johnny Depp",
                     IsCorrect = true
                 };
                 testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "John Wick",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Orlando Bloom",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Matt Damon",
+                    IsCorrect = false
                 };
                 testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Celebrities);
                 testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1Celebrities);
@@ -3426,32 +3466,32 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cine detine titlul de cel mai tanar 'self-made' miliardar din lume?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion5TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "John Collison",
                     IsCorrect = false
                 };
                 testQuestion5TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Kylie Jenner",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Mark Zuckerberg",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Gustav Magnar",
                     IsCorrect = false
                 };
 
@@ -3464,32 +3504,32 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Ce avere are Ion Tiriac?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion6TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "1,6 miliarde $",
+                    IsCorrect = false
                 };
                 testQuestion6TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "2 miliarde $",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "973 milioane $",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "1,3 miliarde $",
                     IsCorrect = true
                 };
                 testQuestion6TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Celebrities);
@@ -3502,32 +3542,32 @@ namespace PAVOC.Common
                 {
                     Order = 7,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cine este fondatorul companiei UiPath?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion7TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Stefan Dobrincu",
                     IsCorrect = false
                 };
                 testQuestion7TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Jack Dorsey",
+                    IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = false
+                    Text = "Daniel Dines",
+                    IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Bill Gates",
                     IsCorrect = false
                 };
 
@@ -3540,33 +3580,33 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "In ce an s-a nascut Eminem?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion8TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "1972",
                     IsCorrect = true
                 };
                 testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "1978",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "1977",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "1974",
+                    IsCorrect = false
                 };
                 testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Celebrities);
                 testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Celebrities);
@@ -3579,32 +3619,32 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cine este cunoscut ca fiind cel mai mare fotbalist roman? ",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion9TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Adrian Mutu",
                     IsCorrect = false
                 };
                 testQuestion9TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Gheorghe Hagi",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Dan Petrescu",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Mircea Lucescu",
                     IsCorrect = false
                 };
 
@@ -3617,32 +3657,32 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Al catelea copil al familiei Jackson a fost Michael?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion10TestLevel1Celebrities);
 
                 var testQuestionAnswer1Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "al treilea",
+                    IsCorrect = false
                 };
                 testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Celebrities);
 
                 var testQuestionAnswer2Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "primul",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "al cincilea",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "al saptelea",
                     IsCorrect = true
                 };
                 testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Celebrities);
