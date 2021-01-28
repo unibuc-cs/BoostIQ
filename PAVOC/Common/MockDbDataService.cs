@@ -2203,6 +2203,162 @@ namespace PAVOC.Common
                 testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question6TestLevel1Sports);
 
 
+                var testQuestion7TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 7,
+                    //TODO Petros -> change this
+                    Text = "Caderea de la paralele a Nadiei Comaneci de la Campionatele Mondiale din 1978, au trimis-o pe locul?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion7TestLevel1Sports);
+
+                var testQuestionAnswer1Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "3",
+                    IsCorrect = false
+                };
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Sports);
+
+                var testQuestionAnswer2Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "4",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "5",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "6",
+                    IsCorrect = false
+                };
+
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1Sports);
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question7TestLevel1Sports);
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question7TestLevel1Sports);
+
+
+                var testQuestion8TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 8,
+                    //TODO Petros -> change this
+                    Text = "Care a fost nota exacta obtinuta de Nadia Comaneci la barna in anul 1979?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion8TestLevel1Sports);
+
+                var testQuestionAnswer1Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "9.90",
+                    IsCorrect = false
+                };
+
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Sports);
+
+                var testQuestionAnswer2Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "9.98",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "10.0",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "9.95",
+                    IsCorrect = true
+                };
+
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Sports);
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Sports);
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1Sports);
+
+
+
+                var testQuestion9TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "Cate puncte a marcat in echipa McDonald's All-American-Team la finalul sezonului in anul 1980 ?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion9TestLevel1Sports);
+
+                var testQuestionAnswer1Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "19.3",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Sports);
+
+                var testQuestionAnswer2Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "15.7",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "29.2",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "11.6",
+                    IsCorrect = false
+                };
+
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Sports);
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1Sports);
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1Sports);
+
+
+                var testQuestion10TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "Dupa moartea tatalui sau, ce zona a fondat Michael Jordan, in semn de recunostinta?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion10TestLevel1Sports);
+
+                var testQuestionAnswer1Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Orlando Magic",
+                    IsCorrect = false
+                };
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Sports);
+
+                var testQuestionAnswer2Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Chicago Boys & Girls Club",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Scottsdale Arizona",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Forbes Stars",
+                    IsCorrect = false
+                };
+
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Sports);
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Sports);
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Sports);
+
+
+
+                categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt sports
 
                 //-------------------------
 
@@ -2232,7 +2388,7 @@ namespace PAVOC.Common
 
                 
 
-                categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt sports
+               
 
 
                 //--------------
@@ -2549,6 +2705,83 @@ namespace PAVOC.Common
                 testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Geography);
                 testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Geography);
                 testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1Geography);
+
+
+
+                var testQuestion9TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion9TestLevel1Geography);
+
+                var testQuestionAnswer1Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Cristofor Columb",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Geography);
+
+                var testQuestionAnswer2Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Amerigo Vespucci",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Fernando Magellan",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Phileas Fogg",
+                    IsCorrect = false
+                };
+
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Geography);
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1Geography);
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1Geography);
+
+
+                var testQuestion10TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "Ce tip de lac este lacul Sf Ana?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
+
+                var testQuestionAnswer1Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Tectonic",
+                    IsCorrect = false
+                };
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Geography);
+
+                var testQuestionAnswer2Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Glaciar",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Vulcanic",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Artificial",
+                    IsCorrect = false
+                };
+
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Geography);
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Geography);
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Geography);
 
                 categoryRepository.Update(geographyCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt geography
 
@@ -2983,8 +3216,7 @@ namespace PAVOC.Common
                 testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Music);
                 testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Music);
 
-
-
+                categoryRepository.Update(musicCategory);
 
 
 
@@ -3014,7 +3246,7 @@ namespace PAVOC.Common
                 musicCategory.TestLevels.Add(testLevel3Music);
 
                 
-                categoryRepository.Update(musicCategory);
+                
 
                 //----------------//
 
