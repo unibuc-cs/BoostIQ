@@ -34,10 +34,10 @@
 </div>
 
 <!-- pagina cu intrebarile -->
-<div class="w1-container">
+<div class="w1-container" >
   <div *ngIf="questionsDisplayed">
     <div *ngIf="question">
-      <br /><br />
+      <br />
       <h2>{{ question.text }}</h2>
       <br /><br />
 
@@ -55,28 +55,30 @@
         </button>
       </div>
 
-      <br /><br /><br />
+      <br /><br />
       <div *ngIf="questionOrder > 1">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+        &nbsp;&nbsp;&nbsp;<button
           type="button"
           class="btn btn-dark"
           (click)="previousQuestion()"
+          style="border-radius: 2%;"
         >
           Intrebarea anterioara
         </button>
       </div>
-      <br /><br /><br />
+      <br />
       <div *ngIf="questionOrder < testLevel.testQuestions.length">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+        <button
           type="button"
           class="btn btn-dark"
           (click)="nextQuestion()"
+          style="border-radius: 2%;"
         >
           Urmatoarea intrebare
         </button>
       </div>
       <div *ngIf="questionOrder == testLevel.testQuestions.length">
-        <button type="button" class="btn btn-dark" (click)="finish()">
+        <button type="button" class="btn btn-dark" (click)="finish()" style="border-radius: 2%;">
           Finish
         </button>
       </div>
@@ -86,15 +88,13 @@
 
 <!-- pagina cu rezultatele -->
 <div *ngIf="resultDisplayed">
-  <div *ngIf="passedLevel">
     <h2>Ai terminat testul</h2>
     <h2>Scorul tau este: {{ scores }}% </h2>
 
     <button type="button" class="btn btn-dark" [routerLink]="'/play'">
       Inapoi la categorii!
     </button>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
     <button type="button" class="btn btn-dark" (click)="reloadPage()">
       Mai incearca odata!
     </button>
@@ -152,8 +152,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
+    width: 35%;
     font-size: 30px;
+    border-radius: 50%;
   }
 
   @media screen and (min-width: 1500px) {
