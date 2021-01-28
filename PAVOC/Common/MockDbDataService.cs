@@ -1569,7 +1569,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://www.europafm.ro/wp-content/uploads/2017/07/Stefan-Cel-Mare.jpg",
+                    Image = "https://i.ibb.co/vVz0Gqs/history.png",
                     Text = ""
                 };
                 historyCategory.TestLevels.Add(testLevel1History);
@@ -1845,32 +1845,32 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "Ce a fost Mihai Viteazu?",
+                    Text = "Cine a fost Mihai Viteazu?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion8TestLevel1History);
 
                 var testQuestionAnswer1Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Secretar de stat",
+                    Text = "Regele Romaniei",
                     IsCorrect = false
                 };
                 testQuestion8TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1History);
 
                 var testQuestionAnswer2Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Voievod",
+                    Text = "Voievodul Romaniei",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ministru",
+                    Text = "Imparatul Romaniei",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Presedinte",
+                    Text = "Presedintele Romaniei",
                     IsCorrect = false
                 };
 
@@ -1882,32 +1882,32 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "Unde este ingropat capul lui Mihai Viteazu?",
+                    Text = "Cum se numea zeul Dacilor?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion9TestLevel1History);
 
                 var testQuestionAnswer1Question9TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Manastirea Putna",
+                    Text = "Allah",
                     IsCorrect = false
                 };
                 testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1History);
 
                 var testQuestionAnswer2Question9TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Manastirea Dealu",
+                    Text = "Zalmoxis",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question9TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Manastirea Caraiman",
+                    Text = "Buddha",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question9TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Bucuresti",
+                    Text = "Zeus",
                     IsCorrect = false
                 };
 
@@ -1917,7 +1917,7 @@ namespace PAVOC.Common
 
 
 
-
+                categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in test pt history
 
 
 
@@ -1951,7 +1951,6 @@ namespace PAVOC.Common
  
 
 
-                categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in test pt history
 
 
 
@@ -1967,7 +1966,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/e/ef/Romania_national_football_team_logo.svg/200px-Romania_national_football_team_logo.svg.png",
+                    Image = "https://i.ibb.co/S7mwjys/Shutterstock-Lisa-Kolbasa.png",
                     Text = ""
                 };
 
@@ -1977,32 +1976,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "De cine a fost invinsa Romania in sferturile de finala a Campionatului European din 2000?",
+                    Text = "Cine a inscris, pana in prezent, cele mai multe goluri in fotbalul profesionist?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion1TestLevel1Sports);
 
                 var testQuestionAnswer1Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Anglia",
+                    Text = " Lionel Messi",
                     IsCorrect = false
                 };
                 testQuestion1TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1Sports);
 
                 var testQuestionAnswer2Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Germania",
+                    Text = "Maradona",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Italia",
+                    Text = "Cristiano Ronaldo",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Suedia",
+                    Text = "Pele",
                     IsCorrect = false
                 };
 
@@ -2015,32 +2014,32 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Cine a marcat unicul gol din victoria decisiva a Romaniei contra Statelor Unite de la Cupa Mondiala 1994?",
+                    Text = "Care este echipa de fotbal cu cele mai multe trofee Cupa Campionilor?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion2TestLevel1Sports);
 
                 var testQuestionAnswer1Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Florin Raducioiu",
+                    Text = "FC Barcelona",
                     IsCorrect = false
                 };
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1Sports);
 
                 var testQuestionAnswer2Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ilie Dumitrescu",
+                    Text = "Manchester United",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Dan Petrescu",
+                    Text = "Real Madrid",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Gheorghe Hagi",
+                    Text = "PSG",
                     IsCorrect = true
                 };
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Sports);
@@ -2053,32 +2052,32 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Caderea de la paralele a Nadiei Comaneci de la Campionatele Mondiale din 1978, au trimis-o pe locul?",
+                    Text = "Cine este denumit cel mai bun basketballist din toate timpurile?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion3TestLevel1Sports);
 
                 var testQuestionAnswer1Question3TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "Kobe Bryant",
                     IsCorrect = false
                 };
                 testQuestion3TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Sports);
 
                 var testQuestionAnswer2Question3TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
+                    Text = "Michael Jordan",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question3TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "5",
+                    Text = "Lebron James",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question3TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "6",
+                    Text = "Stephen Curry",
                     IsCorrect = false
                 };
 
@@ -2131,32 +2130,32 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "Cate puncte a marcat in echipa McDonald's All-American-Team la finalul sezonului in anul 1980 ?",
+                    Text = "Cate titluri la simplu a castigat jucatorul de tenis Ilie Nastase ?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion5TestLevel1Sports);
 
                 var testQuestionAnswer1Question5TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "19.3",
+                    Text = "60",
                     IsCorrect = false
                 };
                 testQuestion5TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Sports);
 
                 var testQuestionAnswer2Question5TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "15.7",
+                    Text = "24",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question5TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "29.2",
+                    Text = "58",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question5TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "11.6",
+                    Text = "46",
                     IsCorrect = false
                 };
 
@@ -2169,32 +2168,32 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "Dupa moartea tatalui sau, ce zona a fondat Michael Jordan, in semn de recunostinta?",
+                    Text = "Cine este jucatorul de fotbal cu cele mai multe baloane de aur?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion6TestLevel1Sports);
 
                 var testQuestionAnswer1Question6TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Orlando Magic",
+                    Text = "Cristiano Ronaldo",
                     IsCorrect = false
                 };
                 testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Sports);
 
                 var testQuestionAnswer2Question6TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Chicago Boys & Girls Club",
+                    Text = "Lionel Messi",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question6TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Scottsdale Arizona",
+                    Text = "Andrea Pirlo",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question6TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Forbes Stars",
+                    Text = "Zlatan Ibrahimovic",
                     IsCorrect = false
                 };
 
@@ -2207,32 +2206,32 @@ namespace PAVOC.Common
                 {
                     Order = 7,
                     //TODO Petros -> change this
-                    Text = "Caderea de la paralele a Nadiei Comaneci de la Campionatele Mondiale din 1978, au trimis-o pe locul?",
+                    Text = "Ce echipa a invins nationala de fotbal U21 a Romaniei in sferturile de finala la EURO U21 din 2019?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion7TestLevel1Sports);
 
                 var testQuestionAnswer1Question7TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "3",
+                    Text = "Anglia U21",
                     IsCorrect = false
                 };
                 testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Sports);
 
                 var testQuestionAnswer2Question7TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "4",
+                    Text = "Germania U21",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question7TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "5",
+                    Text = "Suedia U21",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question7TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "6",
+                    Text = "Spania U21",
                     IsCorrect = false
                 };
 
@@ -2245,13 +2244,13 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "Care a fost nota exacta obtinuta de Nadia Comaneci la barna in anul 1979?",
+                    Text = "Ce jucator de tenis are in palmares cele mai multe titluri Grand Slam?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion8TestLevel1Sports);
 
                 var testQuestionAnswer1Question8TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "9.90",
+                    Text = "Ilie Nastase",
                     IsCorrect = false
                 };
 
@@ -2259,19 +2258,19 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer2Question8TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "9.98",
+                    Text = "Novak Djokovic",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question8TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "10.0",
+                    Text = "Rafael Nadal",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question8TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "9.95",
+                    Text = "Roger Federer",
                     IsCorrect = true
                 };
 
@@ -2285,32 +2284,32 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "Cate puncte a marcat in echipa McDonald's All-American-Team la finalul sezonului in anul 1980 ?",
+                    Text = "Care este scorul cu care s-a impus Franta in fata Croatiei in finala Cupei Mondiale din Rusia 2018 ?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion9TestLevel1Sports);
 
                 var testQuestionAnswer1Question9TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "19.3",
+                    Text = "1-0",
                     IsCorrect = false
                 };
                 testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Sports);
 
                 var testQuestionAnswer2Question9TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "15.7",
+                    Text = "2-1",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question9TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "29.2",
+                    Text = "4-2",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question9TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "11.6",
+                    Text = "3-2",
                     IsCorrect = false
                 };
 
@@ -2323,32 +2322,32 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "Dupa moartea tatalui sau, ce zona a fondat Michael Jordan, in semn de recunostinta?",
+                    Text = "In care din urmatoarele tari s-a tinut Campionatul European de fotbal din 2016?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion10TestLevel1Sports);
 
                 var testQuestionAnswer1Question10TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Orlando Magic",
+                    Text = "Portugalia",
                     IsCorrect = false
                 };
                 testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Sports);
 
                 var testQuestionAnswer2Question10TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Chicago Boys & Girls Club",
+                    Text = "Franta",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question10TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Scottsdale Arizona",
+                    Text = "Germania",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question10TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Forbes Stars",
+                    Text = "Polonia",
                     IsCorrect = false
                 };
 
@@ -2401,7 +2400,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "",
+                    Image = "https://i.ibb.co/zJ28X3V/30445-tumb-750-Xauto.jpg",
                     Text = ""
                 };
                 geographyCategory.TestLevels.Add(testLevel1Geography);
@@ -2485,32 +2484,32 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Din ce tara izvoraste Dunarea?",
+                    Text = "A cata planeta de la soare este Terra?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion3TestLevel1Geography);
 
                 var testQuestionAnswer1Question3TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Romania",
+                    Text = "a patra",
                     IsCorrect = false
                 };
                 testQuestion3TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Geography);
 
                 var testQuestionAnswer2Question3TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Germania",
+                    Text = "a treia",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question3TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ungaria",
+                    Text = "a doua",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question3TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Serbia",
+                    Text = "a cincea",
                     IsCorrect = false
                 };
 
@@ -2523,7 +2522,7 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Care este capitala Portugaliei?",
+                    Text = "Care este forma de relief predominanta in Romania?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion4TestLevel1Geography);
 
@@ -2750,7 +2749,7 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "Ce tip de lac este lacul Sf Ana?",
+                    Text = "Ce tip de lac este lacul Sfanta Ana?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
 
@@ -2840,7 +2839,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ytimg.com/vi/GhNkPKzp-NE/maxresdefault.jpg",
+                    Image = "https://i.ibb.co/R9vY3J6/The-20-Best-Royalty-Free-Music-Sites-in-2018.png",
                     Text = ""
                 };
 
@@ -3263,7 +3262,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "",
+                    Image = "https://i.ibb.co/t4CSnLC/hollywood-star-620x350.jpg",
                     Text = ""
                 };
 
