@@ -17,16 +17,16 @@
   <!-- pagina cu textul -->
   <div *ngIf="textDisplayed"> 
     <div *ngIf="learnLevel">
-        <h1> Learn Level {{learnLevel.learnLevelNumber}} </h1>
+      <h1 class="w3-animate-zoom"> Learn Level {{learnLevel.learnLevelNumber}} </h1>
         <br><br>
       
-        <img src="{{learnLevel.image}}" alt="">
+        <img class="w3-animate-left" src="{{learnLevel.image}}" alt="">
         <br><br><br>
         <div class=w3-container>
         <p style ="white-space: pre-line;">{{learnLevel.text}}</p>
         </div>
     </div>
-    <button type="button" class="btn btn-dark" (click)="goToQuestions()">Întrebări</button><br>
+    <button type="button" class="btn btn-dark" (click)="goToQuestions()"><i class="fa fa-question" aria-hidden="true"></i> Răspundeți la următoarele întrebări <i class="fa fa-question" aria-hidden="true"></i></button><br>
   </div>
 
   <!-- pagina cu intrebarile -->
@@ -34,7 +34,7 @@
   <div *ngIf="questionsDisplayed">
     <div *ngIf="question">
       <br><br>
-        <h2>{{question.text}}</h2>
+      <h2>{{question.text}}</h2>
         <br><br>
         
             <div class="intrebari" *ngFor="let answer of question.learnQuestionAnswers">
@@ -43,14 +43,14 @@
         
         <br><br><br><br><br><br>
         <div *ngIf="questionOrder > 1">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="previousQuestion()">Întrebarea anterioară</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="previousQuestion()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>&nbsp; Întrebarea anterioară</button>
         </div>
         <br><br>
         <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="nextQuestion()">Următoarea întrebare</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="nextQuestion()">Următoarea întrebare &nbsp;<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> </button>
         </div>
         <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
-            <button type="button" class="btn btn-dark" (click)="finish()">Finalizare</button>
+            <button type="button" class="btn btn-dark" (click)="finish()"><i class="fa fa-check-circle" aria-hidden="true"></i> Finalizare <i class="fa fa-check-circle" aria-hidden="true"></i></button>
         </div>
     </div>
   </div>
@@ -104,21 +104,29 @@
     h1{
       font-size:30px;
       text-align:center;
+      font-family: "Times New Roman", Times, serif;
     }
 
     h2{
       text-align: center;
       font-size: 300%;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    p{
+      font-family: "Times New Roman", Times, serif;
     }
 
     .intrebari{
       border-radius: 20px;
       padding: 10px;
+      font-family: "Times New Roman", Times, serif;
     }
 
     .intrebari p{
       font-size: 45px;
       text-align: center;
+      font-family: "Times New Roman", Times, serif;
 
 }
 
@@ -149,6 +157,7 @@
     margin-right: auto;
     width: 55%;
     font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
     }
     
     @media screen and (min-width: 1500px)
@@ -158,8 +167,9 @@
       justify-content: center;
       border-radius: 20% 20% 20% 20%;
       border: none;
-      padding: 4% 29%;
+      padding: 4% 27%;
       text-decoration:none;
+      font-family: "Times New Roman", Times, serif;
     }  
     }
 
