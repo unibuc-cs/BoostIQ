@@ -67,7 +67,7 @@
       </div>
       <br /><br /><br />
       <div *ngIf="questionOrder < testLevel.testQuestions.length">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
           type="button"
           class="btn btn-dark"
           (click)="nextQuestion()"
@@ -87,17 +87,17 @@
 <!-- pagina cu rezultatele -->
 <div *ngIf="resultDisplayed">
   <div *ngIf="passedLevel">
-    <h2>Ai terminat testul, Bravo</h2>
-    <button type="button" class="btn btn-dark" (click)="reloadPage()">
-      GATA
+    <h2>Ai terminat testul</h2>
+    <h2>Scorul tau este: {{ scores }}% </h2>
+
+    <button type="button" class="btn btn-dark" [routerLink]="'/play'">
+      Inapoi la categorii!
     </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </div>
-  <div *ngIf="!passedLevel">
-    <h2>Ai raspuns gresit!</h2>
     <button type="button" class="btn btn-dark" (click)="reloadPage()">
-      Mai incerc odata
+      Mai incearca odata!
     </button>
-  </div>
 </div>
 
 <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->

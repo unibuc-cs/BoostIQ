@@ -22,6 +22,7 @@ export class PlayCategoryComponent implements OnInit {
   public answers = {};
 
   public passedLevel: boolean;
+  public scores: number;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -107,6 +108,7 @@ export class PlayCategoryComponent implements OnInit {
     });
 
     let score = correctAnswers / totalQuestions;
+    this.scores= score*100;
     if (score >= 0.5) {
       this.passedLevel = true;
       this.api
