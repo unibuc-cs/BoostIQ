@@ -125,4 +125,6 @@ export class PlayCategoryComponent implements OnInit {
   reloadPage() {
     window.location.reload();
   }
+
 }
+

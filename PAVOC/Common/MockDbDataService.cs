@@ -1950,14 +1950,14 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "In ce an a avut loc 'Partida de ceai de la Boston' ?",
                 };
-                testLevel1History.TestQuestions.Add(testQuestion9TestLevel1History);
+                testLevel1History.TestQuestions.Add(testQuestion10TestLevel1History);
 
                 var testQuestionAnswer1Question10TestLevel1History = new TestQuestionAnswerEntity()
                 {
                     Text = "1789",
                     IsCorrect = false
                 };
-                testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1History);
+                testQuestion10TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1History);
 
                 var testQuestionAnswer2Question10TestLevel1History = new TestQuestionAnswerEntity()
                 {
@@ -2819,7 +2819,7 @@ namespace PAVOC.Common
                     //TODO Petros -> change this
                     Text = "Cate continente are Terra?",
                 };
-                testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
+                testLevel1Geography.TestQuestions.Add(testQuestion10TestLevel1Geography);
 
                 var testQuestionAnswer1Question10TestLevel1Geography = new TestQuestionAnswerEntity()
                 {

@@ -59,7 +59,7 @@ namespace PAVOC
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            var initDB = true; // change this to true to fill db with mock data
+            var initDB = false; // change this to true to fill db with mock data
 
             if (initDB)
                 MockDbDataService.Fill();
