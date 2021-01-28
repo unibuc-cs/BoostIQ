@@ -47,22 +47,22 @@ export class PlayCategoryComponent implements OnInit {
 
   selectAnswer(answerId) {
     var alreadySelected = this.answers[this.questionOrder];
-    if (alreadySelected) {
-      document.getElementById("answer" + alreadySelected).style.background =
-        "none"; // clear old selection
-    }
+    // if (alreadySelected) {
+    //   document.getElementById("answer" + alreadySelected).style.background =
+    //     "none"; // clear old selection
+    // }
 
     this.answers[this.questionOrder] = answerId;
   }
 
-  getBackgroundColor(answerId) {
-    var answer = this.answers[this.questionOrder];
-    if (answer == answerId) {
-      return "green";
-    } else {
-      return "none";
-    }
-  }
+  // getBackgroundColor(answerId) {
+  //   var answer = this.answers[this.questionOrder];
+  //   if (answer == answerId) {
+  //     return "green";
+  //   } else {
+  //     return "none";
+  //   }
+  // }
 
   goToQuestions() {
     this.textDisplayed = false;
