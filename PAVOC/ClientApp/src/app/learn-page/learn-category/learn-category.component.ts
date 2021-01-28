@@ -96,7 +96,7 @@ export class LearnCategoryComponent implements OnInit {
     });
 
     let score = correctAnswers/totalQuestions;
-    if(score >= 0.5) {
+    if(score >= 1.0) {
       this.passedLevel = true;
       this.api.passLearnLevel(this.authService.getUserId(), this.learnLevel.learnLevelEntityId).subscribe(result => {});
     } else {

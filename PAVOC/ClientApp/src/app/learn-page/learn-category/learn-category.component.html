@@ -26,7 +26,7 @@
         <p style ="white-space: pre-line;">{{learnLevel.text}}</p>
         </div>
     </div>
-    <button type="button" class="btn btn-dark" (click)="goToQuestions()">Intrebari</button><br>
+    <button type="button" class="btn btn-dark" (click)="goToQuestions()">Întrebări</button><br>
   </div>
 
   <!-- pagina cu intrebarile -->
@@ -38,19 +38,19 @@
         <br><br>
         
             <div class="intrebari" *ngFor="let answer of question.learnQuestionAnswers">
-                <button type="button" class="btn btn-dark"  [id]="'answer' + answer.learnQuestionAnswerEntityId" (click)="selectAnswer(answer.learnQuestionAnswerEntityId)">{{answer.text}}</button>
+                <button type="button" class="btn btn-dark w3-center w3-animate-left" [id]="'answer' + answer.learnQuestionAnswerEntityId" (click)="selectAnswer(answer.learnQuestionAnswerEntityId)">{{answer.text}}</button>
             </div>
         
-        <br><br><br>
+        <br><br><br><br><br><br>
         <div *ngIf="questionOrder > 1">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="previousQuestion()">Intrebarea anterioara</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="previousQuestion()">Întrebarea anterioară</button>
         </div>
-        <br><br><br>
+        <br><br>
         <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="nextQuestion()">Urmatoarea intrebare</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="nextQuestion()">Următoarea întrebare</button>
         </div>
         <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
-            <button type="button" class="btn btn-dark" (click)="finish()">Finish</button>
+            <button type="button" class="btn btn-dark" (click)="finish()">Finalizare</button>
         </div>
     </div>
   </div>
@@ -59,19 +59,27 @@
   <!-- pagina cu rezultatele -->
   <div *ngIf="resultDisplayed">
     <div *ngIf="passedLevel">
-        <h2>Felicitari! Ai raspuns corect la toate intrebarile!</h2>
-
-        <button type="button" class="btn btn-dark" (click)="reloadPage()">Nivelul urmator</button>
+        <br><br><br>
+        <h2 class="w3-center w3-animate-zoom">Felicitări! Ai răspuns corect la toate întrebările!</h2>
+        <br><br>
+        <button type="button" class="btn btn-dark" (click)="reloadPage()">Nivelul următor</button>
+        <br><br><br><br>
+        <img src="https://i.gifer.com/3VQL.gif" >
     </div>
     <div *ngIf="!passedLevel">
-        <h2>Ai raspuns gresit!</h2>
-        <button type="button" class="btn btn-dark" (click)="reloadPage()">Incearca din nou</button>
+        <br><br><br>
+        <h2>Ai răspuns greșit!</h2>
+        <br><br>
+        <button type="button" class="btn btn-dark" (click)="reloadPage()">Încearcă din nou</button>
     </div>
   </div>
 
   <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
   <div *ngIf="finishedAllLevels">
-    <h2>Ai finalizat toate nivelele pentru aceasta categorie!</h2>
+    <br><br><br>
+    <h2 class="w3-center w3-animate-zoom">Felicitări! Ai finalizat toate nivelele pentru această categorie!</h2>
+    <br><br><br>
+    <img src="https://i.gifer.com/WS2k.gif" style="width:30%;">
   </div>
 
 
@@ -83,6 +91,14 @@
 
     .w3-container{
       font-size: 24px;
+    }
+
+    .w3-animate-zoom{
+        animation-duration: 2.5s;
+    }
+
+    .w3-animate-left{
+        animation-duration: 2.3s;
     }
     
     h1{
