@@ -144,8 +144,8 @@ namespace PAVOC.Common
 
                 var learnQuestionAnswer1Question2LearnLevel1History = new LearnQuestionAnswerEntity()
                 {
-                    Text = "Voroneț",
-                    IsCorrect = true
+                    Text = "Sucevița",
+                    IsCorrect = false
                 };
                 learnQuestion2LearnLevel1History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel1History);
 
@@ -233,7 +233,7 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Ce prieteni a luat in exil Napoleon Bonaparte?",
+                    Text = "Ce prieten a luat in exil Napoleon Bonaparte?",
                 };
                 learnLevel2History.LearnQuestions.Add(learnQuestion2LearnLevel2History);
 
@@ -247,8 +247,8 @@ namespace PAVOC.Common
 
                 var learnQuestionAnswer2Question2LearnLevel2History = new LearnQuestionAnswerEntity()
                 {
-                    Text = "Henri-Gratien Bertrand",
-                    IsCorrect = true
+                    Text = "Maximilien Robespierre",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer3Question2LearnLevel2History = new LearnQuestionAnswerEntity()
@@ -354,7 +354,7 @@ namespace PAVOC.Common
                 var learnQuestionAnswer4Question2LearnLevel3History = new LearnQuestionAnswerEntity()
                 {
                     Text = "Perestroika",
-                    IsCorrect = true
+                    IsCorrect = false
                 };
 
                 learnQuestion2LearnLevel3History.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel3History);
@@ -457,7 +457,7 @@ namespace PAVOC.Common
                 var learnQuestionAnswer4Question2LearnLevel1Sports = new LearnQuestionAnswerEntity()
                 {
                     Text = "Gheorghe Hagi",
-                    IsCorrect = true
+                    IsCorrect = false
                 };
                 learnQuestion2LearnLevel1Sports.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel1Sports);
                 learnQuestion2LearnLevel1Sports.LearnQuestionAnswers.Add(learnQuestionAnswer3Question2LearnLevel1Sports);
@@ -984,7 +984,7 @@ namespace PAVOC.Common
                 {
                     LearnLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image ="https://i.ytimg.com/vi/GhNkPKzp-NE/maxresdefault.jpg",
+                    Image = "https://www.nationalfm.ro/data_files/blog/large_blog_7-cele-mai-frumoase-piese-de-la-holograf_11.jpg?cache=1474875677",
                     Text = "HOLOGRAF \n\n\n" +
                            "Holograf este o formație românească de muzică rock înființată la București în 1977, de muzicianul Mihai Pocorschi. Holograf este printre cele mai de succes trupe din România, fiecare dintre albumele lor conținând câteva cântece care au ajuns hit-uri în România. Formația este în continuare foarte activă și realizează turnee lungi, cu concerte foarte bine primite de public.\n\n" +
                            "În anii 1990 trupa și-a schimbat stilul într-un rock modern.\n\n" +
@@ -992,18 +992,18 @@ namespace PAVOC.Common
                            "În ciuda unor zvonuri care afirmau că Holograf s-ar fi despărțit în 2015, conform propriului lor site web,formația a concertat în Piatra Neamț în 12 mai 2015, la Sala Polivalentă. Dan Bittman își urmează în continuare cariera solo, cu noi piese, una dintre ele fiind „Și îngerii au demonii lor”, dar asta nu are nimic de-a face cu activitatea în cadrul grupului din care face parte începând cu anul 1985.\n\n" +
                            "Discografia formației Holograf cuprinde aproape 30 de materiale audio și video, lansate de-a lungul celor patru decenii de existență a grupului. Holograf a debutat discografic în anul 1978, cu piesa „Lungul drum al zilei către noapte” (solist vocal Ștefan Rădescu), inclusă pe albumul colectiv Formații de muzică pop 3 din cadrul seriei Formații rock, editată de casa de discuri Electrecord. Primul album integral semnat Holograf a apărut în anul 1983, avându-l ca solist vocal pe Gabriel Cotabiță. După ce Dan Bittman a preluat rolul de vocalist în Holograf în 1985, au urmat alte 11 albume de studio, cel mai recent, intitulat Life Line, fiind lansat în noiembrie 2015. În 1990 a apărut singurul maxi-single al formației, ce include patru piese. Un alt maxi-single a fost lansat de Dan Bittman (ca disc solo) în 1994, anul în care solistul de la Holograf a reprezentat România în cadrul concursului Eurovision. Discografia Holograf este completată de două albume înregistrate acustic în concert (69% Unplugged - Live și Patria Unplugged), un disc promoțional din concert (Live - Vinarte), cinci compilații (cu o parte dintre piese reînregistrate special pentru apariția acestor discuri „best of”) și patru materiale video, filmate în concert.\n\n" +
                            "Albume de studio \n\n" +
-                           "Holograf 1 (1983)\n\n" +
-                           "Holograf 2 (1987)\n\n" +
-                           "Holograf III (1988)\n\n" +
-                           "Banii vorbesc (1991)\n\n" +
-                           "World Full of Lies (1993, reeditat în 2013)\n\n" +
-                           "Stai în poala mea (1995)\n\n" +
-                           "Supersonic (1998, reeditat în 2000)\n\n" +
-                           "Holografica (2000)\n\n" +
-                           "Pur și simplu (2003, reeditat în 2013)\n\n" +
-                           "Taina (, 2006, reeditat în 2013)\n\n" +
-                           "Love Affair (2012)\n\n" +
-                           "Life Line (2015)\n\n"
+                           "Holograf 1 (1983)\n" +
+                           "Holograf 2 (1987)\n" +
+                           "Holograf III (1988)\n" +
+                           "Banii vorbesc (1991)\n" +
+                           "World Full of Lies (1993, reeditat în 2013)\n" +
+                           "Stai în poala mea (1995)\n" +
+                           "Supersonic (1998, reeditat în 2000)\n" +
+                           "Holografica (2000)\n" +
+                           "Pur și simplu (2003, reeditat în 2013)\n" +
+                           "Taina (, 2006, reeditat în 2013)\n" +
+                           "Love Affair (2012)\n" +
+                           "Life Line (2015)\n"
 
                 };
 
@@ -1187,7 +1187,7 @@ namespace PAVOC.Common
                 {
                     LearnLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://api.time.com/wp-content/uploads/2015/12/the-beatles2.jpg",
+                    Image = "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-7349-20121003-beatles-1962-624x420-1349291947.jpg?resize=1800,1200&w=1800",
                     Text = "THE BEATLES \n\n\n" +
                            "The Beatles a fost unul dintre grupurile a cărui muzică a fost cea mai influentă pentru Era Rock care a urmat. Grupul a fost alcătuit din John Lennon (vocal, chitară ritmică), Paul McCartney (vocal, chitară bas), George Harrison (chitară solo) și Ringo Starr (baterie).\n\n" +
                            "Inițial The Four Fabs au avut ca țintă generațiile de tineri rezultate de după al Doilea Război Mondial, în special în țările de limbă engleză, precum Regatul Unit, SUA, Canada și Australia, dar au devenit după anul lor cel mai glorios, 1964, iubiți și admirați de multiple generații. Judecând după multiple criterii, dintre care vânzările muzicale ocupă un loc însemnat, -The Beatles- este unul din cele mai faimoase și de succes grupuri în istoria muzicii rock, contorizând peste 1,1 miliarde de discuri vândute în lumea întreagă.\n\n" +
@@ -1293,9 +1293,22 @@ namespace PAVOC.Common
                 {
                     LearnLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = " \n\n\n" 
-                    };
+                    Image = "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDIwJTJGMDcl/MkYxNCUyRjEyMDYyNTZfMTIwNjI1Nl9H/ZXR0eUltYWdlcy0xMTYxNzcxNjcxLmpw/ZyZ3PTcwMCZoPTQyMCZoYXNoPTIxY2Ux/NTBhZDg1OWM0NzJjZGJiYTBmMzNlMWNkNWFl.thumb.jpg",
+                    Text = "SIMONA HALEP \n\n\n" +
+                           "Simona Halep (n. 27 septembrie 1991, Constanța, România) este o jucătoare de tenis din România care a atins prima poziție în clasamentul mondial WTA, în două rânduri, între 2017 și 2019. A ocupat această poziție timp de 64 de săptămâni, fiind din acest punct de vedere a zecea din istoria tenisului în clasamentul longevității ca lider al circuitului. Halep a încheiat anii 2017 și 2018 pe primul loc în lume în clasamentul WTA. În prezent ea se află pe locul 2 mondial. \n\n" +
+                           "Halep a câștigat turneele de Grand Slam de la Roland Garros (2018) si Wimbledon (2019), pierzând anterior alte trei finale: două la Roland Garros (2014, 2017) și una la Australian Open (2018). A disputat și finala Turneului Campionilor (2014). Ea a câștigat la simplu de-a lungul carierei 20 turnee și a mai disputat alte 17 finale, fiind cea mai titrată jucătoare de tenis din istoria României. \n\n" +
+                           "A fost desemnată Jucătoarea Anului 2018 de WTA, de asemeni și Cea Mai Populară Jucătoare în 2014 și respectiv 2015 dar și Favorita Fanilor la simplu în 2017, 2018 și 2019. În decembrie 2018, Halep a fost aleasă de ESPN cel mai dominant jucător de tenis al anului în lume figurând în topul The Dominant 20 pe locul 9 înaintea unor alți mari sportivi ai planetei, ca Novak Djokovic, Lewis Hamilton sau LeBron James. Ea a câștigat 35,85 milioane de dolari din tenis, fiind pe locul 4 all-time, după surorile Williams și Șarapova. \n\n" +
+                           "Simona s-a născut într-o familie de aromâni în orașul Constanța. Tatăl ei, Stere (jucător de fotbal la echipa Săgeata Stejaru), deținea o fabrică de lactate. Ea a început să joace tenis la 4 ani, fiind antrenată de Ion Stan care era și antrenorul fratelui ei mai mare. La vârsta de 6 ani ea practica zilnic acest sport. In copilărie a jucat și handbal. S-a mutat în București la 16 ani pentru a-și continua cariera în tenis. Doi dintre idolii ei din tinerețe din tenis au fost Justine Henin și Andrei Pavel, iar din afara tenisului Gheorghe Hagi. \n\n" +
+                           "Simona a început studiile la Școala Gimnazială nr. 30 „Gheorghe Țițeica” din Constanța. Între anii 2006 și 2010, Simona Halep a fost eleva Liceului cu Program Sportiv „Nicolae Rotaru” din Constanța. \n\n" +
+                           "În 2014 și-a luat licența la Facultatea de Educație Fizică și Sport a Universității „Ovidius” din Constanța. \n\n" +
+                           "Simona începe perfect anul 2018, câștigând turneul de la Shenzen. În finală, ea a învins-o pe campioana din 2017 Katerina Siniakova în trei seturi: 6-1, 2-6, 6-0. De asemenea, s-a impus și la proba de dublu de la turneul chinez alături de Irina-Camelia Begu, învingând în ultimul act perechea Barbora Krejcikova/Katerina Siniakova, favorite principale. Pentru Simona e primul titlu WTA la dublu, iar pentru Irina al șaptelea. \n\n" +
+                           "Halep pierde finala Australian Open, în fața danezei Caroline Wozniacki, într-un meci strâns, de trei seturi: 6–7(2–7), 6–3, 4–6. \n\n" +
+                           "În iunie 2018, Simona Halep reușește să câștige prima sa finală de Grand Slam la Roland Garros, învingând-o pe Sloane Stephens, numărul 10 mondial, cu 3-6, 6-4, 6-1, după ce pierduse primele doua finale la acest turneu cu Maria Șarapova (în 2014) și Jelena Ostapenko (în 2017). \n\n" +
+                           "În august 2018, Simona Halep a câștigat din nou turneul WTA de la Montreal, impunându-se pentru a doua oară consecutiv în fața americancei Sloane Stephens. Tot în august a ajuns în finala turneului de la Cincinnati, unde a pierdut în fața lui Kiki Bertens, deși a avut minge de meci în setul doi. \n\n" +
+                           "În septembrie 2018, Simona Halep a ajuns la 47 de săptămâni în fruntea ierarhiei mondiale și ocupă locul 11 într-un clasament all-time, apropiindu-se și mai mult de belarusa Victoria Azarenka, aflată pe 10, cu 51 de săptămâni pe prima poziție a clasamentului WTA. \n\n" +
+                           "În acea lună, a fost eliminată însă din primul tur la turneul de la Wuhan în ciuda unor dureri puternice, și a abandonat în primul tur la Beijing. O investigație cu RMN a relevat faptul că Halep suferă de hernie de disc. Presa a speculat că nu ar fi trebuit să meargă la aceste turnee, dar a făcut-o pentru a obține bonusul de 1 milion de dolari din partea WTA pentru participarea la toate turneele Premier Mandatory și la patru din cele cinci turnee Premier Five.  \n\n" 
+                           
+                };
 
                 celebritiesCategory.LearnLevels.Add(learnLevel1Celebrities);
 
@@ -1303,32 +1316,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Pe cine a învins Simona Halep pentru a câștiga primul ei titlu de Grand Slam?",
                 };
                 learnLevel1Celebrities.LearnQuestions.Add(learnQuestion1LearnLevel1Celebrities);
 
                 var learnQuestionAnswer1Question1LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Maria Sarapova",
                     IsCorrect = false
                 };
                 learnQuestion1LearnLevel1Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel1Celebrities);
 
                 var learnQuestionAnswer2Question1LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Serena Williams",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer3Question1LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = false
+                    Text = "Sloane Stephens",
+                    IsCorrect = true
                 };
 
                 var learnQuestionAnswer4Question1LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Caroline Wozniacki",
                     IsCorrect = false
                 };
 
@@ -1341,32 +1354,32 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Câte săptămâni a reușit să stea Simona Halep în fruntea clasamentului WTA?",
                 };
                 learnLevel1Celebrities.LearnQuestions.Add(learnQuestion2LearnLevel1Celebrities);
 
                 var learnQuestionAnswer1Question2LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "51",
+                    IsCorrect = false
                 };
                 learnQuestion2LearnLevel1Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel1Celebrities);
 
                 var learnQuestionAnswer2Question2LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "45",
                     IsCorrect = false
                 };
 
                 var learnQuestionAnswer3Question2LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "17",
                     IsCorrect = false
                 };
 
                 var learnQuestionAnswer4Question2LearnLevel1Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "47",
                     IsCorrect = true
                 };
                 learnQuestion2LearnLevel1Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer2Question2LearnLevel1Celebrities);
@@ -1379,8 +1392,15 @@ namespace PAVOC.Common
                 {
                     LearnLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = " \n\n\n"
+                    Image = "https://www.sheknows.com/wp-content/uploads/2019/08/angelina-jolie-1.jpg?w=1920",
+                    Text = "ANGELINA JOLIE \n\n\n" +
+                           "Angelina Jolie (născută Angelina Jolie Voight, n. 4 iunie 1975, Los Angeles, Comitatul Los Angeles, California, SUA) este o actriță și regizoare de film americană; laureată a unui Premiu Oscar, trei Premii Globul de Aur și două Screen Actors Guild Awards. A fost numită de către Forbes cea mai bine plătită actriță de la Hollywood în 2009, 2011, și 2013. Viața ei fiind pentru moment una din cele mai mediatizate. A fost numită „cea mai frumoasă femeie din lume” de reviste ca Vogue, People și Vanity Fair, iar Esquire, FHM și Empire au numit-o „cea mai sexy femeie în viață”. \n\n" +
+                           "Debutul ei pe micile ecrane a avut loc în copilărie, alături de tatăl ei Jon Voight, în filmul Lookin' to Get Out (1982), dar cariera ei de actriță a început abia zece ani mai târziu, în producția cu buget redus Cyborg 2 (1993). Primul ei rol de succes a fost în filmul Hackers (1995). De asemenea a jucat în George Wallace (1997), un film biografic în jurul căruia au avut loc multe controverse. Mai târziu a jucat în Gia (1998), și a obținut un premiul Oscar pentru cea mai bună actriță într-un rol secundar pentru drama Girl, Interrupted (1999). Jolie a câștigat faima internațională datorită rolulului eroinei de jocuri video Lara Croft în filmul Lara Croft: Tomb Raider (2001) și apoi Lara Croft Tomb Raider: The Cradle of Life (2003). Și-a continuat cariera de star de filme de acțiune cu Mr. & Mrs. Smith (2005), Wanted (2008) și Salt (2010), și a primit aprecere critică pentru performanța sa în dramele A Mighty Heart (2007) și Changeling (2008). \n\n" +
+                           "Divorțată de actorii Jonny Lee Miller și Billy Bob Thornton, acum este căsătorită cu actorul Brad Pitt, acest cuplu atrăgând atenția întregii lumi. Jolie și Pitt au împreună șase copii, dintre care trei copii biologici - Shiloh, Vivienne Marchelline și Knox Leon, și trei adoptați: Maddox, Pax, și Zahara. Jolie susține cauze umanitare în toată lumea și în calitate de Ambasador al Bunăvoinței (în engleză Goodwill Ambassador) pentru Organizația UNHCR, sprijinind mult refugiații. \n\n" +
+                           "Născută în Los Angeles, California, Angelina Jolie este fiica actorilor Jon Voight și Marcheline Bertrand. Este sora actorului James Haven și nepoata cantautoarei Chip Taylor. Nașii săi sunt actorii Jacqueline Bisset și Maximilian Schell. Pe linia tatălui, Jolie are rădăcini germane și slovace, iar pe linia mamei, primar rădăcini franco-canadiene, olandeze și germane. Ca și mama sa, Jolie a spus că este parte a Iroquois, deși unicul său strămoș indigen cunoscut era un huron din secolul al XVII-lea. \n\n" +
+                           "După despărțirea părinților săi în 1976, Angelina Jolie și fratele ei au trăit cu mama lor, care a abandonat actoria pentru a se focusa pe creșterea copiilor. În copilărie, ea adesea privea filme cu mama sa și astfel i-a apărut interesul față de actorie, iar la vârsta de cinci ani deja a făcut parte din distribuția fimulului tatălui său Lookin' to Get Out (1982). Când Jolie avea șase ani, mama sa și partnerul său, cineastul Bill Day, s-au mutat cu traiul în Palisades, New York; iar peste cinci ani s-au reîntors la Los Angeles. Jolie a decis atunci că vrea să devină actriță și s-a înscris la Lee Strasberg Theatre Institute, unde a urmat cursuri timp de doi ani și a apărut în câteva producții de scenă. \n\n" +
+                           "Jolie a intrat la Beverly Hills High School, unde se simțea izolată printre copiii unor familii înstărite din zonă, întrucât mama sa avea venituri mult mai modeste. Ea a fost tachinată de către alți elevi, pentru că era foarte slabă și purta ochelari și aparat dentar. Încercările ei timpurii de a intra în lumea modeling-ului, la insistența mamei sale, s-au soldat fără succes. Atunci ea s-a transferat la Moreno High School, o școală alternativă, unde a devenit un -outsider punk-, purtând haine negre complet, dansând moshing și experimentând cu boyfriend-ul său jocul de lame/cuțite (BDSM). Ea a renunțat la cursurile de actorie și începea să aspire să devină director funerar, luând la domociliu cursuri de îmbălsămare. La vârsta de 16 ani, după ce s-a rupt relația, Jolie a terminat liceul și a închiriat un apartament propriu, înainte de a reveni la studii teatrale, deși în 2004 s-a referit la această perioadă cu observația, -Sunt în inimă — și mereu voi fi — doar un copil punk cu tatuaje.- \n\n" +
+                           "Ca adolescent, Angelinei i-a fost greu să se conecteze emoțional cu alte persoane și în rezultat ea se autoflagela, comentând mai târziu: „Din anumite motive, ritualul de a mă tăia și a simți durerea, a mă simți vie probabil, simțind un fel de ușurare, a fost ceva terapeutic pentru mine.” De asemenea, ea mereu lupta cu insomnia și tulburări de alimentație, și a început să experimenteze cu drogurile; la 20 de ani folosind deja „aproape fiecare drog posibil”, în particular heroina. Jolie suferea episoade de depresie și de două ori și-a pus în plan să comită suicid — la vârsta de 19 și apoi la 22 de ani, ea atunci încercând să angajeze un asasin pentru a o ucide. La vârsta de 24 de ani, ea a avut parte de o criză de nervi și a fost internată pentru 72 de ore în secția de psihiatrie de la Ronald Reagan UCLA Medical Center. Doi ani mai târziu, după adoptarea primului copil, Jolie și-a găsit liniștea în viața sa. \n\n"
                 };
 
                 celebritiesCategory.LearnLevels.Add(learnLevel2Celebrities);
@@ -1389,32 +1409,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Câți copii biologici are Angelina Jolie împreună cu Brad Pitt?",
                 };
                 learnLevel2Celebrities.LearnQuestions.Add(learnQuestion1LearnLevel2Celebrities);
 
                 var learnQuestionAnswer1Question1LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "2",
                     IsCorrect = false
                 };
-                learnQuestion1LearnLevel2History.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2History);
+                learnQuestion1LearnLevel2Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel2Celebrities);
 
                 var learnQuestionAnswer2Question1LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = false
+                    Text = "3",
+                    IsCorrect = true
                 };
 
                 var learnQuestionAnswer3Question1LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "4",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer4Question1LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "5",
                     IsCorrect = false
                 };
 
@@ -1427,33 +1447,33 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cum s-a numit filmul de debut al actriței Angelina Jolie?",
                 };
                 learnLevel2Celebrities.LearnQuestions.Add(learnQuestion2LearnLevel2Celebrities);
 
                 var learnQuestionAnswer1Question2LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = false
+                    Text = "Cyborg 2",
+                    IsCorrect = true
                 };
 
                 learnQuestion2LearnLevel2Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel2Celebrities);
 
                 var learnQuestionAnswer2Question2LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Hackers",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer3Question2LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Get Out",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer4Question2LearnLevel2Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Gia",
                     IsCorrect = false
                 };
 
@@ -1468,9 +1488,18 @@ namespace PAVOC.Common
                 {
                     LearnLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = " \n\n\n"
-                    };
+                    Image = "https://i.cbc.ca/1.5792670.1604684202!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_780/climate-change-monaco.JPG",
+                    Text = "JOHNNY DEPP \n\n\n" +
+                           "John „Johnny” Christopher Depp II (n. 9 iunie 1963, Owensboro, Kentucky, SUA) este un actor, scenarist, regizor, producător și muzician american. A câștigat Globul de Aur și premiul academiei Screen Actors Guid pentru Cel Mai Bun Actor. El a ieșit în evidență în anii 1981, odată cu serialul 21 Jump Street, devenind un idol al adolescenților. \n\n" +
+                           "Depp a acceptat provocarea vieții lui de a accepta roluri -mai mari decât viața-, începând cu un rol suport în filmul lui Oliver Stone, Platoon, reprezentând Războiul din Vietnam și care a apărut în 1986, apoi a jucat rolul principal în filmul fantezist Edward Scissorhands (1990). Mai târziu a experimentat succesul de box- office în aventura fantastică Sleepy Hollow (1999), apoi în fantasticul Pirates of the Caribbean: The Curse of the Black Pearl (2003) și în continuările acestuia. A continuat cu Charlie and the Chocolate Factory (2005), filmul fantastic Alice in Wonderland (2010) și a dat voce personajului principal din comedia western animată Rango (2011). În nouă din filmele lui a colaborat cu directorul, producătorul și prietenul său, Tim Burton. \n\n" +
+                           "Depp este considerat a fi unul dintre cei mai buni actori de film pe plan mondial. A reușit să câștige laudele criticilor pentru performanțele sale, care au inclus următoarele roluri: directorul și regizorul Ed Wood în Ed Wood, agentul FBI sub acoperire Joseph D. Pistone în Donnie Brasco, autorul J.M. Barrie în Finding Neverland, și Whitey Bulger, gangsterul american din Black Mask. Filmele lui Depp au avut încasări de peste 3.2 miliarde de dolari în box-office-ul american și peste 8 miliarde de dolari pe plan mondial. Seria Pirații din Caraibe a strâns 3 miliarde, Alice in Wonderland 1 miliard, Charlie și Fabrica de Ciocolată 474 milioane și Turistul 278 milioane. \n\n" +
+                           "Johnny Depp a fost căsătorit cu Lori Anne Allison din 20 decembrie 1983 până în 1985, când cei doi au divorțat. Ulterior a fost logodit cu actrițele Jennifer Grey și Sherilyn Fenn la sfârșitul anilor 1980, iar în anii 1990 a fost într-o relație cu Winona Ryder, pentru care el și-a tatuat „WINONA FOREVER” pe brațul drept. În 1998, după o relație de patru ani cu supermodelul britanic Kate Moss, Depp a început o relație cu actrița și cântăreața franceză Vanessa Paradis, pe care a întâlnit-o la filmările pentru The Ninth Gate. După 14 ani de relație și în urma câtorva luni de speculații media, în iunie 2012 Depp și Paradis și-au anunțat despărțirea. \n\n" +
+                           "Cel de-al doilea mariaj al lui Depp este cu actrița și modelul Amber Heard. Cei doi sunt împreună din 2012, de la filmările pentru The Rum Diary (Jurnalul unui iubitor de rom) și s-au căsătorit pe 4 februarie 2015, într-o ceremonie privată la casa lor din Los Angeles. \n\n" +
+                           "Depp are doi copii cu Vanessa Paradis: o fată, Lily-Rose Melody Depp (n. 1999), și un băiat, John „Jack” Christopher Depp III (n. 2002). În 2007, fiica lui Depp s-a vindecat după o boală serioasă, o infecție cu bacteria E. coli, care i-a cauzat disfuncționalități ale rinichilor, ceea ce a dus la perioade îndelungate de spitalizare. Ca mulțumire față de Great Ormond Street Hospital, în noiembrie 2007 Depp a vizitat spitalul îmbrăcat în ținuta lui „Jack Sparrow” și a petrecut patru ore citind povești copiilor. În 2008, el a donat spitalului £1 milion (~ $2 milioane). \n\n" +
+                           "Și-a făcut debutul în A Nightmare On Elm Street (1984). În 1987 i-a luat locul lui Jeff Yagher în rolul polițistului sub acoperire Tommy Hanson în serialul TV foarte popular 21 Jump Street (1987). În 1990, după câteva roluri mai puțin importante, a început colaborarea fructuoasă cu regizorul Tim Burton. Primul film la care colaborează cei doi este Edward Scissorhands (1990). A continuat să acumuleze popularitate și faimă prin a doua colaborare cu Tim Burton în Ed Wood (1994). În 1997, a jucat rolul unui agent FBI sub acoperire în Donnie Brasco, alături de Al Pacino. Un an mai târziu a apărut în Spaimă și scârbă în Las Vegas, în regia lui Terry Gilliam, iar în 1999 horrorul științifico-fantastic The Astronaut's Wife. În același an a făcut din nou echipă cu Tim Burton în Sleepy Hollow. Urmează apoi rolurile din From Hell (2001), Once Upon a Time in Mexico, Pirates of the Caribbean: The Curse of the Black Pearl (2003), Finding Neverland (2004) și Charlie and the Chocolate Factory (2005). \n\n" +
+                           "În afara vieții de scenă, Johnny Depp a avut relații cu mai multe celebrități, cum ar fi logodnele eșuate cu Jennifer Grey, Winona Ryder și Kate Moss. A fost căsătorit cu Lori Anne Allison în anii 1983-1985. Cea mai lungă relație a lui Johnny Depp a fost cu actrița și cântăreața franceză Vanessa Paradis, cu care are și doi copii: Lily-Rose Melody, născută în 1999, și Jack, născut în 2002. \n\n" +
+                           "Jonny Depp a fost practic lansat de regizorul Tim Burton, care l-a ales pentru rolul lui Edward Scissorhands, personajul principal al filmului omonim. Prietenia lor și abilitatea de a colabora într-o sinergie rar întâlnită a stat la baza unor succese răsunătoare în Box Office-ul american. \n\n" 
+                };
 
                 celebritiesCategory.LearnLevels.Add(learnLevel3Celebrities);
 
@@ -1478,32 +1507,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Cum se numește filmul care a declanșat povestea de dragoste dintre Johnny Depp și Amber Heard?",
                 };
                 learnLevel3Celebrities.LearnQuestions.Add(learnQuestion1LearnLevel3Celebrities);
 
                 var learnQuestionAnswer1Question1LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Chocolate Factory",
                     IsCorrect = false
                 };
                 learnQuestion1LearnLevel3Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer1Question1LearnLevel3Celebrities);
 
                 var learnQuestionAnswer2Question1LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = false
+                    Text = "The Rum Diary",
+                    IsCorrect = true
                 };
 
                 var learnQuestionAnswer3Question1LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Sleepy Hollow",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer4Question1LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Alice in Wonderland",
                     IsCorrect = false
                 };
 
@@ -1516,32 +1545,32 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "",
+                    Text = "Pentru care dintre următoarele partenere și-a tatuat Johnny Depp brațul? ",
                 };
                 learnLevel3Celebrities.LearnQuestions.Add(learnQuestion2LearnLevel3Celebrities);
 
                 var learnQuestionAnswer1Question2LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Vanessa Paradis",
                     IsCorrect = false
                 };
                 learnQuestion2LearnLevel3Celebrities.LearnQuestionAnswers.Add(learnQuestionAnswer1Question2LearnLevel3Celebrities);
 
                 var learnQuestionAnswer2Question2LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Kate Moss",
                     IsCorrect = false
                 };
 
                 var learnQuestionAnswer3Question2LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
-                    IsCorrect = true
+                    Text = "Lori Anne Allison",
+                    IsCorrect = false
                 };
 
                 var learnQuestionAnswer4Question2LearnLevel3Celebrities = new LearnQuestionAnswerEntity()
                 {
-                    Text = "",
+                    Text = "Winona Ryder",
                     IsCorrect = true
                 };
 

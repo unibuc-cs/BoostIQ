@@ -13,37 +13,43 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-
+<br>
+<h2 style="text-align:center"><i class="fa fa-commenting" aria-hidden="true"></i> CONTACT</h2>
 <div class="container">
     <div style="text-align:center">
-      <h2>Contact</h2>
-      <p>Numele noastre sunt Marculescu Octavian-George, Popa Catalin-Andrei, Sargsian Petros, Vangu Constantin Vladut, Alexandru Emil Adrian suntem studenti in anul 4 la Facultatea de Matematica si Informatica, specializarea CTI, grupa 454 si ne-am decis sa realizam o aplicatie menita sa puna la incercare cunostintele utilizatorilor intr-un mediu interactiv.</p>
-      <p>DATE DE CONTACT PERSONALE</p>
-      <p>Popa Catalin Andrei -- Email: catalin.popa@pavoc.com</p>
-      <p>Marculescu Octavian George -- Email: octavian.marculescu@pavoc.com</p>
-      <p>Sargsian Petros -- Email: petros.sargsian@pavoc.com</p>
-      <p>Vangu Constantin Vladut -- Email: vlad.vangu@pavoc.com</p>
-      <p>Alexandru Emil Adrian -- Email: alex.adrian@pavoc.com</p>
+      <p class="w3-animate-zoom">Numele noastre sunt Mărculescu Octavian George, Popa Cătălin Andrei, Sargsian Petros, Vangu Constantin Vlăduț și Alexandru Emil Adrian. Suntem studenți în anul 4 la Facultatea de Matematică și Informatică, specializarea CTI, grupa 454 și ne-am decis să realizăm o aplicație menită să pună la încercare cunoștințele utilizatorilor într-un mediu interactiv. Ne puteti contacta la adresele personale enumerate mai jos.</p>
+
+      
+
+      <p class="w3-center w3-animate-left">Mărculescu Octavian George&nbsp;&nbsp; <i class="fa fa-envelope"></i> octavian.marculescu@pavoc.com</p>
+      <p class="w3-center w3-animate-left">Vangu Constantin Vlăduț&nbsp;&nbsp; <i class="fa fa-envelope"></i> vlad.vangu@pavoc.com</p>
+      <p class="w3-center w3-animate-left">Alexandru Emil Adrian&nbsp;&nbsp; <i class="fa fa-envelope"></i> alex.adrian@pavoc.com</p>
+      <p class="w3-center w3-animate-left">Popa Cătălin Andrei&nbsp;&nbsp; <i class="fa fa-envelope"></i> catalin.popa@pavoc.com</p>
+      <p class="w3-center w3-animate-left">Sargsian Petros&nbsp;&nbsp; <i class="fa fa-envelope"></i> petros.sargsian@pavoc.com</p>
+
+
+
     </div>
+
     <div class="row">
       <div class="column">
-        <img src="https://thehushhushdiary.com/wp-content/uploads/2017/05/blog-pic-4.jpg" style="width:100%">
+        <img src="https://thehushhushdiary.com/wp-content/uploads/2017/05/blog-pic-4.jpg" style="width:108%">
       </div>
       <div class="column">
         <form  method="POST" action="/action_page.php">
-          <label for="fname">Prenume</label>
+          <label for="fname"><i class="fa fa-user" aria-hidden="true"></i> Prenume</label>
           <input type="text" id="fname" name="firstname" placeholder="Prenumele dvs..">
-          <label for="lname">Nume</label>
+          <label for="lname"><i class="fa fa-user" aria-hidden="true"></i> Nume</label>
           <input type="text" id="lname" name="lastname" placeholder="Numele dvs..">
-          <label for="country">Tara</label>
+          <label for="country"><i class="fa fa-globe" aria-hidden="true"></i> Tara</label>
           <select id="country" name="country">
             <option value="australia">Romania</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
           </select>
-          <label for="subject">Subiect</label>
+          <label for="subject"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Subiect</label>
           <textarea id="subject" name="subject" placeholder="Scrie ceva.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" style="float: right;">
         </form>
       </div>
     </div>
@@ -64,8 +70,26 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    img{
+
+    }
+
+    .w3-animate-left{
+      animation-duration: 4s;
+    }
     
+    .w3-animate-zoom{
+      animation-duration: 4s;
+    }
     
+    p{
+      font-size: 115%;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+
+
     @media screen and (min-width: 1500px)
     {
       a{
