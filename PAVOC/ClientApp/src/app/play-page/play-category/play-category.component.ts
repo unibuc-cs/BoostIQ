@@ -22,6 +22,7 @@ export class PlayCategoryComponent implements OnInit {
   public answers = {};
 
   public passedLevel: boolean;
+  public scores: number;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -47,22 +48,22 @@ export class PlayCategoryComponent implements OnInit {
 
   selectAnswer(answerId) {
     var alreadySelected = this.answers[this.questionOrder];
-    if (alreadySelected) {
-      document.getElementById("answer" + alreadySelected).style.background =
-        "none"; // clear old selection
-    }
+    // if (alreadySelected) {
+    //   document.getElementById("answer" + alreadySelected).style.background =
+    //     "none"; // clear old selection
+    // }
 
     this.answers[this.questionOrder] = answerId;
   }
 
-  getBackgroundColor(answerId) {
-    var answer = this.answers[this.questionOrder];
-    if (answer == answerId) {
-      return "green";
-    } else {
-      return "none";
-    }
-  }
+  // getBackgroundColor(answerId) {
+  //   var answer = this.answers[this.questionOrder];
+  //   if (answer == answerId) {
+  //     return "green";
+  //   } else {
+  //     return "none";
+  //   }
+  // }
 
   goToQuestions() {
     this.textDisplayed = false;
@@ -107,6 +108,7 @@ export class PlayCategoryComponent implements OnInit {
     });
 
     let score = correctAnswers / totalQuestions;
+    this.scores= score*100;
     if (score >= 0.5) {
       this.passedLevel = true;
       this.api

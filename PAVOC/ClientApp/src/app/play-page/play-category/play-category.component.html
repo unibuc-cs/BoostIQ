@@ -1,6 +1,10 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <h1>BoostIQ</h1>
+    <h1>
+      <a href="#"
+        ><img src="https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"
+      /></a>
+    </h1>
     <span class="menu-spacer"></span>
     <div>
       <a mat-button [routerLink]="'/home'"> HOME </a>
@@ -17,50 +21,65 @@
 <!-- pagina cu textul -->
 <div *ngIf="textDisplayed">
   <div *ngIf="testLevel">
-    <h1>Test Level {{ testLevel.testLevelNumber }}</h1>
+    <h1>Play</h1>
     <br /><br />
 
     <img src="{{ testLevel.image }}" alt="" />
     <br /><br /><br />
-    <div class="w3-container">
-      <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{
-          testLevel.text
-        }}
-      </p>
-    </div>
+    <div class="w3-container"></div>
   </div>
   <button type="button" class="btn btn-dark" (click)="goToQuestions()">
-    Incepe testul</button
+    START</button
   ><br />
 </div>
 
 <!-- pagina cu intrebarile -->
-<div *ngIf="questionsDisplayed">
-  <div *ngIf="question">
-    <h2>{{ question.text }}</h2>
-    <ol>
-      <li *ngFor="let answer of question.testQuestionAnswers">
-        <p
+<div class="w1-container">
+  <div *ngIf="questionsDisplayed">
+    <div *ngIf="question">
+      <br /><br />
+      <h2>{{ question.text }}</h2>
+      <br /><br />
+
+      <div
+        class="intrebari"
+        *ngFor="let answer of question.testQuestionAnswers"
+      >
+        <button
+          type="button"
+          class="btn btn-dark"
           [id]="'answer' + answer.testQuestionAnswerEntityId"
-          [style.background-color]="
-            getBackgroundColor(answer.testQuestionAnswerEntityId)
-          "
           (click)="selectAnswer(answer.testQuestionAnswerEntityId)"
         >
           {{ answer.text }}
-        </p>
-      </li>
-    </ol>
+        </button>
+      </div>
 
-    <div *ngIf="questionOrder > 1">
-      <button (click)="previousQuestion()">Intrebarea anterioara</button>
-    </div>
-    <div *ngIf="questionOrder < testLevel.testQuestions.length">
-      <button (click)="nextQuestion()">Urmatoarea intrebare</button>
-    </div>
-    <div *ngIf="questionOrder == testLevel.testQuestions.length">
-      <button (click)="finish()">Finish</button>
+      <br /><br /><br />
+      <div *ngIf="questionOrder > 1">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+          type="button"
+          class="btn btn-dark"
+          (click)="previousQuestion()"
+        >
+          Intrebarea anterioara
+        </button>
+      </div>
+      <br /><br /><br />
+      <div *ngIf="questionOrder < testLevel.testQuestions.length">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+          type="button"
+          class="btn btn-dark"
+          (click)="nextQuestion()"
+        >
+          Urmatoarea intrebare
+        </button>
+      </div>
+      <div *ngIf="questionOrder == testLevel.testQuestions.length">
+        <button type="button" class="btn btn-dark" (click)="finish()">
+          Finish
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -68,13 +87,17 @@
 <!-- pagina cu rezultatele -->
 <div *ngIf="resultDisplayed">
   <div *ngIf="passedLevel">
-    <h2>Felicitari! Ai raspuns corect la toate intrebarile!</h2>
-    <button (click)="reloadPage()">Nivelul urmator</button>
+    <h2>Ai terminat testul</h2>
+    <h2>Scorul tau este: {{ scores }}% </h2>
+
+    <button type="button" class="btn btn-dark" [routerLink]="'/play'">
+      Inapoi la categorii!
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </div>
-  <div *ngIf="!passedLevel">
-    <h2>Ai raspuns gresit!</h2>
-    <button (click)="reloadPage()">Incearca din nou</button>
-  </div>
+    <button type="button" class="btn btn-dark" (click)="reloadPage()">
+      Mai incearca odata!
+    </button>
 </div>
 
 <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
@@ -96,11 +119,41 @@
     text-align: center;
   }
 
+  h2 {
+    text-align: center;
+    font-size: 300%;
+  }
+
+  .intrebari {
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .intrebari p {
+    font-size: 45px;
+    text-align: center;
+  }
+
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 20%;
+  }
+
+  h1 img {
+    width: 63%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    font-size: 30px;
   }
 
   @media screen and (min-width: 1500px) {
@@ -109,7 +162,8 @@
       justify-content: center;
       border-radius: 20% 20% 20% 20%;
       border: none;
-      padding: 4% 31.5%;
+      padding: 4% 29%;
+      text-decoration: none;
     }
   }
 </style>

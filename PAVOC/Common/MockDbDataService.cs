@@ -1569,7 +1569,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://www.europafm.ro/wp-content/uploads/2017/07/Stefan-Cel-Mare.jpg",
+                    Image = "https://i.ibb.co/vVz0Gqs/history.png",
                     Text = ""
                 };
                 historyCategory.TestLevels.Add(testLevel1History);
@@ -1578,32 +1578,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "Pe cine a invins Stefan cel Mare pentru a cuceri tronul Moldovei?",
+                    Text = "In ce an a inceput al doilea razboi modial?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion1TestLevel1History);
 
                 var testQuestionAnswer1Question1TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Iancu de Hunedoara",
+                    Text = "1945",
                     IsCorrect = false
                 };
                 testQuestion1TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1History);
 
                 var testQuestionAnswer2Question1TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Petru Aron",
+                    Text = "1939",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question1TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Vlad Tepes",
+                    Text = "1918",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question1TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Gavril Uric",
+                    Text = "1940",
                     IsCorrect = false
                 };
 
@@ -1616,33 +1616,33 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Care sunt primele ansambluri complete ce s-au pastrat din vechea pictura stefaniana?",
+                    Text = "Cine a fost primul rege al Romaniei?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion2TestLevel1History);
 
                 var testQuestionAnswer1Question2TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Voronet",
+                    Text = "Carol I",
                     IsCorrect = true
                 };
                 testQuestion2TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1History);
 
                 var testQuestionAnswer2Question2TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Doljesti",
+                    Text = "Ferdinand I",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question2TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Chilia",
+                    Text = "Mihai I",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question2TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Patrauti",
-                    IsCorrect = true
+                    Text = "Alexandru II",
+                    IsCorrect = false
                 };
                 testQuestion2TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1History);
                 testQuestion2TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1History);
@@ -1655,32 +1655,32 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Pe cine a invins Stefan cel Mare pentru a cuceri tronul Moldovei?",
+                    Text = "In ce an a intrat Romania in primul razboi mondial?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion3TestLevel1History);
 
                 var testQuestionAnswer1Question3TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Iancu de Hunedoara",
+                    Text = "1922",
                     IsCorrect = false
                 };
                 testQuestion3TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1History);
 
                 var testQuestionAnswer2Question3TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Petru Aron",
+                    Text = "1916",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question3TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Vlad Tepes",
+                    Text = "1942",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question3TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Gavril Uric",
+                    Text = "1914",
                     IsCorrect = false
                 };
 
@@ -1693,37 +1693,231 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Care sunt primele ansambluri complete ce s-au pastrat din vechea pictura stefaniana?",
+                    Text = "In ce secol a domnit Stefan cel Mare?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion4TestLevel1History);
 
                 var testQuestionAnswer1Question4TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Voronet",
+                    Text = "15",
                     IsCorrect = true
                 };
                 testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1History);
 
                 var testQuestionAnswer2Question4TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Doljesti",
+                    Text = "14",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question4TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Chilia",
+                    Text = "16",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question4TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Patrauti",
-                    IsCorrect = true
+                    Text = "17",
+                    IsCorrect =false
                 };
                 testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1History);
                 testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1History);
                 testQuestion4TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question4TestLevel1History);
+
+               
+                var testQuestion5TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 5,
+                    //TODO Petros -> change this
+                    Text = " In ce tara s-a nascut Adolf Hitler?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion5TestLevel1History);
+
+                var testQuestionAnswer1Question5TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Germania",
+                    IsCorrect = false
+                };
+                testQuestion5TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1History);
+
+                var testQuestionAnswer2Question5TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Elvetia",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question5TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Austria",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question5TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Polonia",
+                    IsCorrect = false
+                };
+
+                testQuestion5TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question5TestLevel1History);
+                testQuestion5TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question5TestLevel1History);
+                testQuestion5TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question5TestLevel1History);
+
+
+                var testQuestion6TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 6,
+                    //TODO Petros -> change this
+                    Text = "In ce oras au fost executat Nicolae Ceausescu?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion6TestLevel1History);
+
+                var testQuestionAnswer1Question6TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Bucuresti",
+                    IsCorrect = false
+                };
+
+                testQuestion6TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1History);
+
+                var testQuestionAnswer2Question6TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Targoviste",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question6TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Alexandria",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question6TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Ploiesti",
+                    IsCorrect = false
+                };
+
+                testQuestion6TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1History);
+                testQuestion6TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question6TestLevel1History);
+                testQuestion6TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question6TestLevel1History);
+
+
+                var testQuestion7TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 7,
+                    //TODO Petros -> change this
+                    Text = "In ce perioada a avut loc Razboiul Rece?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion7TestLevel1History);
+
+                var testQuestionAnswer1Question7TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1941-1972",
+                    IsCorrect = false
+                };
+                testQuestion7TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1History);
+
+                var testQuestionAnswer2Question7TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1943-1989",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question7TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1947-1991",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question7TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "1914-1918",
+                    IsCorrect = false
+                };
+
+                testQuestion7TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1History);
+                testQuestion7TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question7TestLevel1History);
+                testQuestion7TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question7TestLevel1History);
+
+
+                var testQuestion8TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 8,
+                    //TODO Petros -> change this
+                    Text = "Cine a fost Mihai Viteazu?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion8TestLevel1History);
+
+                var testQuestionAnswer1Question8TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Regele Romaniei",
+                    IsCorrect = false
+                };
+                testQuestion8TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1History);
+
+                var testQuestionAnswer2Question8TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Voievodul Romaniei",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question8TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Imparatul Romaniei",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question8TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Presedintele Romaniei",
+                    IsCorrect = false
+                };
+
+                testQuestion8TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1History);
+                testQuestion8TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1History);
+                testQuestion8TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1History);
+
+                var testQuestion9TestLevel1History = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "Cum se numea zeul Dacilor?",
+                };
+                testLevel1History.TestQuestions.Add(testQuestion9TestLevel1History);
+
+                var testQuestionAnswer1Question9TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Allah",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1History);
+
+                var testQuestionAnswer2Question9TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Zalmoxis",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question9TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Buddha",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question9TestLevel1History = new TestQuestionAnswerEntity()
+                {
+                    Text = "Zeus",
+                    IsCorrect = false
+                };
+
+                testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1History);
+                testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1History);
+                testQuestion9TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1History);
+
+
+
+                categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in test pt history
 
 
 
@@ -1740,82 +1934,7 @@ namespace PAVOC.Common
 
                 historyCategory.TestLevels.Add(testLevel2History);
 
-                var testQuestion1TestLevel2History = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "Pe ce insula a fost exilat Napoleon Bonaparte?",
-                };
-                testLevel2History.TestQuestions.Add(testQuestion1TestLevel2History);
-
-                var testQuestionAnswer1Question1TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Insula Diavolului",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2History);
-
-                var testQuestionAnswer2Question1TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Insula Sfantul Paul",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Insula Sfanta Elena",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Insula Man",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel2History);
-                testQuestion1TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel2History);
-                testQuestion1TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel2History);
-
-
-                var testQuestion2TestLevel2History = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Ce prieteni a luat in exil Napoleon Bonaparte?",
-                };
-                testLevel2History.TestQuestions.Add(testQuestion2TestLevel2History);
-
-                var testQuestionAnswer1Question2TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Pierre Simon Laplace",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2History);
-
-                var testQuestionAnswer2Question2TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Henri-Gratien Bertrand",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer3Question2TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Charles-Tristan de Montholon",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question2TestLevel2History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Jacques-Louis David",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel2History);
-                testQuestion2TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel2History);
-                testQuestion2TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel2History);
-
+                
 
                 //---------------------
 
@@ -1829,82 +1948,15 @@ namespace PAVOC.Common
 
                 historyCategory.TestLevels.Add(testLevel3History);
 
-                var testQuestion1TestLevel3History = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "In ce perioada a avut loc Razboiul Rece?",
-                };
-                testLevel3History.TestQuestions.Add(testQuestion1TestLevel3History);
-
-                var testQuestionAnswer1Question1TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "1941-1972",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3History);
-
-                var testQuestionAnswer2Question1TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "1943-1989",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "1947-1991",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "1914-1918",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel3History);
-                testQuestion1TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel3History);
-                testQuestion1TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel3History);
+ 
 
 
-                var testQuestion2TestLevel3History = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Cum se numeau reformele de liberalizare introduce de Mihai Gorbaciov in anii '80?",
-                };
-                testLevel3History.TestQuestions.Add(testQuestion2TestLevel3History);
 
-                var testQuestionAnswer1Question2TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Otrezki",
-                    IsCorrect = false
-                };
-                testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3History);
 
-                var testQuestionAnswer2Question2TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Bolșevica",
-                    IsCorrect = false
-                };
 
-                var testQuestionAnswer3Question2TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Glasnost",
-                    IsCorrect = true
-                };
 
-                var testQuestionAnswer4Question2TestLevel3History = new TestQuestionAnswerEntity()
-                {
-                    Text = "Perestroika",
-                    IsCorrect = true
-                };
 
-                testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel3History);
-                testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3History);
-                testQuestion2TestLevel3History.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3History);
 
-                categoryRepository.Update(historyCategory);//asta actualizeaza locatia pana unde s-a rezolvat in test pt history
 
                 //--------------------
 
@@ -1914,7 +1966,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/e/ef/Romania_national_football_team_logo.svg/200px-Romania_national_football_team_logo.svg.png",
+                    Image = "https://i.ibb.co/S7mwjys/Shutterstock-Lisa-Kolbasa.png",
                     Text = ""
                 };
 
@@ -1924,32 +1976,32 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "De cine a fost invinsa Romania in sferturile de finala a Campionatului European din 2000?",
+                    Text = "Cine a inscris, pana in prezent, cele mai multe goluri in fotbalul profesionist?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion1TestLevel1Sports);
 
                 var testQuestionAnswer1Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Anglia",
+                    Text = " Lionel Messi",
                     IsCorrect = false
                 };
                 testQuestion1TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1Sports);
 
                 var testQuestionAnswer2Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Germania",
+                    Text = "Maradona",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Italia",
+                    Text = "Cristiano Ronaldo",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question1TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Suedia",
+                    Text = "Pele",
                     IsCorrect = false
                 };
 
@@ -1962,37 +2014,350 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Cine a marcat unicul gol din victoria decisiva a Romaniei contra Statelor Unite de la Cupa Mondiala 1994?",
+                    Text = "Care este echipa de fotbal cu cele mai multe trofee Cupa Campionilor?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion2TestLevel1Sports);
 
                 var testQuestionAnswer1Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Florin Raducioiu",
+                    Text = "FC Barcelona",
                     IsCorrect = false
                 };
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1Sports);
 
                 var testQuestionAnswer2Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ilie Dumitrescu",
+                    Text = "Manchester United",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Dan Petrescu",
+                    Text = "Real Madrid",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question2TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Gheorghe Hagi",
+                    Text = "PSG",
                     IsCorrect = true
                 };
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Sports);
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Sports);
                 testQuestion2TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel1Sports);
+
+
+
+                var testQuestion3TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 3,
+                    //TODO Petros -> change this
+                    Text = "Cine este denumit cel mai bun basketballist din toate timpurile?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion3TestLevel1Sports);
+
+                var testQuestionAnswer1Question3TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Kobe Bryant",
+                    IsCorrect = false
+                };
+                testQuestion3TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Sports);
+
+                var testQuestionAnswer2Question3TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Michael Jordan",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question3TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lebron James",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question3TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Stephen Curry",
+                    IsCorrect = false
+                };
+
+                testQuestion3TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question3TestLevel1Sports);
+                testQuestion3TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question3TestLevel1Sports);
+                testQuestion3TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question3TestLevel1Sports);
+
+
+                var testQuestion4TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 4,
+                    //TODO Petros -> change this
+                    Text = "Care a fost nota exacta obtinuta de Nadia Comaneci la barna in anul 1979?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion4TestLevel1Sports);
+
+                var testQuestionAnswer1Question4TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "9.90",
+                    IsCorrect = false
+                };
+
+                testQuestion4TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Sports);
+
+                var testQuestionAnswer2Question4TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "9.98",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question4TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "10.0",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question4TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "9.95",
+                    IsCorrect = true
+                };
+
+                testQuestion4TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Sports);
+                testQuestion4TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1Sports);
+                testQuestion4TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question4TestLevel1Sports);
+
+
+
+                var testQuestion5TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 5,
+                    //TODO Petros -> change this
+                    Text = "Cate titluri la simplu a castigat jucatorul de tenis Ilie Nastase ?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion5TestLevel1Sports);
+
+                var testQuestionAnswer1Question5TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "60",
+                    IsCorrect = false
+                };
+                testQuestion5TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Sports);
+
+                var testQuestionAnswer2Question5TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "24",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question5TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "58",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question5TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "46",
+                    IsCorrect = false
+                };
+
+                testQuestion5TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question5TestLevel1Sports);
+                testQuestion5TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question5TestLevel1Sports);
+                testQuestion5TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question5TestLevel1Sports);
+
+
+                var testQuestion6TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 6,
+                    //TODO Petros -> change this
+                    Text = "Cine este jucatorul de fotbal cu cele mai multe baloane de aur?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion6TestLevel1Sports);
+
+                var testQuestionAnswer1Question6TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Cristiano Ronaldo",
+                    IsCorrect = false
+                };
+                testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Sports);
+
+                var testQuestionAnswer2Question6TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lionel Messi",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question6TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Andrea Pirlo",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question6TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Zlatan Ibrahimovic",
+                    IsCorrect = false
+                };
+
+                testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Sports);
+                testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question6TestLevel1Sports);
+                testQuestion6TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question6TestLevel1Sports);
+
+
+                var testQuestion7TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 7,
+                    //TODO Petros -> change this
+                    Text = "Ce echipa a invins nationala de fotbal U21 a Romaniei in sferturile de finala la EURO U21 din 2019?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion7TestLevel1Sports);
+
+                var testQuestionAnswer1Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Anglia U21",
+                    IsCorrect = false
+                };
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Sports);
+
+                var testQuestionAnswer2Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Germania U21",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Suedia U21",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question7TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Spania U21",
+                    IsCorrect = false
+                };
+
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1Sports);
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question7TestLevel1Sports);
+                testQuestion7TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question7TestLevel1Sports);
+
+
+                var testQuestion8TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 8,
+                    //TODO Petros -> change this
+                    Text = "Ce jucator de tenis are in palmares cele mai multe titluri Grand Slam?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion8TestLevel1Sports);
+
+                var testQuestionAnswer1Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Ilie Nastase",
+                    IsCorrect = false
+                };
+
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Sports);
+
+                var testQuestionAnswer2Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Novak Djokovic",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Rafael Nadal",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question8TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Roger Federer",
+                    IsCorrect = true
+                };
+
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Sports);
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Sports);
+                testQuestion8TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1Sports);
+
+
+
+                var testQuestion9TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "Care este scorul cu care s-a impus Franta in fata Croatiei in finala Cupei Mondiale din Rusia 2018 ?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion9TestLevel1Sports);
+
+                var testQuestionAnswer1Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "1-0",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Sports);
+
+                var testQuestionAnswer2Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "2-1",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "4-2",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question9TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "3-2",
+                    IsCorrect = false
+                };
+
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Sports);
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1Sports);
+                testQuestion9TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1Sports);
+
+
+                var testQuestion10TestLevel1Sports = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "In care din urmatoarele tari s-a tinut Campionatul European de fotbal din 2016?",
+                };
+                testLevel1Sports.TestQuestions.Add(testQuestion10TestLevel1Sports);
+
+                var testQuestionAnswer1Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Portugalia",
+                    IsCorrect = false
+                };
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Sports);
+
+                var testQuestionAnswer2Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Franta",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Germania",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question10TestLevel1Sports = new TestQuestionAnswerEntity()
+                {
+                    Text = "Polonia",
+                    IsCorrect = false
+                };
+
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Sports);
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Sports);
+                testQuestion10TestLevel1Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Sports);
+
+
+
+                categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt sports
 
                 //-------------------------
 
@@ -2006,81 +2371,7 @@ namespace PAVOC.Common
 
                 sportsCategory.TestLevels.Add(testLevel2Sports);
 
-                var testQuestion1TestLevel2Sports = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "Caderea de la paralele a Nadiei Comaneci de la Campionatele Mondiale din 1978, au trimis-o pe locul?",
-                };
-                testLevel2Sports.TestQuestions.Add(testQuestion1TestLevel2Sports);
-
-                var testQuestionAnswer1Question1TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "3",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2Sports);
-
-                var testQuestionAnswer2Question1TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "4",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer3Question1TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "5",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question1TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "6",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel2Sports);
-                testQuestion1TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel2Sports);
-                testQuestion1TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel2Sports);
-
-
-                var testQuestion2TestLevel2Sports = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Care a fost nota exacta obtinuta de Nadia Comanescu la barna in anul 1979?",
-                };
-                testLevel2Sports.TestQuestions.Add(testQuestion2TestLevel2Sports);
-
-                var testQuestionAnswer1Question2TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "9.90",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Sports);
-
-                var testQuestionAnswer2Question2TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "9.98",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question2TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "10.0",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question2TestLevel2Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "9.95",
-                    IsCorrect = true
-                };
-
-                testQuestion2TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel2Sports);
-                testQuestion2TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel2Sports);
-                testQuestion2TestLevel2Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel2Sports);
+               
 
                 //----------------
 
@@ -2094,82 +2385,9 @@ namespace PAVOC.Common
 
                 sportsCategory.TestLevels.Add(testLevel3Sports);
 
-                var testQuestion1TestLevel3Sports = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "Cate puncte a marcat in echipa McDonald's All-American-Team la finalul sezonului in anul 1980 ?",
-                };
-                testLevel3Sports.TestQuestions.Add(testQuestion1TestLevel3Sports);
+                
 
-                var testQuestionAnswer1Question1TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "19.3",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Sports);
-
-                var testQuestionAnswer2Question1TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "15.7",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "29.2",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "11.6",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel3Sports);
-                testQuestion1TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel3Sports);
-                testQuestion1TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel3Sports);
-
-
-                var testQuestion2TestLevel3Sports = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Dupa moartea tatalui sau, ce zona a fondat Michael Jordan, in semn de recunostinta?",
-                };
-                testLevel3Sports.TestQuestions.Add(testQuestion2TestLevel3Sports);
-
-                var testQuestionAnswer1Question2TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "Orlando Magic",
-                    IsCorrect = false
-                };
-                testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Sports);
-
-                var testQuestionAnswer2Question2TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "Chicago Boys & Girls Club",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer3Question2TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "Scottsdale Arizona",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question2TestLevel3Sports = new TestQuestionAnswerEntity()
-                {
-                    Text = "Forbes Stars",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel3Sports);
-                testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3Sports);
-                testQuestion2TestLevel3Sports.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3Sports);
-
-                categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt sports
+               
 
 
                 //--------------
@@ -2182,7 +2400,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/vVz0Gqs",
+                    Image = "https://i.ibb.co/zJ28X3V/30445-tumb-750-Xauto.jpg",
                     Text = ""
                 };
                 geographyCategory.TestLevels.Add(testLevel1Geography);
@@ -2261,6 +2479,320 @@ namespace PAVOC.Common
                 testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Geography);
                 testQuestion2TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel1Geography);
 
+
+                var testQuestion3TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 3,
+                    //TODO Petros -> change this
+                    Text = "A cata planeta de la soare este Terra?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion3TestLevel1Geography);
+
+                var testQuestionAnswer1Question3TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "a patra",
+                    IsCorrect = false
+                };
+                testQuestion3TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Geography);
+
+                var testQuestionAnswer2Question3TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "a treia",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question3TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "a doua",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question3TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "a cincea",
+                    IsCorrect = false
+                };
+
+                testQuestion3TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question3TestLevel1Geography);
+                testQuestion3TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question3TestLevel1Geography);
+                testQuestion3TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question3TestLevel1Geography);
+
+
+                var testQuestion4TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 4,
+                    //TODO Petros -> change this
+                    Text = "Care este forma de relief predominanta in Romania?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion4TestLevel1Geography);
+
+                var testQuestionAnswer1Question4TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lisabona",
+                    IsCorrect = true
+                };
+                testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Geography);
+
+                var testQuestionAnswer2Question4TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Porto",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question4TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Aveiro",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question4TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Funchal",
+                    IsCorrect = true
+                };
+                testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Geography);
+                testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1Geography);
+                testQuestion4TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question4TestLevel1Geography);
+
+
+                var testQuestion5TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 5,
+                    //TODO Petros -> change this
+                    Text = "Din ce tara izvoraste Dunarea?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion5TestLevel1Geography);
+
+                var testQuestionAnswer1Question5TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Romania",
+                    IsCorrect = false
+                };
+                testQuestion5TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Geography);
+
+                var testQuestionAnswer2Question5TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Germania",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question5TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Ungaria",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question5TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Serbia",
+                    IsCorrect = false
+                };
+
+                testQuestion5TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question5TestLevel1Geography);
+                testQuestion5TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question5TestLevel1Geography);
+                testQuestion5TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question5TestLevel1Geography);
+
+
+                var testQuestion6TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 6,
+                    //TODO Petros -> change this
+                    Text = "Care este capitala Portugaliei?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion6TestLevel1Geography);
+
+                var testQuestionAnswer1Question6TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lisabona",
+                    IsCorrect = true
+                };
+                testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Geography);
+
+                var testQuestionAnswer2Question6TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Porto",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question6TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Aveiro",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question6TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Funchal",
+                    IsCorrect = true
+                };
+                testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Geography);
+                testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question6TestLevel1Geography);
+                testQuestion6TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question6TestLevel1Geography);
+
+
+                var testQuestion7TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 7,
+                    //TODO Petros -> change this
+                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion7TestLevel1Geography);
+
+                var testQuestionAnswer1Question7TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Cristofor Columb",
+                    IsCorrect = false
+                };
+                testQuestion7TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Geography);
+
+                var testQuestionAnswer2Question7TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Amerigo Vespucci",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question7TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Fernando Magellan",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question7TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Phileas Fogg",
+                    IsCorrect = false
+                };
+
+                testQuestion7TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1Geography);
+                testQuestion7TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question7TestLevel1Geography);
+                testQuestion7TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question7TestLevel1Geography);
+
+
+                var testQuestion8TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 8,
+                    //TODO Petros -> change this
+                    Text = "Ce tip de lac este lacul Sf Ana?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
+
+                var testQuestionAnswer1Question8TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Tectonic",
+                    IsCorrect = false
+                };
+                testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Geography);
+
+                var testQuestionAnswer2Question8TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Glaciar",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question8TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Vulcanic",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question8TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Artificial",
+                    IsCorrect = false
+                };
+
+                testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Geography);
+                testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Geography);
+                testQuestion8TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1Geography);
+
+
+
+                var testQuestion9TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion9TestLevel1Geography);
+
+                var testQuestionAnswer1Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Cristofor Columb",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Geography);
+
+                var testQuestionAnswer2Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Amerigo Vespucci",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Fernando Magellan",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question9TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Phileas Fogg",
+                    IsCorrect = false
+                };
+
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Geography);
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1Geography);
+                testQuestion9TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1Geography);
+
+
+                var testQuestion10TestLevel1Geography = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "Ce tip de lac este lacul Sfanta Ana?",
+                };
+                testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
+
+                var testQuestionAnswer1Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Tectonic",
+                    IsCorrect = false
+                };
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Geography);
+
+                var testQuestionAnswer2Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Glaciar",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Vulcanic",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question10TestLevel1Geography = new TestQuestionAnswerEntity()
+                {
+                    Text = "Artificial",
+                    IsCorrect = false
+                };
+
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Geography);
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Geography);
+                testQuestion10TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Geography);
+
+                categoryRepository.Update(geographyCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt geography
+
+
+
+
+
+
+
+
+
+
                 //-------------------------
 
                 var testLevel2Geography = new TestLevelEntity()
@@ -2273,82 +2805,7 @@ namespace PAVOC.Common
 
                 geographyCategory.TestLevels.Add(testLevel2Geography);
 
-                var testQuestion1TestLevel2Geography = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "Care este cel mai inalt munte de pe glob?",
-                };
-                testLevel2Geography.TestQuestions.Add(testQuestion1TestLevel2Geography);
-
-                var testQuestionAnswer1Question1TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Muntele K2",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2Geography);
-
-                var testQuestionAnswer2Question1TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Muntele Lhotse",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Muntele Everest",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Muntele Makalu",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel2Geography);
-                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel2Geography);
-                testQuestion1TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel2Geography);
-
-
-                var testQuestion2TestLevel2Geography = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Cate state are USA?",
-                };
-                testLevel2Geography.TestQuestions.Add(testQuestion2TestLevel2Geography);
-
-                var testQuestionAnswer1Question2TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "48",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Geography);
-
-                var testQuestionAnswer2Question2TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "50",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer3Question2TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "25",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question2TestLevel2Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "16",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel2Geography);
-                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel2Geography);
-                testQuestion2TestLevel2Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel2Geography);
-
+               
 
                 //---------------------
 
@@ -2362,82 +2819,17 @@ namespace PAVOC.Common
 
                 geographyCategory.TestLevels.Add(testLevel3Geography);
 
-                var testQuestion1TestLevel3Geography = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
-                };
-                testLevel3Geography.TestQuestions.Add(testQuestion1TestLevel3Geography);
-
-                var testQuestionAnswer1Question1TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Cristofor Columb",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Geography);
-
-                var testQuestionAnswer2Question1TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Amerigo Vespucci",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Fernando Magellan",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Phileas Fogg",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel3Geography);
-                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel3Geography);
-                testQuestion1TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel3Geography);
+           
 
 
-                var testQuestion2TestLevel3Geography = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Ce tip de lac este lacul Sf Ana?",
-                };
-                testLevel3Geography.TestQuestions.Add(testQuestion2TestLevel3Geography);
 
-                var testQuestionAnswer1Question2TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Tectonic",
-                    IsCorrect = false
-                };
-                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Geography);
 
-                var testQuestionAnswer2Question2TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Glaciar",
-                    IsCorrect = false
-                };
 
-                var testQuestionAnswer3Question2TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Vulcanic",
-                    IsCorrect = true
-                };
 
-                var testQuestionAnswer4Question2TestLevel3Geography = new TestQuestionAnswerEntity()
-                {
-                    Text = "Artificial",
-                    IsCorrect = false
-                };
 
-                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel3Geography);
-                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3Geography);
-                testQuestion2TestLevel3Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3Geography);
 
-                categoryRepository.Update(geographyCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt geography
+
+
 
                 //-----------------------//
 
@@ -2447,7 +2839,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ytimg.com/vi/GhNkPKzp-NE/maxresdefault.jpg",
+                    Image = "https://i.ibb.co/R9vY3J6/The-20-Best-Royalty-Free-Music-Sites-in-2018.png",
                     Text = ""
                 };
 
@@ -2485,9 +2877,9 @@ namespace PAVOC.Common
                     IsCorrect = true
                 };
 
-                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel1Music);
-                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel1Music);
-                testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel1Music);
+                testQuestion1TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel1Music);
+                testQuestion1TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel1Music);
+                testQuestion1TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel1Music);
 
 
                 var testQuestion2TestLevel1Music = new TestQuestionEntity()
@@ -2526,6 +2918,307 @@ namespace PAVOC.Common
                 testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Music);
                 testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel1Music);
 
+
+
+                var testQuestion3TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 3,
+                    //TODO Petros -> change this
+                    Text = "Câte albume au reeditat trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion3TestLevel1Music);
+
+                var testQuestionAnswer1Question3TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "1",
+                    IsCorrect = false
+                };
+                testQuestion3TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Music);
+
+                var testQuestionAnswer2Question3TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "2",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question3TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "3",
+                    IsCorrect = false
+                };
+                var testQuestionAnswer4Question3TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "4",
+                    IsCorrect = true
+                };
+
+                testQuestion3TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question3TestLevel1Music);
+                testQuestion3TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question3TestLevel1Music);
+                testQuestion3TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question3TestLevel1Music);
+
+
+                var testQuestion4TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 4,
+                    //TODO Petros -> change this
+                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion4TestLevel1Music);
+
+                var testQuestionAnswer1Question4TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Umbre pe cer",
+                    IsCorrect = false
+                };
+                testQuestion4TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Music);
+
+                var testQuestionAnswer2Question4TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Banii vorbesc",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question4TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lungul drum al zilei către noapte",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question4TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Singur pe drum",
+                    IsCorrect = false
+                };
+                testQuestion4TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Music);
+                testQuestion4TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1Music);
+                testQuestion4TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question4TestLevel1Music);
+
+
+                var testQuestion5TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 5,
+                    //TODO Petros -> change this
+                    Text = "Câte albume au reeditat trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion5TestLevel1Music);
+
+                var testQuestionAnswer1Question5TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "1",
+                    IsCorrect = false
+                };
+                testQuestion5TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Music);
+
+                var testQuestionAnswer2Question5TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "2",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question5TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "3",
+                    IsCorrect = false
+                };
+                var testQuestionAnswer4Question5TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "4",
+                    IsCorrect = true
+                };
+
+                testQuestion5TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question5TestLevel1Music);
+                testQuestion5TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question5TestLevel1Music);
+                testQuestion5TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question5TestLevel1Music);
+
+
+                var testQuestion6TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 6,
+                    //TODO Petros -> change this
+                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion6TestLevel1Music);
+
+                var testQuestionAnswer1Question6TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Umbre pe cer",
+                    IsCorrect = false
+                };
+                testQuestion6TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Music);
+
+                var testQuestionAnswer2Question6TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Banii vorbesc",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question6TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lungul drum al zilei către noapte",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question6TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Singur pe drum",
+                    IsCorrect = false
+                };
+                testQuestion6TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Music);
+                testQuestion6TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question6TestLevel1Music);
+                testQuestion6TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question6TestLevel1Music);
+
+
+                var testQuestion7TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 7,
+                    //TODO Petros -> change this
+                    Text = "Câte albume au reeditat trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion7TestLevel1Music);
+
+                var testQuestionAnswer1Question7TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "1",
+                    IsCorrect = false
+                };
+                testQuestion7TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Music);
+
+                var testQuestionAnswer2Question7TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "2",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question7TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "3",
+                    IsCorrect = false
+                };
+                var testQuestionAnswer4Question7TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "4",
+                    IsCorrect = true
+                };
+
+                testQuestion7TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1Music);
+                testQuestion7TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question7TestLevel1Music);
+                testQuestion7TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question7TestLevel1Music);
+
+
+                var testQuestion8TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 8,
+                    //TODO Petros -> change this
+                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion8TestLevel1Music);
+
+                var testQuestionAnswer1Question8TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Umbre pe cer",
+                    IsCorrect = false
+                };
+                testQuestion8TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Music);
+
+                var testQuestionAnswer2Question8TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Banii vorbesc",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question8TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lungul drum al zilei către noapte",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question8TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Singur pe drum",
+                    IsCorrect = false
+                };
+                testQuestion8TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Music);
+                testQuestion8TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Music);
+                testQuestion8TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1Music);
+
+
+                var testQuestion9TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "Câte albume au reeditat trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion9TestLevel1Music);
+
+                var testQuestionAnswer1Question9TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "1",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Music);
+
+                var testQuestionAnswer2Question9TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "2",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question9TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "3",
+                    IsCorrect = false
+                };
+                var testQuestionAnswer4Question9TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "4",
+                    IsCorrect = true
+                };
+
+                testQuestion9TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Music);
+                testQuestion9TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1Music);
+                testQuestion9TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1Music);
+
+
+                var testQuestion10TestLevel1Music = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "Cum se numeste piesa cu care au debutat discografic trupa Holograf?",
+                };
+                testLevel1Music.TestQuestions.Add(testQuestion10TestLevel1Music);
+
+                var testQuestionAnswer1Question10TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Umbre pe cer",
+                    IsCorrect = false
+                };
+                testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Music);
+
+                var testQuestionAnswer2Question10TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Banii vorbesc",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question10TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Lungul drum al zilei către noapte",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer4Question10TestLevel1Music = new TestQuestionAnswerEntity()
+                {
+                    Text = "Singur pe drum",
+                    IsCorrect = false
+                };
+                testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Music);
+                testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Music);
+                testQuestion10TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Music);
+
+                categoryRepository.Update(musicCategory);
+
+
+
                 //-------------------------
 
                 var testLevel2Music = new TestLevelEntity()
@@ -2538,83 +3231,7 @@ namespace PAVOC.Common
 
                 musicCategory.TestLevels.Add(testLevel2Music);
 
-                var testQuestion1TestLevel2Music = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "În ce an a fost lansat albumul “Arrival” de către ABBA?",
-                };
-                testLevel2Music.TestQuestions.Add(testQuestion1TestLevel2Music);
-
-                var testQuestionAnswer1Question1TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "1976",
-                    IsCorrect = true
-                };
-                testQuestion1TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2Music);
-
-                var testQuestionAnswer2Question1TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "1979",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "1977",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question1TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "1975",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel2Music);
-                testQuestion1TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel2Music);
-                testQuestion1TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel2Music);
-
-
-                var testQuestion2TestLevel2Music = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Cum s-a numit grupul pe care l-a părăsit Benny Andersson înainte de a se forma ABBA?",
-                };
-                testLevel2Music.TestQuestions.Add(testQuestion2TestLevel2Music);
-
-                var testQuestionAnswer1Question2TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Hootenanny Singers",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Music);
-
-                var testQuestionAnswer2Question2TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "The Visitors",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question2TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "The Hep Stars",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question2TestLevel2Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Erasure",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel2Music);
-                testQuestion2TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel2Music);
-                testQuestion2TestLevel2Music.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel2Music);
-
-
+                
                 //---------------------
 
                 var testLevel3Music = new TestLevelEntity()
@@ -2627,84 +3244,17 @@ namespace PAVOC.Common
 
                 musicCategory.TestLevels.Add(testLevel3Music);
 
-                var testQuestion1TestLevel3Music = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "Care este evenimentul ce a declansat prăbușirea trupei The Beatles?",
-                };
-                testLevel3Music.TestQuestions.Add(testQuestion1TestLevel3Music);
-
-                var testQuestionAnswer1Question1TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Moartea lui Brian Epstein",
-                    IsCorrect = true
-                };
-                testQuestion1TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Music);
-
-                var testQuestionAnswer2Question1TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "John Lennon afirmă “religia creștină este pe moarte”",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Diversele experimente muzicale",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question1TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Asasinarea lui John Lennon",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel3Music);
-                testQuestion1TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel3Music);
-                testQuestion1TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel3Music);
-
-
-                var testQuestion2TestLevel3Music = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "Care a fost ordinea denumirilor trupei inainte de a se numi The Beatles?",
-                };
-                testLevel3Music.TestQuestions.Add(testQuestion2TestLevel3Music);
-
-                var testQuestionAnswer1Question2TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "The Quarrymen, Blackjacks, Beetles, The Silver Beetles, The Silver Beatles ",
-                    IsCorrect = false
-                };
-                testQuestion2TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Music);
-
-                var testQuestionAnswer2Question2TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Blackjacks, The Quarrymen, Beetles, The Silver Beetles, The Silver Beatles",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer3Question2TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "Blackjacks, The Quarrymen, The Silver Beetles, Beetles, The Silver Beatles",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer4Question2TestLevel3Music = new TestQuestionAnswerEntity()
-                {
-                    Text = "The Quarrymen, Blackjacks, The Silver Beetles, Beetles, The Silver Beatles ",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel3Music);
-                testQuestion2TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3Music);
-                testQuestion2TestLevel3Music.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3Music);
-
-                categoryRepository.Update(musicCategory);
+                
+                
 
                 //----------------//
+
+
+
+
+
+
+
 
                 var celebritiesCategory = categoryRepository.GetCategoryByName("Celebrități");
 
@@ -2712,7 +3262,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "",
+                    Image = "https://i.ibb.co/t4CSnLC/hollywood-star-620x350.jpg",
                     Text = ""
                 };
 
@@ -2792,6 +3342,319 @@ namespace PAVOC.Common
                 testQuestion2TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel1Celebrities);
                 testQuestion2TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel1Celebrities);
 
+
+                
+
+                var testQuestion3TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 3,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion3TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+                testQuestion3TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question3TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question3TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                testQuestion3TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question3TestLevel1Celebrities);
+                testQuestion3TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question3TestLevel1Celebrities);
+                testQuestion3TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question3TestLevel1Celebrities);
+
+
+                var testQuestion4TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 4,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion4TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question4TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question4TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question4TestLevel1Celebrities);
+                testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question4TestLevel1Celebrities);
+                testQuestion4TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question4TestLevel1Celebrities);
+
+
+                
+
+                var testQuestion5TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 5,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion5TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+                testQuestion5TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question5TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question5TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                testQuestion5TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question5TestLevel1Celebrities);
+                testQuestion5TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question5TestLevel1Celebrities);
+                testQuestion5TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question5TestLevel1Celebrities);
+
+
+                var testQuestion6TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 6,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion6TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion6TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question6TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question6TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion6TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question6TestLevel1Celebrities);
+                testQuestion6TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question6TestLevel1Celebrities);
+                testQuestion6TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question6TestLevel1Celebrities);
+
+                
+
+                var testQuestion7TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 7,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion7TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+                testQuestion7TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                testQuestion7TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question7TestLevel1Celebrities);
+                testQuestion7TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question7TestLevel1Celebrities);
+                testQuestion7TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question7TestLevel1Celebrities);
+
+
+                var testQuestion8TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 8,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion8TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question8TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question8TestLevel1Celebrities);
+                testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question8TestLevel1Celebrities);
+                testQuestion8TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question8TestLevel1Celebrities);
+
+
+                
+
+                var testQuestion9TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 9,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion9TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+                testQuestion9TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question9TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+
+                var testQuestionAnswer3Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question9TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                testQuestion9TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question9TestLevel1Celebrities);
+                testQuestion9TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question9TestLevel1Celebrities);
+                testQuestion9TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question9TestLevel1Celebrities);
+
+
+                var testQuestion10TestLevel1Celebrities = new TestQuestionEntity()
+                {
+                    Order = 10,
+                    //TODO Petros -> change this
+                    Text = "",
+                };
+                testLevel1Celebrities.TestQuestions.Add(testQuestion10TestLevel1Celebrities);
+
+                var testQuestionAnswer1Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question10TestLevel1Celebrities);
+
+                var testQuestionAnswer2Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer3Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = false
+                };
+
+                var testQuestionAnswer4Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
+                {
+                    Text = "",
+                    IsCorrect = true
+                };
+                testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Celebrities);
+                testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question10TestLevel1Celebrities);
+                testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question10TestLevel1Celebrities);
+
+
+
+
+
+
+
                 //-------------------------
 
                 var testLevel2Celebrities = new TestLevelEntity()
@@ -2804,83 +3667,7 @@ namespace PAVOC.Common
 
                 celebritiesCategory.TestLevels.Add(testLevel2Celebrities);
 
-                var testQuestion1TestLevel2Celebrities = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "",
-                };
-                testLevel2Celebrities.TestQuestions.Add(testQuestion1TestLevel2Celebrities);
-
-                var testQuestionAnswer1Question1TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel2History.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel2History);
-
-                var testQuestionAnswer2Question1TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel2Celebrities);
-                testQuestion1TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel2Celebrities);
-                testQuestion1TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel2Celebrities);
-
-
-                var testQuestion2TestLevel2Celebrities = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "",
-                };
-                testLevel2Celebrities.TestQuestions.Add(testQuestion2TestLevel2Celebrities);
-
-                var testQuestionAnswer1Question2TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel2Celebrities);
-
-                var testQuestionAnswer2Question2TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer3Question2TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question2TestLevel2Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                testQuestion2TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel2Celebrities);
-                testQuestion2TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel2Celebrities);
-                testQuestion2TestLevel2Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel2Celebrities);
-
-
+                
                 //---------------------
 
                 var testLevel3Celebrities = new TestLevelEntity()
@@ -2893,81 +3680,7 @@ namespace PAVOC.Common
 
                 celebritiesCategory.TestLevels.Add(testLevel3Celebrities);
 
-                var testQuestion1TestLevel3Celebrities = new TestQuestionEntity()
-                {
-                    Order = 1,
-                    //TODO Petros -> change this
-                    Text = "",
-                };
-                testLevel3Celebrities.TestQuestions.Add(testQuestion1TestLevel3Celebrities);
-
-                var testQuestionAnswer1Question1TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-                testQuestion1TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel3Celebrities);
-
-                var testQuestionAnswer2Question1TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question1TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question1TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                testQuestion1TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question1TestLevel3Celebrities);
-                testQuestion1TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question1TestLevel3Celebrities);
-                testQuestion1TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question1TestLevel3Celebrities);
-
-
-                var testQuestion2TestLevel3Celebrities = new TestQuestionEntity()
-                {
-                    Order = 2,
-                    //TODO Petros -> change this
-                    Text = "",
-                };
-                testLevel3Celebrities.TestQuestions.Add(testQuestion2TestLevel3Celebrities);
-
-                var testQuestionAnswer1Question2TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-                testQuestion2TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel3Celebrities);
-
-                var testQuestionAnswer2Question2TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = false
-                };
-
-                var testQuestionAnswer3Question2TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = true
-                };
-
-                var testQuestionAnswer4Question2TestLevel3Celebrities = new TestQuestionAnswerEntity()
-                {
-                    Text = "",
-                    IsCorrect = true
-                };
-
-                testQuestion2TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel3Celebrities);
-                testQuestion2TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer3Question2TestLevel3Celebrities);
-                testQuestion2TestLevel3Celebrities.TestQuestionAnswers.Add(testQuestionAnswer4Question2TestLevel3Celebrities);
-
+                
                 categoryRepository.Update(celebritiesCategory);
 
                 uow.Save();
