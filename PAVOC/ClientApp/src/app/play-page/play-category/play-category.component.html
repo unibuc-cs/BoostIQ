@@ -63,8 +63,8 @@
           (click)="previousQuestion()"
           style="border-radius: 2%"
         >
-          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>&nbsp;
-          Intrebarea anterioara
+          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+          Întrebarea anterioară
         </button>
       </div>
       <br />
@@ -75,8 +75,8 @@
           (click)="nextQuestion()"
           style="border-radius: 2%"
         >
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;
-          Urmatoarea intrebare
+          
+          Următoarea întrebare&nbsp;<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
         </button>
       </div>
       <div *ngIf="questionOrder == testLevel.testQuestions.length">
@@ -95,24 +95,25 @@
 </div>
 
 <!-- pagina cu rezultatele -->
+<br><br><br><br><br>
 <div *ngIf="resultDisplayed">
   <h2>Ai terminat testul</h2>
-  <h2>Scorul tau este: {{ scores }}%</h2>
-
+  <h2>Scorul tău este: {{ scores }}%</h2>
+  <br><br><br>
   <button type="button" class="btn btn-dark" [routerLink]="'/play'">
-    Alta categorie!
+    Altă categorie!
     <i class="fa fa-check-circle" aria-hidden="true"></i>
   </button>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <button type="button" class="btn btn-dark" (click)="reloadPage()">
-    Mai incearca odata!
+    Mai încearcă odată!
     <i class="fa fa-reply" aria-hidden="true"></i>
   </button>
 </div>
 
 <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
 <div *ngIf="finishedAllLevels">
-  <h2>Ai finalizat toate nivelele pentru aceasta categorie!</h2>
+  <h2>Ai finalizat toate nivelele pentru această categorie!</h2>
 </div>
 
 <style>
@@ -176,7 +177,7 @@
       justify-content: center;
       border-radius: 20% 20% 20% 20%;
       border: none;
-      padding: 4% 27%;
+      padding: 4% 26.6%;
       text-decoration: none;
       font-family: "Times New Roman", Times, serif;
     }

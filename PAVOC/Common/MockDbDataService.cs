@@ -1598,7 +1598,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/vVz0Gqs/history.png",
+                    Image = "https://i.gifer.com/F1Wp.gif",
                     Text = ""
                 };
                 historyCategory.TestLevels.Add(testLevel1History);
@@ -1607,7 +1607,7 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "In ce an a inceput al doilea razboi modial?",
+                    Text = "În ce an a început Al Doilea Război Modial?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion1TestLevel1History);
 
@@ -1645,7 +1645,7 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Cine a fost primul rege al Romaniei?",
+                    Text = "Cine a fost primul rege al României?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion2TestLevel1History);
 
@@ -1684,7 +1684,7 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "In ce an a intrat Romania in primul razboi mondial?",
+                    Text = "În ce an a intrat Romania în Primul Război Mondial?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion3TestLevel1History);
 
@@ -1722,7 +1722,7 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "In ce secol a domnit Stefan cel Mare?",
+                    Text = "În ce secol a domnit Ștefan cel Mare?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion4TestLevel1History);
 
@@ -1759,7 +1759,7 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = " In ce tara s-a nascut Adolf Hitler?",
+                    Text = " În ce țară s-a născut Adolf Hitler?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion5TestLevel1History);
 
@@ -1772,7 +1772,7 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer2Question5TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Elvetia",
+                    Text = "Elveția",
                     IsCorrect = false
                 };
 
@@ -1797,13 +1797,13 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "In ce oras a fost executat Nicolae Ceausescu?",
+                    Text = "În ce oraș a fost executat Nicolae Ceaușescu?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion6TestLevel1History);
 
                 var testQuestionAnswer1Question6TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Bucuresti",
+                    Text = "București",
                     IsCorrect = false
                 };
 
@@ -1811,7 +1811,7 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer2Question6TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Targoviste",
+                    Text = "Târgoviște",
                     IsCorrect = true
                 };
 
@@ -1823,7 +1823,7 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer4Question6TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ploiesti",
+                    Text = "Ploiești",
                     IsCorrect = false
                 };
 
@@ -1836,7 +1836,7 @@ namespace PAVOC.Common
                 {
                     Order = 7,
                     //TODO Petros -> change this
-                    Text = "In ce perioada a avut loc Razboiul Rece?",
+                    Text = "În ce perioadă a avut loc Războiul Rece?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion7TestLevel1History);
 
@@ -1880,26 +1880,26 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer1Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Regele Romaniei",
+                    Text = "Regele României",
                     IsCorrect = false
                 };
                 testQuestion8TestLevel1History.TestQuestionAnswers.Add(testQuestionAnswer1Question8TestLevel1History);
 
                 var testQuestionAnswer2Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Voievodul Romaniei",
+                    Text = "Voievodul României",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer3Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Imparatul Romaniei",
+                    Text = "Împăratul României",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer4Question8TestLevel1History = new TestQuestionAnswerEntity()
                 {
-                    Text = "Presedintele Romaniei",
+                    Text = "Președintele României",
                     IsCorrect = false
                 };
 
@@ -1948,7 +1948,7 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "In ce an a avut loc 'Partida de ceai de la Boston' ?",
+                    Text = "În ce an a avut loc 'Partida de ceai de la Boston' ?",
                 };
                 testLevel1History.TestQuestions.Add(testQuestion10TestLevel1History);
 
@@ -1994,7 +1994,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://upload.wikimedia.org/wikipedia/commons/4/40/Napoleon_in_His_Study.jpg",
+                    Image = "",
                     Text = ""
                 };
 
@@ -2008,7 +2008,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://upload.wikimedia.org/wikipedia/ro/thumb/0/0b/ColdWar.jpg/300px-ColdWar.jpg",
+                    Image = "",
                     Text = ""
                 };
 
@@ -2032,7 +2032,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/S7mwjys/Shutterstock-Lisa-Kolbasa.png",
+                    Image = "https://i.pinimg.com/originals/47/32/3f/47323f3814100312de9fd64b48d0cef5.gif",
                     Text = ""
                 };
 
@@ -2042,7 +2042,7 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "Cine a inscris, pana in prezent, cele mai multe goluri in fotbalul profesionist?",
+                    Text = "Cine a înscris, până în prezent, cele mai multe goluri în fotbalul profesionist?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion1TestLevel1Sports);
 
@@ -2080,7 +2080,7 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Care este echipa de fotbal cu cele mai multe trofee Cupa Campionilor?",
+                    Text = "Care este echipa de fotbal cu cele mai multe trofee de Cupa Campionilor?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion2TestLevel1Sports);
 
@@ -2118,7 +2118,7 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Cine este denumit cel mai bun basketballist din toate timpurile?",
+                    Text = "Cine este denumit cel mai bun baschetbalist din toate timpurile?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion3TestLevel1Sports);
 
@@ -2157,7 +2157,7 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Care a fost nota exacta obtinuta de Nadia Comaneci la barna in anul 1979?",
+                    Text = "Care a fost nota exactă obținută de Nadia Comaneci la bârnă în anul 1979?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion4TestLevel1Sports);
 
@@ -2197,7 +2197,7 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "Cate titluri la simplu a castigat jucatorul de tenis Ilie Nastase ?",
+                    Text = "Câte titluri la simplu a caștigat jucătorul de tenis Ilie Năstase ?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion5TestLevel1Sports);
 
@@ -2235,7 +2235,7 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "Cine este jucatorul de fotbal cu cele mai multe baloane de aur?",
+                    Text = "Cine este jucătorul de fotbal cu cele mai multe baloane de aur?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion6TestLevel1Sports);
 
@@ -2274,7 +2274,7 @@ namespace PAVOC.Common
                 {
                     Order = 7,
                     //TODO Petros -> change this
-                    Text = "Ce echipa a invins nationala de fotbal U21 a Romaniei in sferturile de finala la EURO U21 din 2019?",
+                    Text = "Ce echipă a învins naționala de fotbal U21 a României în sferturile de finală la EURO U21 din 2019?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion7TestLevel1Sports);
 
@@ -2312,13 +2312,13 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "Ce jucator de tenis are in palmares cele mai multe titluri Grand Slam?",
+                    Text = "Ce jucător de tenis are în palmares cele mai multe titluri Grand Slam?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion8TestLevel1Sports);
 
                 var testQuestionAnswer1Question8TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Ilie Nastase",
+                    Text = "Ilie Năstase",
                     IsCorrect = false
                 };
 
@@ -2352,7 +2352,7 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "Care este scorul cu care s-a impus Franta in fata Croatiei in finala Cupei Mondiale din Rusia 2018 ?",
+                    Text = "Care este scorul cu care s-a impus Franța în fața Croației în finala Cupei Mondiale din Rusia 2018 ?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion9TestLevel1Sports);
 
@@ -2390,7 +2390,7 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "In care din urmatoarele tari s-a tinut Campionatul European de fotbal din 2016?",
+                    Text = "În care din următoarele țări s-a ținut Campionatul European de fotbal din 2016?",
                 };
                 testLevel1Sports.TestQuestions.Add(testQuestion10TestLevel1Sports);
 
@@ -2403,7 +2403,7 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer2Question10TestLevel1Sports = new TestQuestionAnswerEntity()
                 {
-                    Text = "Franta",
+                    Text = "Franța",
                     IsCorrect = true
                 };
 
@@ -2433,7 +2433,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://playtech.ro/stiri/wp-content/uploads/2020/03/nadia-comaneci.jpg",
+                    Image = "",
                     Text = ""
                 };
 
@@ -2447,7 +2447,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://image-cdn.essentiallysports.com/wp-content/uploads/20200912202247/michael-jordan-t.jpg",
+                    Image = "",
                     Text = ""
                 };
 
@@ -2468,7 +2468,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/zJ28X3V/30445-tumb-750-Xauto.jpg",
+                    Image = "https://i.pinimg.com/originals/1e/0a/75/1e0a755cb32b1be40e677ed2480fea43.gif",
                     Text = ""
                 };
                 geographyCategory.TestLevels.Add(testLevel1Geography);
@@ -2477,13 +2477,13 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "Din ce tara izvoraste Dunarea?",
+                    Text = "Din ce țară izvorăște Dunărea?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion1TestLevel1Geography);
 
                 var testQuestionAnswer1Question1TestLevel1Geography = new TestQuestionAnswerEntity()
                 {
-                    Text = "Romania",
+                    Text = "România",
                     IsCorrect = false
                 };
                 testQuestion1TestLevel1Geography.TestQuestionAnswers.Add(testQuestionAnswer1Question1TestLevel1Geography);
@@ -2552,7 +2552,7 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "A cata planeta de la soare este Terra?",
+                    Text = "A câta planetă de la soare este Terra?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion3TestLevel1Geography);
 
@@ -2590,7 +2590,7 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Pana la ce adancime (metri) ajunge Groapa Marianelor, Oceanul Pacific? ",
+                    Text = "Până la ce adâncime (metri) ajunge Groapa Marianelor, Oceanul Pacific? ",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion4TestLevel1Geography);
 
@@ -2627,7 +2627,7 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "Care din urmatoarele fluvii are cea mai mare lungime?",
+                    Text = "Care din următoarele fluvii are cea mai mare lungime?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion5TestLevel1Geography);
 
@@ -2665,7 +2665,7 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "A carei tari este capitala Reykjavík?",
+                    Text = "A cărei țări este capitala Reykjavík?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion6TestLevel1Geography);
 
@@ -2702,7 +2702,7 @@ namespace PAVOC.Common
                 {
                     Order = 7,
                     //TODO Petros -> change this
-                    Text = "Cine a realizat pentru prima data calatoria in jurul pamantului?",
+                    Text = "Cine a realizat pentru prima dată călătoria în jurul pământului?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion7TestLevel1Geography);
 
@@ -2740,7 +2740,7 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "Din ce categorie face parte lacul Sfanta Ana?",
+                    Text = "Din ce categorie face parte lacul Sfânta Ana?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion8TestLevel1Geography);
 
@@ -2779,7 +2779,7 @@ namespace PAVOC.Common
                 {
                     Order = 9,
                     //TODO Petros -> change this
-                    Text = "Ce tara detine titlul pentru cea mai mare densitate a populatiei ?",
+                    Text = "Ce țară deține titlul pentru cea mai mare densitate a populației ?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion9TestLevel1Geography);
 
@@ -2817,7 +2817,7 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "Cate continente are Terra?",
+                    Text = "Câte continente are Terra?",
                 };
                 testLevel1Geography.TestQuestions.Add(testQuestion10TestLevel1Geography);
 
@@ -2867,7 +2867,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/vVz0Gqs",
+                    Image = "",
                     Text = ""
                 };
 
@@ -2881,7 +2881,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/vVz0Gqs",
+                    Image = "",
                     Text = ""
                 };
 
@@ -2907,7 +2907,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/R9vY3J6/The-20-Best-Royalty-Free-Music-Sites-in-2018.png",
+                    Image = "https://i.pinimg.com/originals/71/d3/65/71d365c6b3117191bcbf8def41219e45.gif",
                     Text = ""
                 };
 
@@ -2917,7 +2917,7 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "In ce an a fost formata trupa AC/DC?",
+                    Text = "În ce an a fost formată trupa AC/DC?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion1TestLevel1Music);
 
@@ -2960,26 +2960,26 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer1Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Germana",
+                    Text = "Germană",
                     IsCorrect = false
                 };
                 testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer1Question2TestLevel1Music);
 
                 var testQuestionAnswer2Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Australiana",
+                    Text = "Australiană",
                     IsCorrect = false
                 };
 
                 var testQuestionAnswer3Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Britanica",
+                    Text = "Britanică",
                     IsCorrect = true
                 };
 
                 var testQuestionAnswer4Question2TestLevel1Music = new TestQuestionAnswerEntity()
                 {
-                    Text = "Franceza",
+                    Text = "Franceză",
                     IsCorrect = false
                 };
                 testQuestion2TestLevel1Music.TestQuestionAnswers.Add(testQuestionAnswer2Question2TestLevel1Music);
@@ -2992,7 +2992,7 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Cum este supranumita trupa Aerosmith?",
+                    Text = "Cum este supranumită trupa Aerosmith?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion3TestLevel1Music);
 
@@ -3029,7 +3029,7 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Cum il cheama pe solistul trupei Metallica?",
+                    Text = "Cum îl cheamă pe solistul trupei Metallica?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion4TestLevel1Music);
 
@@ -3066,7 +3066,7 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "In ce an a murit Michael Jackson?",
+                    Text = "În ce an a murit Michael Jackson?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion5TestLevel1Music);
 
@@ -3103,7 +3103,7 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "Ce artist a facut melodia 'Non, je ne regrette rien'?",
+                    Text = "Ce artist a făcut melodia 'Non, je ne regrette rien'?",
                 };
                 testLevel1Music.TestQuestions.Add(testQuestion6TestLevel1Music);
 
@@ -3294,7 +3294,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 2,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://www.rollingstone.com/wp-content/uploads/2018/08/best-deepcut-abba-songs-sheffield.jpg?resize=1800,1200&w=1800",
+                    Image = "",
                     Text = ""
                 };
 
@@ -3307,7 +3307,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 3,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://api.time.com/wp-content/uploads/2015/12/the-beatles2.jpg",
+                    Image = "",
                     Text = ""
                 };
 
@@ -3331,7 +3331,7 @@ namespace PAVOC.Common
                 {
                     TestLevelNumber = 1,
                     //TODO Petros -> change these 2 lines
-                    Image = "https://i.ibb.co/t4CSnLC/hollywood-star-620x350.jpg",
+                    Image = "https://thumbs.gfycat.com/HatefulSlightIvorybackedwoodswallow-small.gif",
                     Text = ""
                 };
 
@@ -3341,7 +3341,7 @@ namespace PAVOC.Common
                 {
                     Order = 1,
                     //TODO Petros -> change this
-                    Text = "Ce actor a avut rolul principal in filmul Interstellar?",
+                    Text = "Ce actor a avut rolul principal în filmul Interstellar?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion1TestLevel1Celebrities);
 
@@ -3379,7 +3379,7 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Cati copii are Angelina Jolie",
+                    Text = "Câți copii are Angelina Jolie",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion2TestLevel1Celebrities);
 
@@ -3418,7 +3418,7 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Al catelea presedinte al SUA a fost Barack Obama? ",
+                    Text = "Al câtelea președinte al SUA a fost Barack Obama? ",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion3TestLevel1Celebrities);
 
@@ -3456,7 +3456,7 @@ namespace PAVOC.Common
                 {
                     Order = 4,
                     //TODO Petros -> change this
-                    Text = "Cine a interpretat rolul capitanului Jack Sparrow ?",
+                    Text = "Cine a interpretat rolul căpitanului Jack Sparrow ?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion4TestLevel1Celebrities);
 
@@ -3495,7 +3495,7 @@ namespace PAVOC.Common
                 {
                     Order = 5,
                     //TODO Petros -> change this
-                    Text = "Cine detine titlul de cel mai tanar 'self-made' miliardar din lume?",
+                    Text = "Cine deține titlul de cel mai tânăr 'self-made' miliardar din lume?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion5TestLevel1Celebrities);
 
@@ -3533,7 +3533,7 @@ namespace PAVOC.Common
                 {
                     Order = 6,
                     //TODO Petros -> change this
-                    Text = "Ce avere are Ion Tiriac?",
+                    Text = "Ce avere are Ion Țiriac?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion6TestLevel1Celebrities);
 
@@ -3577,7 +3577,7 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer1Question7TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "Stefan Dobrincu",
+                    Text = "Ștefan Dobrincu",
                     IsCorrect = false
                 };
                 testQuestion7TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer1Question7TestLevel1Celebrities);
@@ -3609,7 +3609,7 @@ namespace PAVOC.Common
                 {
                     Order = 8,
                     //TODO Petros -> change this
-                    Text = "In ce an s-a nascut Eminem?",
+                    Text = "În ce an s-a născut Eminem?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion8TestLevel1Celebrities);
 
@@ -3686,7 +3686,7 @@ namespace PAVOC.Common
                 {
                     Order = 10,
                     //TODO Petros -> change this
-                    Text = "Al catelea copil al familiei Jackson a fost Michael?",
+                    Text = "Al câtelea copil al familiei Jackson a fost Michael?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion10TestLevel1Celebrities);
 
@@ -3711,7 +3711,7 @@ namespace PAVOC.Common
 
                 var testQuestionAnswer4Question10TestLevel1Celebrities = new TestQuestionAnswerEntity()
                 {
-                    Text = "al saptelea",
+                    Text = "al șaptelea",
                     IsCorrect = true
                 };
                 testQuestion10TestLevel1Celebrities.TestQuestionAnswers.Add(testQuestionAnswer2Question10TestLevel1Celebrities);
