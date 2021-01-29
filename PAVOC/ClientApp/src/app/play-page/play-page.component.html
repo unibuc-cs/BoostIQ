@@ -2,7 +2,9 @@
   <mat-toolbar>
     <mat-toolbar-row>
       <h1>
-        <a href="#"><img src="https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"/></a>
+        <a href="#"
+          ><img src="https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"
+        /></a>
       </h1>
       <span class="menu-spacer"></span>
       <div>
@@ -11,12 +13,11 @@
         <a mat-button [routerLink]="'/play'"> PLAY </a>
         <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
         <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
-
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
   <br />
-  <h2>Categorii</h2>
+  <h2><i class="fa fa-bars" aria-hidden="true"></i> Categorii</h2>
   <br />
 
   <p>Selecteaza categoria din care vrei sa dai test</p>
@@ -53,11 +54,13 @@
   h2 {
     font-size: 50px;
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
   }
 
   p {
     font-size: 40px;
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
   }
 
   button {

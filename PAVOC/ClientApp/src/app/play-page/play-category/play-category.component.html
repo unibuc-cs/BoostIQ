@@ -21,7 +21,7 @@
 <!-- pagina cu textul -->
 <div *ngIf="textDisplayed">
   <div *ngIf="testLevel">
-    <h1>Play</h1>
+    <h1><i class="fa fa-gamepad" aria-hidden="true"></i> Play</h1>
     <br /><br />
 
     <img src="{{ testLevel.image }}" alt="" />
@@ -34,7 +34,7 @@
 </div>
 
 <!-- pagina cu intrebarile -->
-<div class="w1-container" >
+<div class="w1-container">
   <div *ngIf="questionsDisplayed">
     <div *ngIf="question">
       <br />
@@ -61,8 +61,9 @@
           type="button"
           class="btn btn-dark"
           (click)="previousQuestion()"
-          style="border-radius: 2%;"
+          style="border-radius: 2%"
         >
+          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>&nbsp;
           Intrebarea anterioara
         </button>
       </div>
@@ -72,14 +73,21 @@
           type="button"
           class="btn btn-dark"
           (click)="nextQuestion()"
-          style="border-radius: 2%;"
+          style="border-radius: 2%"
         >
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;
           Urmatoarea intrebare
         </button>
       </div>
       <div *ngIf="questionOrder == testLevel.testQuestions.length">
-        <button type="button" class="btn btn-dark" (click)="finish()" style="border-radius: 2%;">
+        <button
+          type="button"
+          class="btn btn-dark"
+          (click)="finish()"
+          style="border-radius: 2%"
+        >
           Finish
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -88,16 +96,18 @@
 
 <!-- pagina cu rezultatele -->
 <div *ngIf="resultDisplayed">
-    <h2>Ai terminat testul</h2>
-    <h2>Scorul tau este: {{ scores }}% </h2>
+  <h2>Ai terminat testul</h2>
+  <h2>Scorul tau este: {{ scores }}%</h2>
 
-    <button type="button" class="btn btn-dark" [routerLink]="'/play'">
-      Inapoi la categorii!
-    </button>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    <button type="button" class="btn btn-dark" (click)="reloadPage()">
-      Mai incearca odata!
-    </button>
+  <button type="button" class="btn btn-dark" [routerLink]="'/play'">
+    Alta categorie!
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+  </button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" class="btn btn-dark" (click)="reloadPage()">
+    Mai incearca odata!
+    <i class="fa fa-reply" aria-hidden="true"></i>
+  </button>
 </div>
 
 <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
@@ -115,13 +125,15 @@
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
   }
 
   h2 {
     text-align: center;
     font-size: 300%;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .intrebari {
@@ -139,6 +151,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    border-radius: 20%;
   }
 
   h1 img {

@@ -1,179 +1,210 @@
 <mat-toolbar>
-    <mat-toolbar-row>
-      <h1><a href="#"><img src = "https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"></a></h1>
-      <span class="menu-spacer"></span>
-      <div>
-        <a mat-button [routerLink]="'/home'"> HOME </a>
-        <a mat-button [routerLink]="'/learn'"> LEARN </a>
-        <a mat-button [routerLink]="'/play'"> PLAY </a>
-        <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
-        <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
-      </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-  
-  <br>
-
-  <!-- pagina cu textul -->
-  <div *ngIf="textDisplayed"> 
-    <div *ngIf="learnLevel">
-      <h1 class="w3-animate-zoom"> Learn Level {{learnLevel.learnLevelNumber}} </h1>
-        <br><br>
-      
-        <img class="w3-animate-left" src="{{learnLevel.image}}" alt="">
-        <br><br><br>
-        <div class=w3-container>
-        <p style ="white-space: pre-line;">{{learnLevel.text}}</p>
-        </div>
+  <mat-toolbar-row>
+    <h1>
+      <a href="#"
+        ><img src="https://i.ibb.co/s5Pb5R2/Vanilla-1s-280px-4.gif"
+      /></a>
+    </h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> HOME </a>
+      <a mat-button [routerLink]="'/learn'"> LEARN </a>
+      <a mat-button [routerLink]="'/play'"> PLAY </a>
+      <a mat-button [routerLink]="'/leaderboard'"> LEADERBOARD </a>
+      <a mat-button [routerLink]="'/about-us'"> ABOUT US </a>
     </div>
-    <button type="button" class="btn btn-dark" (click)="goToQuestions()"><i class="fa fa-question" aria-hidden="true"></i> Răspundeți la următoarele întrebări <i class="fa fa-question" aria-hidden="true"></i></button><br>
-  </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-  <!-- pagina cu intrebarile -->
-  <div class="w1-container">
+<br />
+
+<!-- pagina cu textul -->
+<div *ngIf="textDisplayed">
+  <div *ngIf="learnLevel">
+    <h1 class="w3-animate-zoom">
+      Learn Level {{ learnLevel.learnLevelNumber }}
+    </h1>
+    <br /><br />
+
+    <img class="w3-animate-left" src="{{ learnLevel.image }}" alt="" />
+    <br /><br /><br />
+    <div class="w3-container">
+      <p style="white-space: pre-line">{{ learnLevel.text }}</p>
+    </div>
+  </div>
+  <button type="button" class="btn btn-dark" (click)="goToQuestions()">
+    <i class="fa fa-question" aria-hidden="true"></i> Răspundeți la următoarele
+    întrebări <i class="fa fa-question" aria-hidden="true"></i></button
+  ><br />
+</div>
+
+<!-- pagina cu intrebarile -->
+<div class="w1-container">
   <div *ngIf="questionsDisplayed">
     <div *ngIf="question">
-      <br><br>
-      <h2>{{question.text}}</h2>
-        <br><br>
-        
-            <div class="intrebari" *ngFor="let answer of question.learnQuestionAnswers">
-                <button type="button" class="btn btn-dark w3-center w3-animate-left" [id]="'answer' + answer.learnQuestionAnswerEntityId" (click)="selectAnswer(answer.learnQuestionAnswerEntityId)">{{answer.text}}</button>
-            </div>
-        
-        <br><br><br><br><br><br>
-        <div *ngIf="questionOrder > 1">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="previousQuestion()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>&nbsp; Întrebarea anterioară</button>
-        </div>
-        <br><br>
-        <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-dark" (click)="nextQuestion()">Următoarea întrebare &nbsp;<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> </button>
-        </div>
-        <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
-            <button type="button" class="btn btn-dark" (click)="finish()"><i class="fa fa-check-circle" aria-hidden="true"></i> Finalizare <i class="fa fa-check-circle" aria-hidden="true"></i></button>
-        </div>
+      <br /><br />
+      <h2>{{ question.text }}</h2>
+      <br /><br />
+
+      <div
+        class="intrebari"
+        *ngFor="let answer of question.learnQuestionAnswers"
+      >
+        <button
+          type="button"
+          class="btn btn-dark w3-center w3-animate-left"
+          [id]="'answer' + answer.learnQuestionAnswerEntityId"
+          (click)="selectAnswer(answer.learnQuestionAnswerEntityId)"
+        >
+          {{ answer.text }}
+        </button>
+      </div>
+
+      <br /><br /><br /><br /><br /><br />
+      <div *ngIf="questionOrder > 1">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+          type="button"
+          class="btn btn-dark"
+          (click)="previousQuestion()"
+        >
+          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>&nbsp;
+          Întrebarea anterioară
+        </button>
+      </div>
+      <br /><br />
+      <div *ngIf="questionOrder < learnLevel.learnQuestions.length">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+          type="button"
+          class="btn btn-dark"
+          (click)="nextQuestion()"
+        >
+          Următoarea întrebare &nbsp;<i
+            class="fa fa-arrow-circle-right"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+      <div *ngIf="questionOrder == learnLevel.learnQuestions.length">
+        <button type="button" class="btn btn-dark" (click)="finish()">
+          <i class="fa fa-check-circle" aria-hidden="true"></i> Finalizare
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- pagina cu rezultatele -->
+<div *ngIf="resultDisplayed">
+  <div *ngIf="passedLevel">
+    <br /><br /><br />
+    <h2 class="w3-center w3-animate-zoom">
+      Felicitări! Ai răspuns corect la toate întrebările!
+    </h2>
+    <br /><br />
+    <button type="button" class="btn btn-dark" (click)="reloadPage()">
+      Nivelul următor
+    </button>
+    <br /><br /><br /><br />
+    <img src="https://i.gifer.com/3VQL.gif" />
   </div>
-
-  <!-- pagina cu rezultatele -->
-  <div *ngIf="resultDisplayed">
-    <div *ngIf="passedLevel">
-        <br><br><br>
-        <h2 class="w3-center w3-animate-zoom">Felicitări! Ai răspuns corect la toate întrebările!</h2>
-        <br><br>
-        <button type="button" class="btn btn-dark" (click)="reloadPage()">Nivelul următor</button>
-        <br><br><br><br>
-        <img src="https://i.gifer.com/3VQL.gif" >
-    </div>
-    <div *ngIf="!passedLevel">
-        <br><br><br>
-        <h2>Ai răspuns greșit!</h2>
-        <br><br>
-        <button type="button" class="btn btn-dark" (click)="reloadPage()">Încearcă din nou</button>
-    </div>
+  <div *ngIf="!passedLevel">
+    <br /><br /><br />
+    <h2>Ai răspuns greșit!</h2>
+    <br /><br />
+    <button type="button" class="btn btn-dark" (click)="reloadPage()">
+      Încearcă din nou
+    </button>
   </div>
+</div>
 
-  <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
-  <div *ngIf="finishedAllLevels">
-    <br><br><br>
-    <h2 class="w3-center w3-animate-zoom">Felicitări! Ai finalizat toate nivelele pentru această categorie!</h2>
-    <br><br><br>
-    <img src="https://i.gifer.com/WS2k.gif" style="width:30%;">
-  </div>
+<!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
+<div *ngIf="finishedAllLevels">
+  <br /><br /><br />
+  <h2 class="w3-center w3-animate-zoom">
+    Felicitări! Ai finalizat toate nivelele pentru această categorie!
+  </h2>
+  <br /><br /><br />
+  <img src="https://i.gifer.com/WS2k.gif" style="width: 30%" />
+</div>
 
+<style>
+  .menu-spacer {
+    margin: 20px;
+  }
 
+  .w3-container {
+    font-size: 24px;
+  }
 
-  <style>
-    .menu-spacer {
-      margin: 20px;
-    }
+  .w3-animate-zoom {
+    animation-duration: 2.5s;
+  }
 
-    .w3-container{
-      font-size: 24px;
-    }
+  .w3-animate-left {
+    animation-duration: 2.3s;
+  }
 
-    .w3-animate-zoom{
-        animation-duration: 2.5s;
-    }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
 
-    .w3-animate-left{
-        animation-duration: 2.3s;
-    }
-    
-    h1{
-      font-size:30px;
-      text-align:center;
-      font-family: "Times New Roman", Times, serif;
-    }
+  h2 {
+    text-align: center;
+    font-size: 300%;
+    font-family: "Times New Roman", Times, serif;
+  }
 
-    h2{
-      text-align: center;
-      font-size: 300%;
-      font-family: "Times New Roman", Times, serif;
-    }
+  p {
+    font-family: "Times New Roman", Times, serif;
+  }
 
-    p{
-      font-family: "Times New Roman", Times, serif;
-    }
+  .intrebari {
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+  }
 
-    .intrebari{
-      border-radius: 20px;
-      padding: 10px;
-      font-family: "Times New Roman", Times, serif;
-    }
+  .intrebari p {
+    font-size: 45px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
 
-    .intrebari p{
-      font-size: 45px;
-      text-align: center;
-      font-family: "Times New Roman", Times, serif;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
 
-}
+  h1 img {
+    width: 63%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-
-
-    img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20%;
-
-    }
-
-    h1 img{
-      width: 63%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    
-
-
-
-    button{
+  button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 55%;
     font-size: 30px;
     font-family: "Times New Roman", Times, serif;
-    }
-    
-    @media screen and (min-width: 1500px)
-    {
-      a{
+  }
+
+  @media screen and (min-width: 1500px) {
+    a {
       font-size: 100%;
       justify-content: center;
       border-radius: 20% 20% 20% 20%;
       border: none;
       padding: 4% 27%;
-      text-decoration:none;
+      text-decoration: none;
       font-family: "Times New Roman", Times, serif;
-    }  
     }
-
-
-    </style>
-
-  
+  }
+</style>
