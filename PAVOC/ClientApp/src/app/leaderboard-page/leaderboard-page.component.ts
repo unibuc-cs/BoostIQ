@@ -21,6 +21,7 @@ export class LeaderboardPageComponent implements OnInit {
   
   displayedColumns: string[] = ['position', 'username', 'score'];
   dataSourceLearn;
+  dataSourceTest;
 
   @ViewChild(MatSort, {static:false}) sort: MatSort;
   
@@ -32,5 +33,13 @@ export class LeaderboardPageComponent implements OnInit {
       this.dataSourceLearn = new MatTableDataSource(scores);
       this.dataSourceLearn.sort = this.sort;
     })
+
+    this.apiService.getTestScores().subscribe((scorestest: Score[])=> {
+      this.dataSourceTest = new MatTableDataSource(scorestest);
+      this.dataSourceTest.sort = this.sort;
+    })
+
   }
+
+  
 }

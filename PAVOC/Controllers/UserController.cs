@@ -34,6 +34,25 @@ namespace PAVOC.Controllers
 
         }
 
+
+        [HttpGet("passTest/user/{userId}/testLevel/{testLevelId}")]
+        public void PassTestLevel(int userId, int testLevelId)
+        {
+            using (var uow = new UnitOfWork())
+            {
+                var userRepo = uow.GetRepository<IUserRepository>();
+                var user = userRepo.GetById(userId);
+                UserTestLevelEntity userTestLevelEntity = new UserTestLevelEntity()
+                {
+                    UserEntityId = userId,
+                    TestLevelEntityId = testLevelId
+                };
+                user.UserTestLevels.Add(userTestLevelEntity);
+                uow.Save();
+            }
+
+        }
+
         // GET api/<UserController>/5
         [HttpGet("{id}")]
         public string Get(int id)
