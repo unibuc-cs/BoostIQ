@@ -54,4 +54,8 @@ export class ApiService {
         testLevelId
     );
   }
+
+  registerUser(user) {
+    return this.http.post<any>('/api/User/register', user);
+  }
 }

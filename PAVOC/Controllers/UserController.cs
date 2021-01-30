@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PAVOC.Common.DTO;
 using PAVOC.DataModel.Models;
 using PAVOC.DataModel.Repository.Interface;
 using PAVOC.DataModel.UnitOfWork;
@@ -40,10 +41,21 @@ namespace PAVOC.Controllers
             return "value";
         }
 
-        // POST api/<UserController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("register")]
+        public void Post([FromBody] UserRegisterDTO user)
         {
+            using (var uow = new UnitOfWork())
+            {
+                var userRepo = uow.GetRepository<IUserRepository>();
+                var userEntity = new UserEntity()
+                {
+                    Email = user.email,
+                    Password = user.password,
+                    Username = user.username
+                };
+                userRepo.Add(userEntity);
+                uow.Save();
+            }
         }
 
         // PUT api/<UserController>/5
