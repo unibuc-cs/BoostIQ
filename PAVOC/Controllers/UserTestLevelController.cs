@@ -24,6 +24,36 @@ namespace PAVOC.Controllers
             return new string[] { "value1", "value2" };
         }
 
+        [HttpGet("scorestest")]
+        public List<ScoreDTO> GetTestScores()
+        {
+            List<ScoreDTO> scorestest = new List<ScoreDTO>();
+            using (var uow = new UnitOfWork())
+            {
+                var repo = uow.GetRepository<IUserRepository>();
+                var allUsers = repo.GetAll();
+                foreach (var user in allUsers)
+                {
+                    ScoreDTO score = new ScoreDTO()
+                    {
+                        username = user.Username,
+                        score = user.UserTestLevels.Count() * 50 //number of user learn levels * 50 points
+                    };
+                    scorestest.Add(score);
+                }
+            }
+
+            //sort desc by score
+            scorestest = scorestest.OrderByDescending(p => p.score).ToList();
+
+            //setting positions
+            int position = 1;
+            foreach (var score in scorestest)
+            {
+                score.position = position++;
+            }
+            return scorestest;
+        }
 
 
         // GET api/<UserTestLevelController>/5

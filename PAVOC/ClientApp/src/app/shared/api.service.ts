@@ -49,6 +49,10 @@ export class ApiService {
     );
   }
 
+  getTestScores() {
+    return this.http.get<any>(this.baseUrl + "UserTestLevel/scorestest");
+  }
+
   passTestLevel(userId: string, testLevelId: string) {
     return this.http.get<any>(
       this.baseUrl +
