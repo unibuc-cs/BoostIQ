@@ -12,6 +12,10 @@
     overflow: hidden;
     font-family: "Times New Roman", Times, serif;
   }
+  a{
+    text-decoration: none;
+    font-size: 130%;
+  }
   
   mat-card {
     width: 30%;
