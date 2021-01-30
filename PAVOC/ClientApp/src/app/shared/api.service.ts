@@ -29,6 +29,10 @@ export class ApiService {
     );
   }
 
+  getLearnScores() {
+    return this.http.get<any>(this.baseUrl + "UserLearnLevel/scores");
+  }
+
   passLearnLevel(userId: string, learnLevelId: string) {
     return this.http.get<any>(
       this.baseUrl +
