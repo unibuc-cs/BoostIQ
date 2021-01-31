@@ -37,7 +37,7 @@ namespace PAVOC.Controllers
                     ScoreDTO score = new ScoreDTO()
                     {
                         username = user.Username,
-                        score = user.UserTestLevels.Count() * 50 //number of user learn levels * 50 points
+                        score = user.UserTestLevels.Count() * 100 //number of user learn levels * 50 points
                     };
                     scorestest.Add(score);
                 }

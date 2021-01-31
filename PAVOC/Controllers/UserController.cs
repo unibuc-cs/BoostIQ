@@ -45,7 +45,9 @@ namespace PAVOC.Controllers
                 UserTestLevelEntity userTestLevelEntity = new UserTestLevelEntity()
                 {
                     UserEntityId = userId,
-                    TestLevelEntityId = testLevelId
+                    TestLevelEntityId = testLevelId,
+             
+
                 };
                 user.UserTestLevels.Add(userTestLevelEntity);
                 uow.Save();
