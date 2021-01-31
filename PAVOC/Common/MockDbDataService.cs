@@ -1988,40 +1988,6 @@ namespace PAVOC.Common
 
 
 
-                //-------------------------
-
-                var testLevel2History = new TestLevelEntity()
-                {
-                    TestLevelNumber = 2,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                historyCategory.TestLevels.Add(testLevel2History);
-
-                
-
-                //---------------------
-
-                var testLevel3History = new TestLevelEntity()
-                {
-                    TestLevelNumber = 3,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                historyCategory.TestLevels.Add(testLevel3History);
-
- 
-
-
-
-
-
-
-
 
 
                 //--------------------
@@ -2427,34 +2393,6 @@ namespace PAVOC.Common
 
                 categoryRepository.Update(sportsCategory);//-asta actualizeaza locatia pana unde s-a rezolvat in test pt sports
 
-                //-------------------------
-
-                var testLevel2Sports = new TestLevelEntity()
-                {
-                    TestLevelNumber = 2,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                sportsCategory.TestLevels.Add(testLevel2Sports);
-
-               
-
-                //----------------
-
-                var testLevel3Sports = new TestLevelEntity()
-                {
-                    TestLevelNumber = 3,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                sportsCategory.TestLevels.Add(testLevel3Sports);
-
-                
-
                
 
 
@@ -2859,46 +2797,6 @@ namespace PAVOC.Common
 
 
 
-
-
-                //-------------------------
-
-                var testLevel2Geography = new TestLevelEntity()
-                {
-                    TestLevelNumber = 2,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                geographyCategory.TestLevels.Add(testLevel2Geography);
-
-               
-
-                //---------------------
-
-                var testLevel3Geography = new TestLevelEntity()
-                {
-                    TestLevelNumber = 3,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                geographyCategory.TestLevels.Add(testLevel3Geography);
-
-           
-
-
-
-
-
-
-
-
-
-
-
                 //-----------------------//
 
                 var musicCategory = categoryRepository.GetCategoryByName("Muzică");
@@ -3288,34 +3186,7 @@ namespace PAVOC.Common
 
 
 
-                //-------------------------
-
-                var testLevel2Music = new TestLevelEntity()
-                {
-                    TestLevelNumber = 2,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                musicCategory.TestLevels.Add(testLevel2Music);
-
-                
-                //---------------------
-
-                var testLevel3Music = new TestLevelEntity()
-                {
-                    TestLevelNumber = 3,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                musicCategory.TestLevels.Add(testLevel3Music);
-
-                
-                
-
+               
                 //----------------//
 
 
@@ -3721,35 +3592,6 @@ namespace PAVOC.Common
 
 
 
-
-
-
-                //-------------------------
-
-                var testLevel2Celebrities = new TestLevelEntity()
-                {
-                    TestLevelNumber = 2,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                celebritiesCategory.TestLevels.Add(testLevel2Celebrities);
-
-                
-                //---------------------
-
-                var testLevel3Celebrities = new TestLevelEntity()
-                {
-                    TestLevelNumber = 3,
-                    //TODO Petros -> change these 2 lines
-                    Image = "",
-                    Text = ""
-                };
-
-                celebritiesCategory.TestLevels.Add(testLevel3Celebrities);
-
-                
                 categoryRepository.Update(celebritiesCategory);
 
                 uow.Save();
