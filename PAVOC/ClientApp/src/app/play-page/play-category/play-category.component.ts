@@ -109,7 +109,7 @@ export class PlayCategoryComponent implements OnInit {
 
     let score = correctAnswers / totalQuestions;
     this.scores= score*100;
-    if (score >= 1) {
+    if (score >= 0.7) {
       this.passedLevel = true;
       this.api
         .passTestLevel(
