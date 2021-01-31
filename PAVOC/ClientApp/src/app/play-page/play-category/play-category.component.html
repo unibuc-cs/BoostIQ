@@ -97,7 +97,7 @@
 </div>
 
 <!-- pagina cu rezultatele -->
-<br /><br /><br /><br /><br />
+<br /><br /><br />
 <div *ngIf="resultDisplayed">
   <h2>Ai terminat testul</h2>
   <h2>Scorul tău este: {{ scores }}%</h2>
@@ -112,6 +112,13 @@
 <!-- pagina unde ii spuneam utilizatorului ca a terminat toate levele pt aceasta categorie -->
 <div *ngIf="finishedAllLevels">
   <h2>Ai completat deja toate intrebarile pentru această categorie!</h2>
+  <br /><br />
+  <img src="https://i.ibb.co/LgHLqGS/nextweek.jpg" />
+  <br /><br />
+  <button type="button" class="btn btn-dark" [routerLink]="'/play'">
+    Altă categorie!
+    <i class="fa fa-reply" aria-hidden="true"></i>
+  </button>
 </div>
 
 <style>
