@@ -3250,7 +3250,7 @@ namespace PAVOC.Common
                 {
                     Order = 2,
                     //TODO Petros -> change this
-                    Text = "Câți copii are Angelina Jolie",
+                    Text = "Câți copii are Angelina Jolie ?",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion2TestLevel1Celebrities);
 
@@ -3289,7 +3289,7 @@ namespace PAVOC.Common
                 {
                     Order = 3,
                     //TODO Petros -> change this
-                    Text = "Al câtelea președinte al SUA a fost Barack Obama? ",
+                    Text = "Al câtelea președinte al SUA a fost Barack Obama ? ",
                 };
                 testLevel1Celebrities.TestQuestions.Add(testQuestion3TestLevel1Celebrities);
 

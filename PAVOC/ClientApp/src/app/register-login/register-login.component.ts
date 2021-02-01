@@ -56,7 +56,7 @@ export class RegisterLoginComponent implements OnInit {
     }
 
     this.apiService.registerUser(this.registerForm.value).subscribe(result => {
-      alert('Success!');
+      alert('Contul tau a fost inregistrat!');
     })
 
   }
